@@ -142,6 +142,7 @@ async function drawMap(){if(!window.L){$('#map').innerHTML='<div class="banner">
  lmap=L.map('map',{zoomSnap:0.25});L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(lmap);
  const f=ui.mapF,b=[];if(!ROUTE){try{ROUTE=await (await fetch('route.json')).json();}catch(e){ROUTE={};}}if(!lmap)return;
  if(f!=='ideas')for(const leg of all('leg')){const r=ROUTE[leg.id];if(r){L.polyline(r.pts,{color:'#d9480f',weight:5,opacity:.85}).addTo(lmap);r.pts.forEach(p=>b.push(p));}}
+ if(f==='all'){if(ROUTE.RC)L.polyline(ROUTE.RC.pts,{color:'#1c7ed6',weight:4,dashArray:'8 8'}).addTo(lmap).bindPopup('Río Celeste day trip (idea)');L.polyline([[10.4517,-83.5960],[10.5420,-83.5024]],{color:'#0b7285',weight:4,dashArray:'4 8'}).addTo(lmap).bindPopup('Boat: La Pavona → Tortuguero (about 1 h)');}
  const pin=(i,html,pop)=>{L.marker([+i.lat,+i.lng],{zIndexOffset:-500,icon:L.divIcon({html,className:'',iconSize:[30,30],iconAnchor:[f==='all'?-8:15,f==='all'?36:15]})}).addTo(lmap).bindPopup(pop);b.push([+i.lat,+i.lng]);};
  const has=i=>i.lat!=null&&i.lat!=='';let no=0;
  if(f==='all'||f==='sleep'){const st=all('stay').filter(s=>!s.backupOf).sort((x,y)=>x.fromDay-y.fromDay);const seenAt={};
@@ -150,7 +151,7 @@ async function drawMap(){if(!window.L){$('#map').innerHTML='<div class="banner">
  if(f==='all'||f==='coffee')all('tour').filter(x=>x.day||f==='coffee').forEach(x=>has(x)?pin(x,'<div class="pinc">☕</div>',`<b>${esc(x.name)}</b><br>${esc(x.when)}<br>${chip(x.status)}<br>${waze(x)}`):no++);
  if(f==='ideas')all('place').forEach(p=>has(p)?pin(p,'<div class="pinc">💡</div>',`<b>${esc(p.name)}</b><br>${esc(p.why)}<br>${chip(p.status)}<br>${waze(p)}`):no++);
  if(b.length)lmap.fitBounds(b,{padding:[20,20]});else lmap.setView([9.9,-84.2],7);
- $('#nogps').innerHTML=(f!=='ideas'?'Numbers = where you sleep, in day order. Orange line = real roads.<br>':'')+(no?`${no} items have no GPS yet, so they are not on the map.`:'');}
+ $('#nogps').innerHTML=(f!=='ideas'?'Numbers = where you sleep, in day order. Orange line = real roads. Blue dashes = boat / day trip.<br>':'')+(no?`${no} items have no GPS yet, so they are not on the map.`:'');}
 // ---------- editor
 const F={day:'label,title,plan,sunset,notes',stay:'name,area,status,fromDay:n,toDay:n,address,gps,price,ref,checkin,checkout,phone,link,notes',leg:'name,day:day,route,km:n,time,leaveBy,notes',fuel:'name,day:day,km:n,gps',
  flight:'date,name,route,leaves,lands',car:'name,status,warn,company,ref,pickup,ret,days,car,insurance,watch,licence,price,deposit,phone,gps',tour:'name,day:day,when,length,price,status,link,gps,notes',
