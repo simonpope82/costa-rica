@@ -18,6 +18,8 @@ function setMeta(ch){doc.meta={...doc.meta,...ch,u:Date.now()};pending.__meta=1;
 function swap(a,b){const x=get(a),y=get(b);const t=x.o;upd(a,{o:y.o});upd(b,{o:t});}
 const days=()=>all('day');const dayOf=n=>days().find(d=>d.day==n);
 const stayFor=n=>all('stay').find(s=>!s.backupOf&&n>=s.fromDay&&n<=s.toDay);
+const RATE=c=>c==='USD'?1:c==='CRC'?(doc.meta.rate||456.61):c==='NOK'?(doc.meta.nokRate||9.57):c==='SEK'?(doc.meta.sekRate||10.04):1;
+const toUSD=(amt,c)=>(+amt||0)/RATE(c);const money=v=>'$'+v.toFixed(2);
 const usd=crc=>doc.meta.rate?(crc/doc.meta.rate).toFixed(0):'?';
 // ---------- links
 function waze(it,label='🚗 Navigate in Waze'){const q=[it.name&&!/^Not chosen|^Ideas:/.test(it.name)?it.name:'',it.area,C.country].filter(Boolean).join(' ');
@@ -35,7 +37,7 @@ function crClock(){return new Date(Date.now()+C.utcOffset*3600e3).toISOString().
 function homeTime(hhmm){if(!/^\d\d:\d\d/.test(hhmm||''))return '';let [h,mm]=hhmm.split(':').map(Number);h=(h+C.homeOffsetH)%24;return `${String(h).padStart(2,'0')}:${String(mm).padStart(2,'0')} ${C.homeName}`;}
 // ---------- screens
 const R={};
-R.more=()=>`<h2>☰ All screens</h2><div class="tiles">${[['today','🏠','Today'],['map','🗺️','Map'],['days','📅','Day by day'],['stays','🛏️','Stays'],['car','🚙','Car'],['flights','✈️','Flights'],['places','📍','Places'],['lists','✅','Checklists'],['info','ℹ️','Info + notes'],['settings','⚙️','Sync + export']].map(([h,e,t])=>`<a class="tile" href="#${h}"><b>${e}</b>${t}</a>`).join('')}</div>`;
+R.more=()=>`<h2>☰ All screens</h2><div class="banner">📱 iPhone: Share → Add to Home Screen</div><div class="tiles">${[['today','🏠','Today'],['map','🗺️','Map'],['days','📅','Day by day'],['stays','🛏️','Stays'],['car','🚙','Car'],['flights','✈️','Flights'],['spend','💸','Spend'],['places','📍','Places'],['lists','✅','Checklists'],['info','ℹ️','Info + notes'],['settings','⚙️','Sync + export']].map(([h,e,t])=>`<a class="tile" href="#${h}"><b>${e}</b>${t}</a>`).join('')}</div>`;
 R.today=()=>{const t=crNow(),ds=days(),first=ds[0],last=ds[ds.length-1];let h='';
  if(first&&t<first.date){const n=Math.ceil((new Date(first.date)-new Date(t))/864e5);
   const tb=[...all('todo').filter(x=>!x.done),...all('stay').filter(s=>s.status==='To book'&&!s.backupOf),...all('tour').filter(x=>x.status==='To book')];
@@ -105,6 +107,18 @@ R.settings=()=>`<h2>⚙️ Sync, export, settings</h2><div class="card"><h3>🔄
  <div class="card"><h3>💱 Rate</h3><label>CRC per 1 USD</label><input id="rate" inputmode="decimal" value="${esc(doc.meta.rate)}"><button class="btn" data-rate>Save rate</button><div class="mut">${esc(doc.meta.rateNote||'')}</div></div>
  <div class="card"><h3>📤 Share + backup</h3><button class="btn" data-export>⬇️ Export JSON</button><label>Import JSON (replaces nothing, merges newer)</label><input type="file" id="imp" accept=".json,application/json"><button class="btn" data-share>🔗 Share link</button><button class="btn" data-print>🖨️ Print / PDF (all days)</button></div>
  <div class="mut">${esc(doc.meta.basics||'')}<br>${esc(doc.meta.tz||'')}</div>`;
+
+R.spend=()=>{const P=doc.meta.travellers||['Simon','Stian'],e=all('spend').sort((x,y)=>(y.date||'').localeCompare(x.date||''));
+ const tot=e.reduce((s,x)=>s+toUSD(x.amount,x.cur),0),paid={};P.forEach(p=>paid[p]=0);e.forEach(x=>paid[x.who]=(paid[x.who]||0)+toUSD(x.amount,x.cur));
+ const half=tot/2,diff=paid[P[0]]-half;
+ const owe=Math.abs(diff)<0.005?'✅ All square':diff>0?`${esc(P[1])} owes ${esc(P[0])} <b>${money(diff)}</b>`:`${esc(P[0])} owes ${esc(P[1])} <b>${money(-diff)}</b>`;
+ const ic={hotel:'🛏️',car:'🚙',fuel:'⛽',food:'🍽️',tours:'🎟️',other:'📦'};
+ return `<h2>💸 Spend</h2><div class="card" style="text-align:center"><div class="mut">Total spent</div><div class="big-num">${money(tot)}</div><div class="mut">Each person's share (50/50): <b>${money(half)}</b></div>
+ <div style="font-size:24px;margin-top:8px">${owe}</div></div>
+ <div class="card">${P.map(p=>`<div class="kv" style="font-size:20px"><b>${esc(p)} paid</b> ${money(paid[p]||0)}</div>`).join('')}</div>
+ <button class="btn big pri" data-new="spend">＋ Add expense</button>
+ ${e.map(x=>`<div class="row"><span style="font-size:30px">${ic[x.cat]||'📦'}</span><span class="t"><b>${esc(x.what)}</b><br><span class="mut">${esc(x.date)} · paid by ${esc(x.who)}</span></span><span style="text-align:right"><b>${esc(x.amount)} ${esc(x.cur)}</b><br><span class="mut">${money(toUSD(x.amount,x.cur))}</span></span><button class="sm" data-ed="${x.id}">✏️</button></div>`).join('')||'<div class="mut">No expenses yet.</div>'}
+ <div class="card"><h3>💱 Rates (1 USD =)</h3><label>CRC</label><input id="r-crc" inputmode="decimal" value="${esc(doc.meta.rate||456.61)}"><label>NOK</label><input id="r-nok" inputmode="decimal" value="${esc(doc.meta.nokRate||9.57)}"><label>SEK</label><input id="r-sek" inputmode="decimal" value="${esc(doc.meta.sekRate||10.04)}"><button class="btn" data-rates>Save rates</button><div class="mut">Start values: CRC 10 Oct (BCCR), NOK + SEK 12 Oct 2026.</div></div>`;};
 // ---------- map
 let lmap=null;
 R.map=()=>`<h2>🗺️ Map</h2><div class="tabs">${[['all','All'],['sleep','🛏️ Sleep'],['coffee','☕ Coffee'],['ideas','💡 Ideas']].map(([k,t])=>`<button class="${ui.mapF===k?'on':''}" data-mf="${k}">${t}</button>`).join('')}</div><div id="map"></div><div id="nogps" class="mut"></div>`;
@@ -120,12 +134,13 @@ function drawMap(){if(!window.L){$('#map').innerHTML='<div class="banner">Map ne
 // ---------- editor
 const F={day:'label,title,plan,sunset,notes',stay:'name,area,status,fromDay:n,toDay:n,address,gps,price,ref,checkin,checkout,phone,link,notes',leg:'name,day:day,route,km:n,time,leaveBy,notes',fuel:'name,day:day,km:n,gps',
  flight:'date,name,route,leaves,lands',car:'name,status,company,ref,pickup,ret,days,car,insurance,watch,licence,price,deposit,phone,gps',tour:'name,day:day,when,length,price,status,link,gps,notes',
- place:'name,area,kind:kind,why,status,day:day,link,gps',todo:'name,status,ref,price,notes',pack:'name,group',question:'name,answer',good:'name,text',info:'name,text,status',food:'name,link,notes,gps',fuellog:'date,litres:n,cost:n,station',toll:'date,name,cost:n'};
-const LBL={fromDay:'First night (day no.)',toDay:'Last night (day no.)',ret:'Return',leaveBy:'Leave by',kind:'Type',why:'Why go',day:'Day',cost:'Cost (₡)',gps:'GPS (lat, lng)'};
+ place:'name,area,kind:kind,why,status,day:day,link,gps',todo:'name,status,ref,price,notes',pack:'name,group',question:'name,answer',good:'name,text',info:'name,text,status',food:'name,link,notes,gps',spend:'date,what,amount:n,cur:cur,who:who,cat:cat',fuellog:'date,litres:n,cost:n,station',toll:'date,name,cost:n'};
+const LBL={what:'What',amount:'Amount',cur:'Currency',who:'Who paid',cat:'Category',fromDay:'First night (day no.)',toDay:'Last night (day no.)',ret:'Return',leaveBy:'Leave by',kind:'Type',why:'Why go',day:'Day',cost:'Cost (₡)',gps:'GPS (lat, lng)'};
 function openEd(id,type,preset){const it=id?get(id):{type,...preset};const fs=F[it.type].split(',');let h=`<h2>✏️ ${id?'Edit':'Add'}</h2>`;
  for(const f of fs){const[k,t]=f.split(':');const lab=LBL[k]||k[0].toUpperCase()+k.slice(1);
   if(k==='status')h+=`<label>Status</label><select data-f="status"><option></option>${STATUSES.map(s=>`<option ${it.status===s?'selected':''}>${s}</option>`).join('')}</select>`;
   else if(t==='day')h+=`<label>${lab}</label><select data-f="day" data-num><option value="">— none —</option>${days().map(d=>`<option value="${d.day}" ${it.day==d.day?'selected':''}>Day ${d.day} · ${esc(d.label)}</option>`).join('')}</select>`;
+  else if(t==='cur'||t==='who'||t==='cat'){const opts=t==='cur'?['USD','CRC','NOK','SEK']:t==='who'?(doc.meta.travellers||['Simon','Stian']):['hotel','car','fuel','food','tours','other'];h+=`<label>${lab}</label><select data-f="${k}">${opts.map(s=>`<option ${it[k]===s?'selected':''}>${esc(s)}</option>`).join('')}</select>`;}
   else if(t==='kind')h+=`<label>${lab}</label><select data-f="kind">${['beach','coffee','nature','food','nightlife','activity'].map(s=>`<option ${it.kind===s?'selected':''}>${s}</option>`).join('')}</select>`;
   else if(k==='gps')h+=`<label>${lab}</label><input data-gps value="${it.lat!=null&&it.lat!==''?it.lat+', '+it.lng:''}" placeholder="Paste coordinates or a Google Maps link"><button class="btn" data-here>📍 Use my location</button>`;
   else if(/plan|notes|text|insurance|watch|why|answer/.test(k))h+=`<label>${lab}</label><textarea data-f="${k}">${esc(it[k])}</textarea>`;
@@ -157,7 +172,7 @@ async function sync(){if(!set.pw){setSync('Set password',false);return;}if(synci
  syncing=false;}
 // ---------- events
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.closest('#sheet'))return;const d=b.dataset;
- if(d.ed)return openEd(d.ed);if(d.new)return openEd(null,d.new,{status:'Idea'});
+ if(d.ed)return openEd(d.ed);if(d.new==='spend')return openEd(null,'spend',{date:crNow(),cur:'USD',who:set.me||'Simon',cat:'food'});if(d.new)return openEd(null,d.new,{status:'Idea'});
  if(d.addact)return openEd(null,'tour',{day:+d.addact,status:'Idea'});
  if(d.tg){const[id,k]=d.tg.split(':');upd(id,{[k]:!get(id)[k]});}
  else if(d.pk){const[id,p]=d.pk.split(':');const t={...(get(id).ticks||{})};t[p]=!t[p];upd(id,{ticks:t});}
@@ -170,6 +185,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||
  else if('newgroup' in d){const g=$('#new-group').value.trim();if(!g)return;addItem('pack',{group:g,name:'New item',ticks:{}});}
  else if('savesync' in d){set.pw=$('#pw').value.trim();set.srv=$('#srv').value.trim();saveSet();sync();}
  else if('font' in d){set.lexend=!set.lexend;saveSet();applyFont();}
+ else if('rates' in d){const c=parseFloat($('#r-crc').value),n=parseFloat($('#r-nok').value),s=parseFloat($('#r-sek').value);if(c>0&&n>0&&s>0)setMeta({rate:c,nokRate:n,sekRate:s});else{alert('Rates must be numbers');return;}}
  else if('rate' in d){const v=parseFloat($('#rate').value);if(v>0)setMeta({rate:v});}
  else if('export' in d){const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(doc,null,1)],{type:'application/json'}));a.download=C.key+'-'+crNow()+'.json';a.click();return;}
  else if('share' in d){const u=location.href.split('#')[0];navigator.share?navigator.share({title:doc.meta.title,url:u}):(navigator.clipboard?.writeText(u),alert('Link copied: '+u));return;}
@@ -189,4 +205,5 @@ addEventListener('hashchange',render);addEventListener('online',sync);setInterva
 (async()=>{applyFont();$('#ttl').textContent=C.flag+' '+C.country;
  doc=JSON.parse(localStorage.getItem(LK+':doc')||'null');
  if(!doc){try{doc=await (await fetch('seed.json',{cache:'no-store'})).json();}catch(e){m.innerHTML='<div class="banner">No data yet. Open once with internet.</div>';return;}saveLocal();}
+ else{try{const sd=await (await fetch('seed.json',{cache:'no-store'})).json();let n=0;for(const[id,it]of Object.entries(sd.items)){const c=doc.items[id];if(!c||(it.u||0)>(c.u||0)){doc.items[id]=it;pending[id]=1;n++;}}if(n)saveLocal();}catch(e){}}
  render();sync();if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');})();

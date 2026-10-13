@@ -16,7 +16,8 @@ D=[("Wed 28 Oct","Arrive","Land 17:30, car 18:30, early night"),("Thu 29 Oct","C
 ("Wed 11 Nov","Fly home","Leave by 12:30 latest (aim 12:00). Fill up near airport. Car back by 16:30. Fly 19:30")]
 for i,(d,t,p) in enumerate(D,1):
     add("day",id=f"day{i}",day=i,date=f"2026-{'10' if 'Oct' in d else '11'}-{int(d.split()[1]):02d}",label=d,title=t,plan=p,notes="",sunset="Dark about 17:15–17:30")
-S=[("st_rb","Finca Rosa Blanca coffee farm","Santa Bárbara de Heredia",1,2,"To book","Junior Suite from about 315 USD/night + 13% tax. Idea: 1 night here + 1 at a backup.","+506 2269 9392",None,"",None,None),
+S=[("st_hampton","Hampton by Hilton San Jose Airport","Alajuela (at SJO airport)",1,1,"Booked","1 night, prepaid SEK 1,305, non-refundable. Booking site still says 'Confirming'. Alamo car rental station is at this hotel.","",None,"",None,None),
+("st_rb","Finca Rosa Blanca coffee farm","Santa Bárbara de Heredia",2,2,"To book","Junior Suite from about 315 USD/night + 13% tax. Idea: 1 night here + 1 at a backup.","+506 2269 9392",None,"",None,None),
 ("st_pv","Pura Vida Hotel","Tuetal, Alajuela (4 km from SJO)",1,2,"Idea","99–129 USD/night + 13% tax, breakfast, free airport pickup","", "st_rb","",None,None),
 ("st_bv","Buena Vista Chic Hotel","Alajuela hills (9 km from SJO)",1,2,"Idea","From about 144 USD/night, breakfast + airport shuttle","","st_rb","",None,None),
 ("st_lf","Not chosen","La Fortuna / Arenal",3,5,"To book","","",None,"",10.4679,-84.6427),
@@ -25,7 +26,7 @@ S=[("st_rb","Finca Rosa Blanca coffee farm","Santa Bárbara de Heredia",1,2,"To 
 ("st_uv","Not chosen","Uvita / Dominical",11,12,"To book","","",None,"",9.1611,-83.7372),
 ("st_sm","Ideas: Hotel Valle Verde (in town) or Cedrela Eco Lodge (10 min away)","Santa María de Dota",13,14,"To book","Cold at night","",None,"",None,None)]
 for sid,n,a,f,t,st,no,ph,bk,ref,la,lo in S:
-    add("stay",id=sid,name=n,area=a,fromDay=f,toDay=t,status=st,notes=no,phone=ph,backupOf=bk or "",ref=ref,lat=la,lng=lo,address="",price="",checkin="",checkout="",link="",gpsAsked=False,parkingAsked=False)
+    add("stay",id=sid,name=n,area=a,address=("Airport Blvd 1, Alajuela" if sid=="st_hampton" else ""),checkin=("Wed 28 Oct" if sid=="st_hampton" else ""),checkout=("Thu 29 Oct" if sid=="st_hampton" else ""),price=("SEK 1,305 (prepaid)" if sid=="st_hampton" else ""),fromDay=f,toDay=t,status=st,notes=no,phone=ph,backupOf=bk or "",ref=ref,lat=la,lng=lo,link="",gpsAsked=False,parkingAsked=False)
 L=[(1,"SJO → Finca Rosa Blanca",15,"30 min","",[("Delta La Ribera",6)],"None needed."),
 (2,"Rosa Blanca ↔ Hacienda Doka",35,"1 h 30","",[("Servicentro Carrizal",7)],"None needed."),
 (3,"Rosa Blanca → La Fortuna",135,"3 h 30","",[("Mi Servicentro Naranjo",40),("Delta San Jorge, La Fortuna",119)],"Break at Naranjo. Fill up at Delta San Jorge. Cost about 22 USD."),
@@ -96,6 +97,8 @@ F=[("st_lf","Don Rufino","https://donrufino.com/","Costa Rican, smart dinner. Bo
 ("st_sm","Café Coopedota","https://www.coopedota.com/","Coffee + local food"),("st_sm","Pizzería Las Tejas","","Pizza"),("st_sm","Restaurante y Pesca La Teja","","Trout")]
 town={"st_lf":"La Fortuna","st_mv":"Santa Elena Monteverde","st_ma":"Manuel Antonio","st_uv":"Uvita","st_sm":"Santa María de Dota"}
 for s,n,u,no in F: add("food",stay=s,name=n,link=u,notes=no,area=town[s],lat=None,lng=None)
-for it in items: it["u"]=1
+add("spend",id="sp_hampton",date="2026-10-13",what="Hampton by Hilton SJO, night 1",amount=1305,cur="SEK",who="Simon",cat="hotel")
+NEW={"st_hampton","st_rb","sp_hampton"}
+for it in items: it["u"]=1760352000000 if it["id"] in NEW else 1
 json.dump({"v":1,"meta":meta,"items":{i["id"]:i for i in items}},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
 print(len(items))

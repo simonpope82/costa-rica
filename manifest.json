@@ -1,1 +1,39 @@
-{"name":"Costa Rica trip","short_name":"Costa Rica","start_url":"./","display":"standalone","background_color":"#f4f7f5","theme_color":"#0a7d4f","icons":[{"src":"icon-192.png","sizes":"192x192","type":"image/png"},{"src":"icon-512.png","sizes":"512x512","type":"image/png"}]}
+{
+ "name": "Costa Rica trip",
+ "short_name": "Costa Rica",
+ "start_url": "./#today",
+ "scope": "./",
+ "display": "standalone",
+ "background_color": "#f3f6f4",
+ "theme_color": "#0a6b45",
+ "icons": [
+  {
+   "src": "icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ],
+ "shortcuts": [
+  {
+   "name": "Spend",
+   "short_name": "Spend",
+   "url": "./#spend",
+   "icons": [
+    {
+     "src": "icon-192.png",
+     "sizes": "192x192"
+    }
+   ]
+  },
+  {
+   "name": "Today",
+   "url": "./#today"
+  }
+ ]
+}

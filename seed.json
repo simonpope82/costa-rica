@@ -209,11 +209,39 @@
 "o": 15,
 "u": 1
 },
+"st_hampton": {
+"id": "st_hampton",
+"name": "Hampton by Hilton San Jose Airport",
+"area": "Alajuela (at SJO airport)",
+"address": "Airport Blvd 1, Alajuela",
+"checkin": "Wed 28 Oct",
+"checkout": "Thu 29 Oct",
+"price": "SEK 1,305 (prepaid)",
+"fromDay": 1,
+"toDay": 1,
+"status": "Booked",
+"notes": "1 night, prepaid SEK 1,305, non-refundable. Booking site still says 'Confirming'. Alamo car rental station is at this hotel.",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": null,
+"lng": null,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 16,
+"u": 1760352000000
+},
 "st_rb": {
 "id": "st_rb",
 "name": "Finca Rosa Blanca coffee farm",
 "area": "Santa Bárbara de Heredia",
-"fromDay": 1,
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 2,
 "toDay": 2,
 "status": "To book",
 "notes": "Junior Suite from about 315 USD/night + 13% tax. Idea: 1 night here + 1 at a backup.",
@@ -222,21 +250,21 @@
 "ref": "",
 "lat": null,
 "lng": null,
-"address": "",
-"price": "",
-"checkin": "",
-"checkout": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
 "type": "stay",
-"o": 16,
-"u": 1
+"o": 17,
+"u": 1760352000000
 },
 "st_pv": {
 "id": "st_pv",
 "name": "Pura Vida Hotel",
 "area": "Tuetal, Alajuela (4 km from SJO)",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
 "fromDay": 1,
 "toDay": 2,
 "status": "Idea",
@@ -246,21 +274,21 @@
 "ref": "",
 "lat": null,
 "lng": null,
-"address": "",
-"price": "",
-"checkin": "",
-"checkout": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
 "type": "stay",
-"o": 17,
+"o": 18,
 "u": 1
 },
 "st_bv": {
 "id": "st_bv",
 "name": "Buena Vista Chic Hotel",
 "area": "Alajuela hills (9 km from SJO)",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
 "fromDay": 1,
 "toDay": 2,
 "status": "Idea",
@@ -270,21 +298,21 @@
 "ref": "",
 "lat": null,
 "lng": null,
-"address": "",
-"price": "",
-"checkin": "",
-"checkout": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
 "type": "stay",
-"o": 18,
+"o": 19,
 "u": 1
 },
 "st_lf": {
 "id": "st_lf",
 "name": "Not chosen",
 "area": "La Fortuna / Arenal",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
 "fromDay": 3,
 "toDay": 5,
 "status": "To book",
@@ -294,21 +322,21 @@
 "ref": "",
 "lat": 10.4679,
 "lng": -84.6427,
-"address": "",
-"price": "",
-"checkin": "",
-"checkout": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
 "type": "stay",
-"o": 19,
+"o": 20,
 "u": 1
 },
 "st_mv": {
 "id": "st_mv",
 "name": "Not chosen",
 "area": "Monteverde (Santa Elena)",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
 "fromDay": 6,
 "toDay": 7,
 "status": "To book",
@@ -318,21 +346,21 @@
 "ref": "",
 "lat": 10.3167,
 "lng": -84.8256,
-"address": "",
-"price": "",
-"checkin": "",
-"checkout": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
 "type": "stay",
-"o": 20,
+"o": 21,
 "u": 1
 },
 "st_ma": {
 "id": "st_ma",
 "name": "Not chosen",
 "area": "Manuel Antonio / Quepos",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
 "fromDay": 8,
 "toDay": 10,
 "status": "To book",
@@ -342,21 +370,21 @@
 "ref": "",
 "lat": 9.43,
 "lng": -84.16,
-"address": "",
-"price": "",
-"checkin": "",
-"checkout": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
 "type": "stay",
-"o": 21,
+"o": 22,
 "u": 1
 },
 "st_uv": {
 "id": "st_uv",
 "name": "Not chosen",
 "area": "Uvita / Dominical",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
 "fromDay": 11,
 "toDay": 12,
 "status": "To book",
@@ -366,21 +394,21 @@
 "ref": "",
 "lat": 9.1611,
 "lng": -83.7372,
-"address": "",
-"price": "",
-"checkin": "",
-"checkout": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
 "type": "stay",
-"o": 22,
+"o": 23,
 "u": 1
 },
 "st_sm": {
 "id": "st_sm",
 "name": "Ideas: Hotel Valle Verde (in town) or Cedrela Eco Lodge (10 min away)",
 "area": "Santa María de Dota",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
 "fromDay": 13,
 "toDay": 14,
 "status": "To book",
@@ -390,15 +418,11 @@
 "ref": "",
 "lat": null,
 "lng": null,
-"address": "",
-"price": "",
-"checkin": "",
-"checkout": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
 "type": "stay",
-"o": 23,
+"o": 24,
 "u": 1
 },
 "L1": {
@@ -411,10 +435,10 @@
 "leaveBy": "",
 "notes": "None needed.",
 "type": "leg",
-"o": 24,
+"o": 25,
 "u": 1
 },
-"fuel25": {
+"fuel26": {
 "name": "Delta La Ribera",
 "day": 1,
 "leg": "L1",
@@ -422,8 +446,8 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel25",
-"o": 25,
+"id": "fuel26",
+"o": 26,
 "u": 1
 },
 "L2": {
@@ -436,10 +460,10 @@
 "leaveBy": "",
 "notes": "None needed.",
 "type": "leg",
-"o": 26,
+"o": 27,
 "u": 1
 },
-"fuel27": {
+"fuel28": {
 "name": "Servicentro Carrizal",
 "day": 2,
 "leg": "L2",
@@ -447,8 +471,8 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel27",
-"o": 27,
+"id": "fuel28",
+"o": 28,
 "u": 1
 },
 "L3": {
@@ -461,10 +485,10 @@
 "leaveBy": "",
 "notes": "Break at Naranjo. Fill up at Delta San Jorge. Cost about 22 USD.",
 "type": "leg",
-"o": 28,
+"o": 29,
 "u": 1
 },
-"fuel29": {
+"fuel30": {
 "name": "Mi Servicentro Naranjo",
 "day": 3,
 "leg": "L3",
@@ -472,11 +496,11 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel29",
-"o": 29,
+"id": "fuel30",
+"o": 30,
 "u": 1
 },
-"fuel30": {
+"fuel31": {
 "name": "Delta San Jorge, La Fortuna",
 "day": 3,
 "leg": "L3",
@@ -484,8 +508,8 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel30",
-"o": 30,
+"id": "fuel31",
+"o": 31,
 "u": 1
 },
 "L4": {
@@ -498,10 +522,10 @@
 "leaveBy": "09:00",
 "notes": "Leave full. Tilarán is the last before gravel. Cost about 19 USD.",
 "type": "leg",
-"o": 31,
+"o": 32,
 "u": 1
 },
-"fuel32": {
+"fuel33": {
 "name": "Servicentro Arenal",
 "day": 6,
 "leg": "L4",
@@ -509,11 +533,11 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel32",
-"o": 32,
+"id": "fuel33",
+"o": 33,
 "u": 1
 },
-"fuel33": {
+"fuel34": {
 "name": "Servicentro Tilarán",
 "day": 6,
 "leg": "L4",
@@ -521,8 +545,8 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel33",
-"o": 33,
+"id": "fuel34",
+"o": 34,
 "u": 1
 },
 "L5": {
@@ -535,26 +559,14 @@
 "leaveBy": "",
 "notes": "Longest drive. Cost about 31 USD.",
 "type": "leg",
-"o": 34,
-"u": 1
-},
-"fuel35": {
-"name": "JSM Monteverde",
-"day": 8,
-"leg": "L5",
-"km": 2,
-"lat": null,
-"lng": null,
-"type": "fuel",
-"id": "fuel35",
 "o": 35,
 "u": 1
 },
 "fuel36": {
-"name": "Servicentro Jacó",
+"name": "JSM Monteverde",
 "day": 8,
 "leg": "L5",
-"km": 114,
+"km": 2,
 "lat": null,
 "lng": null,
 "type": "fuel",
@@ -563,6 +575,18 @@
 "u": 1
 },
 "fuel37": {
+"name": "Servicentro Jacó",
+"day": 8,
+"leg": "L5",
+"km": 114,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel37",
+"o": 37,
+"u": 1
+},
+"fuel38": {
 "name": "Gasolinera Paquita, Quepos",
 "day": 8,
 "leg": "L5",
@@ -570,8 +594,8 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel37",
-"o": 37,
+"id": "fuel38",
+"o": 38,
 "u": 1
 },
 "L6": {
@@ -584,10 +608,10 @@
 "leaveBy": "",
 "notes": "Cost about 11 USD.",
 "type": "leg",
-"o": 38,
+"o": 39,
 "u": 1
 },
-"fuel39": {
+"fuel40": {
 "name": "Delta Quepos",
 "day": 11,
 "leg": "L6",
@@ -595,11 +619,11 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel39",
-"o": 39,
+"id": "fuel40",
+"o": 40,
 "u": 1
 },
-"fuel40": {
+"fuel41": {
 "name": "Servicentro Bahía Ballena, Uvita",
 "day": 11,
 "leg": "L6",
@@ -607,8 +631,8 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel40",
-"o": 40,
+"id": "fuel41",
+"o": 41,
 "u": 1
 },
 "L7": {
@@ -621,26 +645,14 @@
 "leaveBy": "09:00",
 "notes": "Must fill in San Isidro. Gasolinera Santa María on arrival. Cost about 22 USD.",
 "type": "leg",
-"o": 41,
-"u": 1
-},
-"fuel42": {
-"name": "Servicentro Bahía Ballena",
-"day": 13,
-"leg": "L7",
-"km": 2,
-"lat": null,
-"lng": null,
-"type": "fuel",
-"id": "fuel42",
 "o": 42,
 "u": 1
 },
 "fuel43": {
-"name": "Tanok or Gasotica, San Isidro",
+"name": "Servicentro Bahía Ballena",
 "day": 13,
 "leg": "L7",
-"km": 50,
+"km": 2,
 "lat": null,
 "lng": null,
 "type": "fuel",
@@ -649,6 +661,18 @@
 "u": 1
 },
 "fuel44": {
+"name": "Tanok or Gasotica, San Isidro",
+"day": 13,
+"leg": "L7",
+"km": 50,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel44",
+"o": 44,
+"u": 1
+},
+"fuel45": {
 "name": "Gasolinera Santa María",
 "day": 13,
 "leg": "L7",
@@ -656,8 +680,8 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel44",
-"o": 44,
+"id": "fuel45",
+"o": 45,
 "u": 1
 },
 "L8": {
@@ -670,10 +694,10 @@
 "leaveBy": "12:30",
 "notes": "Leave full. Fill up near SJO for car return. Cost about 13 USD.",
 "type": "leg",
-"o": 45,
+"o": 46,
 "u": 1
 },
-"fuel46": {
+"fuel47": {
 "name": "Gas Caribe",
 "day": 15,
 "leg": "L8",
@@ -681,11 +705,11 @@
 "lat": null,
 "lng": null,
 "type": "fuel",
-"id": "fuel46",
-"o": 46,
+"id": "fuel47",
+"o": 47,
 "u": 1
 },
-"flight47": {
+"flight48": {
 "date": "Wed 28 Oct",
 "name": "KL 1198",
 "route": "Oslo → Amsterdam",
@@ -693,11 +717,11 @@
 "lands": "11:25",
 "status": "Booked",
 "type": "flight",
-"id": "flight47",
-"o": 47,
+"id": "flight48",
+"o": 48,
 "u": 1
 },
-"flight48": {
+"flight49": {
 "date": "Wed 28 Oct",
 "name": "KL 759",
 "route": "Amsterdam → San José (SJO)",
@@ -705,11 +729,11 @@
 "lands": "17:30",
 "status": "Booked",
 "type": "flight",
-"id": "flight48",
-"o": 48,
+"id": "flight49",
+"o": 49,
 "u": 1
 },
-"flight49": {
+"flight50": {
 "date": "Wed 11 Nov",
 "name": "KL 760",
 "route": "San José → Amsterdam",
@@ -717,11 +741,11 @@
 "lands": "12:50 Thu 12 Nov",
 "status": "Booked",
 "type": "flight",
-"id": "flight49",
-"o": 49,
+"id": "flight50",
+"o": 50,
 "u": 1
 },
-"flight50": {
+"flight51": {
 "date": "Thu 12 Nov",
 "name": "KL 1203",
 "route": "Amsterdam → Oslo",
@@ -729,8 +753,8 @@
 "lands": "16:10",
 "status": "Booked",
 "type": "flight",
-"id": "flight50",
-"o": 50,
+"id": "flight51",
+"o": 51,
 "u": 1
 },
 "car": {
@@ -753,26 +777,26 @@
 "lng": -84.2088,
 "area": "SJO airport (Juan Santamaría)",
 "type": "car",
-"o": 51,
-"u": 1
-},
-"info52": {
-"name": "Fuel prices",
-"text": "From 3 Oct 2026: Súper 764 CRC/L, Plus 91 719 CRC/L, Diesel 785 CRC/L, same at every station. One tank covers any single drive.",
-"type": "info",
-"id": "info52",
 "o": 52,
 "u": 1
 },
 "info53": {
-"name": "Tolls",
-"text": "Small, on Ruta 27 (e.g. Pozón 570 CRC, Atenas 750 CRC): card, cash or Quick Pass.",
+"name": "Fuel prices",
+"text": "From 3 Oct 2026: Súper 764 CRC/L, Plus 91 719 CRC/L, Diesel 785 CRC/L, same at every station. One tank covers any single drive.",
 "type": "info",
 "id": "info53",
 "o": 53,
 "u": 1
 },
-"tour54": {
+"info54": {
+"name": "Tolls",
+"text": "Small, on Ruta 27 (e.g. Pozón 570 CRC, Atenas 750 CRC): card, cash or Quick Pass.",
+"type": "info",
+"id": "info54",
+"o": 54,
+"u": 1
+},
+"tour55": {
 "name": "Hacienda Doka, Sabanilla de Alajuela",
 "day": 2,
 "when": "09:00",
@@ -784,11 +808,11 @@
 "lng": null,
 "link": "",
 "type": "tour",
-"id": "tour54",
-"o": 54,
+"id": "tour55",
+"o": 55,
 "u": 1
 },
-"tour55": {
+"tour56": {
 "name": "Finca Rosa Blanca tour + cupping",
 "day": 2,
 "when": "13:00",
@@ -800,11 +824,11 @@
 "lng": null,
 "link": "",
 "type": "tour",
-"id": "tour55",
-"o": 55,
+"id": "tour56",
+"o": 56,
 "u": 1
 },
-"tour56": {
+"tour57": {
 "name": "Coopedota, Santa María de Dota",
 "day": 14,
 "when": "10:30",
@@ -816,11 +840,11 @@
 "lng": null,
 "link": "",
 "type": "tour",
-"id": "tour56",
-"o": 56,
+"id": "tour57",
+"o": 57,
 "u": 1
 },
-"tour57": {
+"tour58": {
 "name": "Starbucks Hacienda Alsacia (next to Doka)",
 "day": null,
 "when": "Option",
@@ -832,11 +856,11 @@
 "lng": null,
 "link": "",
 "type": "tour",
-"id": "tour57",
-"o": 57,
+"id": "tour58",
+"o": 58,
 "u": 1
 },
-"tour58": {
+"tour59": {
 "name": "Don Juan Tours, Monteverde",
 "day": 7,
 "when": "Option, 3 Nov",
@@ -848,99 +872,87 @@
 "lng": null,
 "link": "",
 "type": "tour",
-"id": "tour58",
-"o": 58,
-"u": 1
-},
-"info59": {
-"name": "Coffee: skip",
-"text": "Skip: Café Britt (a show, not a working farm) and Hacienda Espíritu Santo (closed since 30 May 2025). Ask farms whether the mill runs in late Oct / early Nov.",
-"type": "info",
-"id": "info59",
+"id": "tour59",
 "o": 59,
 "u": 1
 },
 "info60": {
-"name": "Option: 1 night in Colombia",
-"status": "Idea",
-"text": "Idea, not decided. Fly Thu 29 Oct SJO → Bogotá or Medellín, back Fri 30 Oct. Costs about 2 road-trip nights. No visa for Norwegians. Yellow fever jab needed to re-enter Costa Rica, at least 10 days before: both need it by about 20 Oct.",
+"name": "Coffee: skip",
+"text": "Skip: Café Britt (a show, not a working farm) and Hacienda Espíritu Santo (closed since 30 May 2025). Ask farms whether the mill runs in late Oct / early Nov.",
 "type": "info",
 "id": "info60",
 "o": 60,
 "u": 1
 },
-"good61": {
-"name": "Entry",
-"text": "No visa for Norwegians, up to 180 days. May be asked for a return ticket (we have one) and about 100 USD per person per month.",
-"type": "good",
-"id": "good61",
+"info61": {
+"name": "Option: 1 night in Colombia",
+"status": "Idea",
+"text": "Idea, not decided. Fly Thu 29 Oct SJO → Bogotá or Medellín, back Fri 30 Oct. Costs about 2 road-trip nights. No visa for Norwegians. Yellow fever jab needed to re-enter Costa Rica, at least 10 days before: both need it by about 20 Oct.",
+"type": "info",
+"id": "info61",
 "o": 61,
 "u": 1
 },
 "good62": {
-"name": "Driving",
-"text": "Drive on the right. Limits: 40 km/h towns, 60–80 rural, 100 max. Speed cameras, big fines. No driving after dark (dark about 17:30); arrive by 16:30–17:00. Never drive into water you can't see the bottom of. One-lane bridge: the side with the CEDA sign waits. Right on red only if clear and no sign. Seatbelts on.",
+"name": "Entry",
+"text": "No visa for Norwegians, up to 180 days. May be asked for a return ticket (we have one) and about 100 USD per person per month.",
 "type": "good",
 "id": "good62",
 "o": 62,
 "u": 1
 },
 "good63": {
-"name": "La Fortuna → Monteverde",
-"text": "Last 35 km after Tilarán is gravel, potholes, steep. Slow, 4x4, daylight only.",
+"name": "Driving",
+"text": "Drive on the right. Limits: 40 km/h towns, 60–80 rural, 100 max. Speed cameras, big fines. No driving after dark (dark about 17:30); arrive by 16:30–17:00. Never drive into water you can't see the bottom of. One-lane bridge: the side with the CEDA sign waits. Right on red only if clear and no sign. Seatbelts on.",
 "type": "good",
 "id": "good63",
 "o": 63,
 "u": 1
 },
 "good64": {
-"name": "Weather",
-"text": "End of rainy season. October is the wettest; drier in November. Sunny mornings, rainy afternoons. Caribbean side is dry Sep–Oct, wet in Nov (backup if the Pacific is bad).",
+"name": "La Fortuna → Monteverde",
+"text": "Last 35 km after Tilarán is gravel, potholes, steep. Slow, 4x4, daylight only.",
 "type": "good",
 "id": "good64",
 "o": 64,
 "u": 1
 },
 "good65": {
-"name": "Money",
-"text": "Colones (CRC). US dollars OK in tourist areas. Cards work almost everywhere.",
+"name": "Weather",
+"text": "End of rainy season. October is the wettest; drier in November. Sunny mornings, rainy afternoons. Caribbean side is dry Sep–Oct, wet in Nov (backup if the Pacific is bad).",
 "type": "good",
 "id": "good65",
 "o": 65,
 "u": 1
 },
 "good66": {
-"name": "Day 1",
-"text": "Land in the dark; night 1 is only 30 min away.",
+"name": "Money",
+"text": "Colones (CRC). US dollars OK in tourist areas. Cards work almost everywhere.",
 "type": "good",
 "id": "good66",
 "o": 66,
 "u": 1
 },
 "good67": {
-"name": "Waze",
-"text": "Download Waze offline areas or Google Maps offline maps before the trip.",
+"name": "Day 1",
+"text": "Land in the dark; night 1 is only 30 min away.",
 "type": "good",
 "id": "good67",
 "o": 67,
 "u": 1
 },
-"todo68": {
-"name": "Flights, ref on Flights screen",
-"done": true,
-"status": "Booked",
-"ref": "",
-"price": "",
-"notes": "",
-"type": "todo",
-"id": "todo68",
+"good68": {
+"name": "Waze",
+"text": "Download Waze offline areas or Google Maps offline maps before the trip.",
+"type": "good",
+"id": "good68",
 "o": 68,
 "u": 1
 },
 "todo69": {
-"name": "4x4 SUV: 28 Oct 18:30 → 11 Nov 16:30, with SLI, grace period, Quick Pass, Stian as driver, 4 bags fit",
-"done": false,
-"status": "To book",
+"name": "Flights, ref on Flights screen",
+"done": true,
+"status": "Booked",
 "ref": "",
 "price": "",
 "notes": "",
@@ -950,7 +962,7 @@
 "u": 1
 },
 "todo70": {
-"name": "Credit card coverage letter (only to skip CDW)",
+"name": "4x4 SUV: 28 Oct 18:30 → 11 Nov 16:30, with SLI, grace period, Quick Pass, Stian as driver, 4 bags fit",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -962,7 +974,7 @@
 "u": 1
 },
 "todo71": {
-"name": "Hotel 28–29 Oct (2 nights): Finca Rosa Blanca, or 1 night + backup",
+"name": "Credit card coverage letter (only to skip CDW)",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -974,7 +986,7 @@
 "u": 1
 },
 "todo72": {
-"name": "Hotel 30 Oct – 1 Nov (3 nights): La Fortuna",
+"name": "Hotel 28–29 Oct (2 nights): Finca Rosa Blanca, or 1 night + backup",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -986,7 +998,7 @@
 "u": 1
 },
 "todo73": {
-"name": "Hotel 2–3 Nov (2 nights): Monteverde",
+"name": "Hotel 30 Oct – 1 Nov (3 nights): La Fortuna",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -998,7 +1010,7 @@
 "u": 1
 },
 "todo74": {
-"name": "Hotel 4–6 Nov (3 nights): Manuel Antonio",
+"name": "Hotel 2–3 Nov (2 nights): Monteverde",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1010,7 +1022,7 @@
 "u": 1
 },
 "todo75": {
-"name": "Hotel 7–8 Nov (2 nights): Uvita",
+"name": "Hotel 4–6 Nov (3 nights): Manuel Antonio",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1022,7 +1034,7 @@
 "u": 1
 },
 "todo76": {
-"name": "Hotel 9–10 Nov (2 nights): Santa María de Dota",
+"name": "Hotel 7–8 Nov (2 nights): Uvita",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1034,7 +1046,7 @@
 "u": 1
 },
 "todo77": {
-"name": "Hacienda Doka tour, Thu 29 Oct 09:00",
+"name": "Hotel 9–10 Nov (2 nights): Santa María de Dota",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1046,7 +1058,7 @@
 "u": 1
 },
 "todo78": {
-"name": "Rosa Blanca tour + cupping, Thu 29 Oct 13:00 (min 2 people)",
+"name": "Hacienda Doka tour, Thu 29 Oct 09:00",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1058,7 +1070,7 @@
 "u": 1
 },
 "todo79": {
-"name": "Coopedota tour, Tue 10 Nov 10:30",
+"name": "Rosa Blanca tour + cupping, Thu 29 Oct 13:00 (min 2 people)",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1070,7 +1082,7 @@
 "u": 1
 },
 "todo80": {
-"name": "Park tickets on SINAC online: Manuel Antonio, Arenal, Poás, Marino Ballena",
+"name": "Coopedota tour, Tue 10 Nov 10:30",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1082,7 +1094,7 @@
 "u": 1
 },
 "todo81": {
-"name": "Travel insurance for both",
+"name": "Park tickets on SINAC online: Manuel Antonio, Arenal, Poás, Marino Ballena",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1094,9 +1106,9 @@
 "u": 1
 },
 "todo82": {
-"name": "Yellow fever jab by about 20 Oct (only if doing Colombia, both)",
+"name": "Travel insurance for both",
 "done": false,
-"status": "Question",
+"status": "To book",
 "ref": "",
 "price": "",
 "notes": "",
@@ -1106,9 +1118,9 @@
 "u": 1
 },
 "todo83": {
-"name": "Waze + offline maps downloaded",
+"name": "Yellow fever jab by about 20 Oct (only if doing Colombia, both)",
 "done": false,
-"status": "To book",
+"status": "Question",
 "ref": "",
 "price": "",
 "notes": "",
@@ -1118,7 +1130,7 @@
 "u": 1
 },
 "todo84": {
-"name": "Local SIM or eSIM",
+"name": "Waze + offline maps downloaded",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1130,7 +1142,7 @@
 "u": 1
 },
 "todo85": {
-"name": "Some colones + card for tolls",
+"name": "Local SIM or eSIM",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1142,7 +1154,7 @@
 "u": 1
 },
 "todo86": {
-"name": "Ask each hotel for GPS location and safe parking",
+"name": "Some colones + card for tolls",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1154,7 +1166,7 @@
 "u": 1
 },
 "todo87": {
-"name": "Check in online for KL 760 (24 h before)",
+"name": "Ask each hotel for GPS location and safe parking",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1166,7 +1178,7 @@
 "u": 1
 },
 "todo88": {
-"name": "Check for an online arrival form for Costa Rica",
+"name": "Check in online for KL 760 (24 h before)",
 "done": false,
 "status": "To book",
 "ref": "",
@@ -1177,21 +1189,21 @@
 "o": 88,
 "u": 1
 },
-"pack89": {
-"group": "Documents and money",
-"name": "Passport (6+ months left is safest)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack89",
+"todo89": {
+"name": "Check for an online arrival form for Costa Rica",
+"done": false,
+"status": "To book",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"id": "todo89",
 "o": 89,
 "u": 1
 },
 "pack90": {
 "group": "Documents and money",
-"name": "Norwegian driving licence (both, if Stian drives)",
+"name": "Passport (6+ months left is safest)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1203,7 +1215,7 @@
 },
 "pack91": {
 "group": "Documents and money",
-"name": "Credit card in the driver's name (for the car deposit)",
+"name": "Norwegian driving licence (both, if Stian drives)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1215,7 +1227,7 @@
 },
 "pack92": {
 "group": "Documents and money",
-"name": "Debit card + backup card",
+"name": "Credit card in the driver's name (for the car deposit)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1227,7 +1239,7 @@
 },
 "pack93": {
 "group": "Documents and money",
-"name": "Some US dollars in cash",
+"name": "Debit card + backup card",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1239,7 +1251,7 @@
 },
 "pack94": {
 "group": "Documents and money",
-"name": "Card coverage letter (if skipping CDW)",
+"name": "Some US dollars in cash",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1251,7 +1263,7 @@
 },
 "pack95": {
 "group": "Documents and money",
-"name": "Travel insurance details",
+"name": "Card coverage letter (if skipping CDW)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1263,7 +1275,7 @@
 },
 "pack96": {
 "group": "Documents and money",
-"name": "E-ticket and booking refs (also offline on phone)",
+"name": "Travel insurance details",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1275,7 +1287,7 @@
 },
 "pack97": {
 "group": "Documents and money",
-"name": "Copies of passport and licence (photo on phone + paper)",
+"name": "E-ticket and booking refs (also offline on phone)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1287,7 +1299,7 @@
 },
 "pack98": {
 "group": "Documents and money",
-"name": "Yellow fever certificate (only if Colombia)",
+"name": "Copies of passport and licence (photo on phone + paper)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1298,8 +1310,8 @@
 "u": 1
 },
 "pack99": {
-"group": "Tech",
-"name": "Phone + charger",
+"group": "Documents and money",
+"name": "Yellow fever certificate (only if Colombia)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1311,7 +1323,7 @@
 },
 "pack100": {
 "group": "Tech",
-"name": "Power bank",
+"name": "Phone + charger",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1323,7 +1335,7 @@
 },
 "pack101": {
 "group": "Tech",
-"name": "Plug adapter for Costa Rica (US-type plugs, 120 V: check chargers say 100–240 V)",
+"name": "Power bank",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1335,7 +1347,7 @@
 },
 "pack102": {
 "group": "Tech",
-"name": "Car phone holder",
+"name": "Plug adapter for Costa Rica (US-type plugs, 120 V: check chargers say 100–240 V)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1347,7 +1359,7 @@
 },
 "pack103": {
 "group": "Tech",
-"name": "Car USB charger + cable",
+"name": "Car phone holder",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1359,7 +1371,7 @@
 },
 "pack104": {
 "group": "Tech",
-"name": "Headphones",
+"name": "Car USB charger + cable",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1371,7 +1383,7 @@
 },
 "pack105": {
 "group": "Tech",
-"name": "Head torch (night walk in Monteverde)",
+"name": "Headphones",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1382,8 +1394,8 @@
 "u": 1
 },
 "pack106": {
-"group": "Clothes",
-"name": "Rain jacket (October is the wettest month)",
+"group": "Tech",
+"name": "Head torch (night walk in Monteverde)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1395,7 +1407,7 @@
 },
 "pack107": {
 "group": "Clothes",
-"name": "Warm layer / fleece (Monteverde and Dota are cold at night)",
+"name": "Rain jacket (October is the wettest month)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1407,7 +1419,7 @@
 },
 "pack108": {
 "group": "Clothes",
-"name": "Long trousers (hiking, mosquitoes)",
+"name": "Warm layer / fleece (Monteverde and Dota are cold at night)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1419,7 +1431,7 @@
 },
 "pack109": {
 "group": "Clothes",
-"name": "Light quick-dry shirts and shorts",
+"name": "Long trousers (hiking, mosquitoes)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1431,7 +1443,7 @@
 },
 "pack110": {
 "group": "Clothes",
-"name": "Swimwear",
+"name": "Light quick-dry shirts and shorts",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1443,7 +1455,7 @@
 },
 "pack111": {
 "group": "Clothes",
-"name": "Walking shoes or light hiking boots (mud)",
+"name": "Swimwear",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1455,7 +1467,7 @@
 },
 "pack112": {
 "group": "Clothes",
-"name": "Sandals / flip-flops",
+"name": "Walking shoes or light hiking boots (mud)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1467,7 +1479,7 @@
 },
 "pack113": {
 "group": "Clothes",
-"name": "Cap or sun hat",
+"name": "Sandals / flip-flops",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1479,7 +1491,7 @@
 },
 "pack114": {
 "group": "Clothes",
-"name": "Clothes for a nice dinner",
+"name": "Cap or sun hat",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1490,8 +1502,8 @@
 "u": 1
 },
 "pack115": {
-"group": "Health and comfort",
-"name": "Personal medicines (enough for the whole trip)",
+"group": "Clothes",
+"name": "Clothes for a nice dinner",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1503,7 +1515,7 @@
 },
 "pack116": {
 "group": "Health and comfort",
-"name": "Insect repellent (strong, DEET)",
+"name": "Personal medicines (enough for the whole trip)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1515,7 +1527,7 @@
 },
 "pack117": {
 "group": "Health and comfort",
-"name": "Sunscreen (reef-safe for the beaches)",
+"name": "Insect repellent (strong, DEET)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1527,7 +1539,7 @@
 },
 "pack118": {
 "group": "Health and comfort",
-"name": "Sunglasses",
+"name": "Sunscreen (reef-safe for the beaches)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1539,7 +1551,7 @@
 },
 "pack119": {
 "group": "Health and comfort",
-"name": "Small first aid kit + plasters",
+"name": "Sunglasses",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1551,7 +1563,7 @@
 },
 "pack120": {
 "group": "Health and comfort",
-"name": "Travel sickness tablets (lots of curvy roads)",
+"name": "Small first aid kit + plasters",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1563,7 +1575,7 @@
 },
 "pack121": {
 "group": "Health and comfort",
-"name": "Stomach tablets",
+"name": "Travel sickness tablets (lots of curvy roads)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1575,7 +1587,7 @@
 },
 "pack122": {
 "group": "Health and comfort",
-"name": "Hand sanitiser",
+"name": "Stomach tablets",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1586,8 +1598,8 @@
 "u": 1
 },
 "pack123": {
-"group": "Day trips",
-"name": "Small daypack",
+"group": "Health and comfort",
+"name": "Hand sanitiser",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1599,7 +1611,7 @@
 },
 "pack124": {
 "group": "Day trips",
-"name": "Dry bag (rafting, boat trips, rain)",
+"name": "Small daypack",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1611,7 +1623,7 @@
 },
 "pack125": {
 "group": "Day trips",
-"name": "Water bottle",
+"name": "Dry bag (rafting, boat trips, rain)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1623,7 +1635,7 @@
 },
 "pack126": {
 "group": "Day trips",
-"name": "Binoculars (birds, sloths, whales)",
+"name": "Water bottle",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1635,7 +1647,7 @@
 },
 "pack127": {
 "group": "Day trips",
-"name": "Snorkel mask (optional)",
+"name": "Binoculars (birds, sloths, whales)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1647,7 +1659,7 @@
 },
 "pack128": {
 "group": "Day trips",
-"name": "Quick-dry towel",
+"name": "Snorkel mask (optional)",
 "ticks": {
 "Simon": false,
 "Stian": false
@@ -1657,17 +1669,20 @@
 "o": 128,
 "u": 1
 },
-"question129": {
-"name": "29 Oct: Doka + Rosa Blanca cupping, or Alsacia instead of Doka?",
-"done": false,
-"answer": "",
-"type": "question",
-"id": "question129",
+"pack129": {
+"group": "Day trips",
+"name": "Quick-dry towel",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack129",
 "o": 129,
 "u": 1
 },
 "question130": {
-"name": "Last night: Santa María de Dota (2 h 30 to SJO) or closer to the airport?",
+"name": "29 Oct: Doka + Rosa Blanca cupping, or Alsacia instead of Doka?",
 "done": false,
 "answer": "",
 "type": "question",
@@ -1676,7 +1691,7 @@
 "u": 1
 },
 "question131": {
-"name": "Budget per night? One room or two?",
+"name": "Last night: Santa María de Dota (2 h 30 to SJO) or closer to the airport?",
 "done": false,
 "answer": "",
 "type": "question",
@@ -1685,7 +1700,7 @@
 "u": 1
 },
 "question132": {
-"name": "Add Stian as a driver?",
+"name": "Budget per night? One room or two?",
 "done": false,
 "answer": "",
 "type": "question",
@@ -1694,7 +1709,7 @@
 "u": 1
 },
 "question133": {
-"name": "Must-dos: zip-line, rafting, hot springs, whales, fishing, surfing?",
+"name": "Add Stian as a driver?",
 "done": false,
 "answer": "",
 "type": "question",
@@ -1703,7 +1718,7 @@
 "u": 1
 },
 "question134": {
-"name": "Caribbean detour (Puerto Viejo / Cahuita) if bad weather?",
+"name": "Must-dos: zip-line, rafting, hot springs, whales, fishing, surfing?",
 "done": false,
 "answer": "",
 "type": "question",
@@ -1712,7 +1727,7 @@
 "u": 1
 },
 "question135": {
-"name": "Keep Coopedota in the plan?",
+"name": "Caribbean detour (Puerto Viejo / Cahuita) if bad weather?",
 "done": false,
 "answer": "",
 "type": "question",
@@ -1721,7 +1736,7 @@
 "u": 1
 },
 "question136": {
-"name": "Do the 1 night in Colombia?",
+"name": "Keep Coopedota in the plan?",
 "done": false,
 "answer": "",
 "type": "question",
@@ -1730,7 +1745,7 @@
 "u": 1
 },
 "question137": {
-"name": "Will the coffee mills be running in late Oct / early Nov?",
+"name": "Do the 1 night in Colombia?",
 "done": false,
 "answer": "",
 "type": "question",
@@ -1738,26 +1753,20 @@
 "o": 137,
 "u": 1
 },
-"place138": {
-"name": "Papagayo Peninsula",
-"why": "Hotels and food (pricey but nice)",
-"status": "Idea",
-"kind": "food",
-"area": "",
-"lat": null,
-"lng": null,
-"link": "",
-"day": null,
-"type": "place",
-"id": "place138",
+"question138": {
+"name": "Will the coffee mills be running in late Oct / early Nov?",
+"done": false,
+"answer": "",
+"type": "question",
+"id": "question138",
 "o": 138,
 "u": 1
 },
 "place139": {
-"name": "San José",
-"why": "Culture and nightlife",
+"name": "Papagayo Peninsula",
+"why": "Hotels and food (pricey but nice)",
 "status": "Idea",
-"kind": "nightlife",
+"kind": "food",
 "area": "",
 "lat": null,
 "lng": null,
@@ -1769,10 +1778,10 @@
 "u": 1
 },
 "place140": {
-"name": "Nosara",
-"why": "Yoga and spa",
+"name": "San José",
+"why": "Culture and nightlife",
 "status": "Idea",
-"kind": "activity",
+"kind": "nightlife",
 "area": "",
 "lat": null,
 "lng": null,
@@ -1784,10 +1793,10 @@
 "u": 1
 },
 "place141": {
-"name": "Jacó",
-"why": "For variety (lunch stop on 4 Nov)",
-"status": "In plan",
-"kind": "food",
+"name": "Nosara",
+"why": "Yoga and spa",
+"status": "Idea",
+"kind": "activity",
 "area": "",
 "lat": null,
 "lng": null,
@@ -1799,6 +1808,21 @@
 "u": 1
 },
 "place142": {
+"name": "Jacó",
+"why": "For variety (lunch stop on 4 Nov)",
+"status": "In plan",
+"kind": "food",
+"area": "",
+"lat": null,
+"lng": null,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place142",
+"o": 142,
+"u": 1
+},
+"place143": {
 "name": "Monteverde",
 "why": "Cloud forest, coffee a must",
 "status": "In plan",
@@ -1809,28 +1833,13 @@
 "link": "",
 "day": null,
 "type": "place",
-"id": "place142",
-"o": 142,
-"u": 1
-},
-"place143": {
-"name": "Puerto Viejo de Talamanca",
-"why": "Beach and activities",
-"status": "Idea",
-"kind": "beach",
-"area": "",
-"lat": null,
-"lng": null,
-"link": "",
-"day": null,
-"type": "place",
 "id": "place143",
 "o": 143,
 "u": 1
 },
 "place144": {
-"name": "Tamarindo",
-"why": "Best for surfing",
+"name": "Puerto Viejo de Talamanca",
+"why": "Beach and activities",
 "status": "Idea",
 "kind": "beach",
 "area": "",
@@ -1844,10 +1853,10 @@
 "u": 1
 },
 "place145": {
-"name": "Drake Bay",
-"why": "Only reachable by boat or plane",
+"name": "Tamarindo",
+"why": "Best for surfing",
 "status": "Idea",
-"kind": "nature",
+"kind": "beach",
 "area": "",
 "lat": null,
 "lng": null,
@@ -1859,6 +1868,21 @@
 "u": 1
 },
 "place146": {
+"name": "Drake Bay",
+"why": "Only reachable by boat or plane",
+"status": "Idea",
+"kind": "nature",
+"area": "",
+"lat": null,
+"lng": null,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place146",
+"o": 146,
+"u": 1
+},
+"place147": {
 "name": "La Fortuna",
 "why": "Volcano scenery",
 "status": "In plan",
@@ -1869,30 +1893,15 @@
 "link": "",
 "day": null,
 "type": "place",
-"id": "place146",
-"o": 146,
-"u": 1
-},
-"place147": {
-"name": "Playa Conchal",
-"why": "Snorkelling and scuba",
-"status": "Idea",
-"kind": "beach",
-"area": "",
-"lat": null,
-"lng": null,
-"link": "",
-"day": null,
-"type": "place",
 "id": "place147",
 "o": 147,
 "u": 1
 },
 "place148": {
-"name": "Pacuare River",
-"why": "White water rafting, kayak",
+"name": "Playa Conchal",
+"why": "Snorkelling and scuba",
 "status": "Idea",
-"kind": "activity",
+"kind": "beach",
 "area": "",
 "lat": null,
 "lng": null,
@@ -1904,10 +1913,10 @@
 "u": 1
 },
 "place149": {
-"name": "\"Tico beach\" (local favourite)",
-"why": "Name to check",
-"status": "Question",
-"kind": "beach",
+"name": "Pacuare River",
+"why": "White water rafting, kayak",
+"status": "Idea",
+"kind": "activity",
 "area": "",
 "lat": null,
 "lng": null,
@@ -1918,24 +1927,26 @@
 "o": 149,
 "u": 1
 },
-"food150": {
-"stay": "st_lf",
-"name": "Don Rufino",
-"link": "https://donrufino.com/",
-"notes": "Costa Rican, smart dinner. Book.",
-"area": "La Fortuna",
+"place150": {
+"name": "\"Tico beach\" (local favourite)",
+"why": "Name to check",
+"status": "Question",
+"kind": "beach",
+"area": "",
 "lat": null,
 "lng": null,
-"type": "food",
-"id": "food150",
+"link": "",
+"day": null,
+"type": "place",
+"id": "place150",
 "o": 150,
 "u": 1
 },
 "food151": {
 "stay": "st_lf",
-"name": "Soda La Hormiga",
-"link": "",
-"notes": "Cheap local food",
+"name": "Don Rufino",
+"link": "https://donrufino.com/",
+"notes": "Costa Rican, smart dinner. Book.",
 "area": "La Fortuna",
 "lat": null,
 "lng": null,
@@ -1946,9 +1957,9 @@
 },
 "food152": {
 "stay": "st_lf",
-"name": "Arenal Puesta del Sol",
-"link": "https://www.arenalpuestadelsol.com/",
-"notes": "Volcano view. Book.",
+"name": "Soda La Hormiga",
+"link": "",
+"notes": "Cheap local food",
 "area": "La Fortuna",
 "lat": null,
 "lng": null,
@@ -1958,11 +1969,11 @@
 "u": 1
 },
 "food153": {
-"stay": "st_mv",
-"name": "Taco Taco",
-"link": "",
-"notes": "Mexican, busy, fun",
-"area": "Santa Elena Monteverde",
+"stay": "st_lf",
+"name": "Arenal Puesta del Sol",
+"link": "https://www.arenalpuestadelsol.com/",
+"notes": "Volcano view. Book.",
+"area": "La Fortuna",
 "lat": null,
 "lng": null,
 "type": "food",
@@ -1972,9 +1983,9 @@
 },
 "food154": {
 "stay": "st_mv",
-"name": "Don Luis",
-"link": "https://donluiscr.com/",
-"notes": "Steak + pizza",
+"name": "Taco Taco",
+"link": "",
+"notes": "Mexican, busy, fun",
 "area": "Santa Elena Monteverde",
 "lat": null,
 "lng": null,
@@ -1985,9 +1996,9 @@
 },
 "food155": {
 "stay": "st_mv",
-"name": "The Green Restaurant",
-"link": "",
-"notes": "Healthy, good steaks",
+"name": "Don Luis",
+"link": "https://donluiscr.com/",
+"notes": "Steak + pizza",
 "area": "Santa Elena Monteverde",
 "lat": null,
 "lng": null,
@@ -1997,11 +2008,11 @@
 "u": 1
 },
 "food156": {
-"stay": "st_ma",
-"name": "Claro Que Sí",
+"stay": "st_mv",
+"name": "The Green Restaurant",
 "link": "",
-"notes": "Seafood (Hotel Si Como No)",
-"area": "Manuel Antonio",
+"notes": "Healthy, good steaks",
+"area": "Santa Elena Monteverde",
 "lat": null,
 "lng": null,
 "type": "food",
@@ -2011,9 +2022,9 @@
 },
 "food157": {
 "stay": "st_ma",
-"name": "Ronny's Place",
+"name": "Claro Que Sí",
 "link": "",
-"notes": "Sunset view",
+"notes": "Seafood (Hotel Si Como No)",
 "area": "Manuel Antonio",
 "lat": null,
 "lng": null,
@@ -2024,9 +2035,9 @@
 },
 "food158": {
 "stay": "st_ma",
-"name": "ARBOL",
-"link": "https://arbolrestaurant.com/",
-"notes": "Smart dinner, adults only",
+"name": "Ronny's Place",
+"link": "",
+"notes": "Sunset view",
 "area": "Manuel Antonio",
 "lat": null,
 "lng": null,
@@ -2037,9 +2048,9 @@
 },
 "food159": {
 "stay": "st_ma",
-"name": "Soda Sánchez (Quepos)",
-"link": "",
-"notes": "Cheap local food",
+"name": "ARBOL",
+"link": "https://arbolrestaurant.com/",
+"notes": "Smart dinner, adults only",
 "area": "Manuel Antonio",
 "lat": null,
 "lng": null,
@@ -2049,11 +2060,11 @@
 "u": 1
 },
 "food160": {
-"stay": "st_uv",
-"name": "Mestizo",
+"stay": "st_ma",
+"name": "Soda Sánchez (Quepos)",
 "link": "",
-"notes": "Peru/Japan, ceviche",
-"area": "Uvita",
+"notes": "Cheap local food",
+"area": "Manuel Antonio",
 "lat": null,
 "lng": null,
 "type": "food",
@@ -2063,9 +2074,9 @@
 },
 "food161": {
 "stay": "st_uv",
-"name": "Al Chile Que Sí",
+"name": "Mestizo",
 "link": "",
-"notes": "Sunset view, cocktails",
+"notes": "Peru/Japan, ceviche",
 "area": "Uvita",
 "lat": null,
 "lng": null,
@@ -2076,9 +2087,9 @@
 },
 "food162": {
 "stay": "st_uv",
-"name": "Kinsu",
+"name": "Al Chile Que Sí",
 "link": "",
-"notes": "Casado, cheap",
+"notes": "Sunset view, cocktails",
 "area": "Uvita",
 "lat": null,
 "lng": null,
@@ -2088,11 +2099,11 @@
 "u": 1
 },
 "food163": {
-"stay": "st_sm",
-"name": "Café Coopedota",
-"link": "https://www.coopedota.com/",
-"notes": "Coffee + local food",
-"area": "Santa María de Dota",
+"stay": "st_uv",
+"name": "Kinsu",
+"link": "",
+"notes": "Casado, cheap",
+"area": "Uvita",
 "lat": null,
 "lng": null,
 "type": "food",
@@ -2102,9 +2113,9 @@
 },
 "food164": {
 "stay": "st_sm",
-"name": "Pizzería Las Tejas",
-"link": "",
-"notes": "Pizza",
+"name": "Café Coopedota",
+"link": "https://www.coopedota.com/",
+"notes": "Coffee + local food",
 "area": "Santa María de Dota",
 "lat": null,
 "lng": null,
@@ -2115,9 +2126,9 @@
 },
 "food165": {
 "stay": "st_sm",
-"name": "Restaurante y Pesca La Teja",
+"name": "Pizzería Las Tejas",
 "link": "",
-"notes": "Trout",
+"notes": "Pizza",
 "area": "Santa María de Dota",
 "lat": null,
 "lng": null,
@@ -2125,6 +2136,31 @@
 "id": "food165",
 "o": 165,
 "u": 1
+},
+"food166": {
+"stay": "st_sm",
+"name": "Restaurante y Pesca La Teja",
+"link": "",
+"notes": "Trout",
+"area": "Santa María de Dota",
+"lat": null,
+"lng": null,
+"type": "food",
+"id": "food166",
+"o": 166,
+"u": 1
+},
+"sp_hampton": {
+"id": "sp_hampton",
+"date": "2026-10-13",
+"what": "Hampton by Hilton SJO, night 1",
+"amount": 1305,
+"cur": "SEK",
+"who": "Simon",
+"cat": "hotel",
+"type": "spend",
+"o": 167,
+"u": 1760352000000
 }
 }
 }
