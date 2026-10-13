@@ -29,7 +29,7 @@ for i,(d,t,p) in enumerate(D,1):
     add("day",id=f"day{i}",day=i,date=f"2026-{'10' if 'Oct' in d else '11'}-{int(d.split()[1]):02d}",label=d,title=t,plan=p,notes="",sunset="Dark about 17:15–17:30",
         wx={"kind":w["kind"],"place":w["place"],"tmax":w["tmax"],"tmin":w["tmin"],"mm":w["mm"],"pop":w["pop"]})
 G={"SJO":(9.9939,-84.2088),"MV":(10.31651,-84.82434),"LF":(10.47168,-84.64444),"AT":(9.97949,-84.39903),"MA":(9.40857,-84.15476),"SM":(9.65346,-83.96871),"PV":(9.64965,-82.77509)}
-S=[("st_hampton","Hampton by Hilton San Jose Airport","Alajuela (at SJO airport)",1,1,"Booked","1 night (Wed 28 Oct only), prepaid SEK 1,305, non-refundable. Booking site still says 'Confirming'. Alamo car rental station is at this hotel. GPS = airport (approx).","",None,"SJO"),
+S=[("st_hampton","Hampton by Hilton San Jose Airport","Alajuela (at SJO airport)",1,1,"Booked","1 night (Wed 28 Oct only), prepaid SEK 1,305, non-refundable. Confirmed by Trip.com 13 Oct. Check-in after 14:00. Non-refundable. Alamo car rental station is at this hotel. GPS = airport (approx).","",None,"SJO"),
 ("st_mv","Not chosen","Monteverde (Santa Elena)",2,3,"To book","","",None,"MV"),
 ("st_lf","Not chosen (hotel with hot springs)","La Fortuna / Arenal",4,6,"To book","Want: hotel with hot springs. Tabacón itself is an option.","",None,"LF"),
 ("st_at","Not chosen","Atenas",7,7,"To book","Break night.","",None,"AT"),
@@ -149,5 +149,5 @@ for k,it in final.items():
         if ch: patch[k]=ch
 gone=set(v1)|set().union(*[set(O) for O in olds])
 for k in gone-set(final): patch[k]={"del":True}
-json.dump({"v":1,"meta":meta,"mig":{"id":"m3-draftC","patch":patch},"items":final},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
+json.dump({"v":1,"meta":meta,"mig":[{"id":"m3-draftC","patch":patch},{"id":"m4-hampton-ok","patch":{"st_hampton":{"notes":final["st_hampton"]["notes"]}}}],"items":final},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
 print(len(final),"items;",len(patch),"patches;",sum(1 for p in patch.values() if p.get("del")),"deletes")

@@ -13,7 +13,8 @@
 "rateNote": "456.61 CRC = 1 USD (10 Oct 2026)",
 "basics": "Route: draft C (approved 13 Oct). 14 nights · about 1,040 km, about 30 h driving over 7 days · fuel: to check"
 },
-"mig": {
+"mig": [
+{
 "id": "m3-draftC",
 "patch": {
 "day1": {
@@ -655,182 +656,191 @@
 "sp_car": {
 "auto": true
 },
-"info61": {
-"del": true
-},
-"tour58": {
-"del": true
-},
-"question138": {
-"del": true
-},
-"fuel36": {
-"del": true
-},
-"info60": {
-"del": true
-},
-"todo79": {
-"del": true
-},
-"fuel47": {
-"del": true
-},
-"fuel30": {
-"del": true
-},
-"st_uv": {
-"del": true
-},
-"tour57": {
-"del": true
-},
-"fuel34": {
-"del": true
-},
-"todo89": {
-"del": true
-},
-"fuel31": {
-"del": true
-},
-"question136": {
-"del": true
-},
-"tour59": {
+"todo74": {
 "del": true
 },
 "fuel29": {
 "del": true
 },
-"todo78": {
+"todo75": {
 "del": true
 },
-"fuel38": {
+"tour57": {
 "del": true
 },
-"fuel42": {
-"del": true
-},
-"food161": {
+"fuel31": {
 "del": true
 },
 "fuel41": {
 "del": true
 },
-"fuel40": {
-"del": true
-},
-"todo69": {
-"del": true
-},
-"tour56": {
-"del": true
-},
-"food166": {
-"del": true
-},
-"pack129": {
-"del": true
-},
-"flight51": {
-"del": true
-},
-"fuel26": {
-"del": true
-},
-"place150": {
-"del": true
-},
-"fuel43": {
-"del": true
-},
-"tour55": {
-"del": true
-},
-"fuel46": {
-"del": true
-},
-"L8": {
-"del": true
-},
-"fuel35": {
-"del": true
-},
-"todo80": {
-"del": true
-},
-"todo76": {
-"del": true
-},
-"fuel25": {
-"del": true
-},
-"info54": {
-"del": true
-},
-"todo71": {
-"del": true
-},
-"todo72": {
-"del": true
-},
-"todo77": {
-"del": true
-},
-"todo82": {
+"info61": {
 "del": true
 },
 "fuel44": {
 "del": true
 },
-"fuel27": {
+"tour55": {
 "del": true
 },
-"tour54": {
+"info60": {
 "del": true
 },
-"fuel45": {
+"fuel36": {
 "del": true
 },
-"fuel28": {
+"tour59": {
 "del": true
 },
-"food162": {
+"food161": {
 "del": true
 },
-"fuel37": {
-"del": true
-},
-"fuel39": {
-"del": true
-},
-"fuel32": {
+"fuel46": {
 "del": true
 },
 "fuel33": {
 "del": true
 },
+"fuel25": {
+"del": true
+},
+"todo80": {
+"del": true
+},
+"fuel39": {
+"del": true
+},
+"L8": {
+"del": true
+},
 "food160": {
 "del": true
 },
-"todo73": {
+"fuel38": {
 "del": true
 },
-"good68": {
+"fuel26": {
+"del": true
+},
+"tour54": {
+"del": true
+},
+"fuel43": {
+"del": true
+},
+"food162": {
+"del": true
+},
+"fuel45": {
+"del": true
+},
+"todo69": {
+"del": true
+},
+"pack129": {
+"del": true
+},
+"todo79": {
+"del": true
+},
+"fuel37": {
+"del": true
+},
+"tour56": {
+"del": true
+},
+"question138": {
 "del": true
 },
 "pack98": {
 "del": true
 },
-"todo74": {
+"todo82": {
 "del": true
 },
-"todo75": {
+"todo73": {
+"del": true
+},
+"todo78": {
+"del": true
+},
+"tour58": {
+"del": true
+},
+"st_uv": {
+"del": true
+},
+"fuel42": {
+"del": true
+},
+"good68": {
+"del": true
+},
+"fuel34": {
+"del": true
+},
+"info54": {
+"del": true
+},
+"todo76": {
+"del": true
+},
+"fuel35": {
+"del": true
+},
+"fuel32": {
+"del": true
+},
+"todo89": {
+"del": true
+},
+"fuel40": {
+"del": true
+},
+"fuel27": {
+"del": true
+},
+"fuel28": {
+"del": true
+},
+"fuel47": {
+"del": true
+},
+"todo71": {
+"del": true
+},
+"question136": {
+"del": true
+},
+"place150": {
+"del": true
+},
+"food166": {
+"del": true
+},
+"flight51": {
+"del": true
+},
+"todo77": {
+"del": true
+},
+"todo72": {
+"del": true
+},
+"fuel30": {
 "del": true
 }
 }
 },
+{
+"id": "m4-hampton-ok",
+"patch": {
+"st_hampton": {
+"notes": "1 night (Wed 28 Oct only), prepaid SEK 1,305, non-refundable. Confirmed by Trip.com 13 Oct. Check-in after 14:00. Non-refundable. Alamo car rental station is at this hotel. GPS = airport (approx)."
+}
+}
+}
+],
 "items": {
 "day1": {
 "id": "day1",
@@ -1158,7 +1168,7 @@
 "fromDay": 1,
 "toDay": 1,
 "status": "Booked",
-"notes": "1 night (Wed 28 Oct only), prepaid SEK 1,305, non-refundable. Booking site still says 'Confirming'. Alamo car rental station is at this hotel. GPS = airport (approx).",
+"notes": "1 night (Wed 28 Oct only), prepaid SEK 1,305, non-refundable. Confirmed by Trip.com 13 Oct. Check-in after 14:00. Non-refundable. Alamo car rental station is at this hotel. GPS = airport (approx).",
 "phone": "",
 "backupOf": "",
 "ref": "",

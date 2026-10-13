@@ -222,7 +222,10 @@ function render(){const r=(location.hash||'#today').slice(1);const f=R[r]||R.tod
  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+r));
  if(lmap){lmap.remove();lmap=null;}m.innerHTML=f();if(r==='map')setTimeout(drawMap,0);if(render.last===r)scrollTo(0,y);else scrollTo(0,0);render.last=r;}
 addEventListener('hashchange',render);addEventListener('online',sync);setInterval(()=>{if(!document.hidden)sync()},30000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)sync()});
-function migrate(sd){const m=sd.mig;if(!m||set.mig===m.id)return;const now=Date.now();const byName={};for(const x of Object.values(doc.items))if(!x.del)byName[x.type+'|'+x.name]={...x};
+function migrate(sd){if(!sd.mig)return;const L=[].concat(sd.mig);set.migs=set.migs||(set.mig?[set.mig]:[]);const todo=L.filter(m=>!set.migs.includes(m.id));if(!todo.length)return;
+ if(!set.migs.includes(L[0].id)){migrate1(sd,L[0]);}else for(const m of todo)migrate1(sd,m);
+ set.migs=L.map(m=>m.id);set.mig=L[L.length-1].id;saveSet();saveLocal();}
+function migrate1(sd,m){const now=Date.now();const byName={};for(const x of Object.values(doc.items))if(!x.del)byName[x.type+'|'+x.name]={...x};
  for(const[id,p]of Object.entries(m.patch)){const loc=doc.items[id],si=sd.items[id];let it=null;
   if(p.del){if(loc&&!loc.del)it={id,type:loc.type,o:loc.o,del:true};}
   else if(p.full||p.auto){if(!loc||loc.del||p.full||loc.name!==si.name||loc.type!==si.type){const src=p.full&&loc&&!loc.del&&loc.type===si.type?loc:byName[si.type+'|'+si.name];const keep=src?{done:src.done,ticks:src.ticks,answer:src.answer}:{};it={...si,...Object.fromEntries(Object.entries(keep).filter(([k,v])=>v!==undefined&&!(si.link&&k==='done')))};}}
@@ -230,10 +233,10 @@ function migrate(sd){const m=sd.mig;if(!m||set.mig===m.id)return;const now=Date.
   if(it){it.u=now;doc.items[id]=it;pending[id]=1;}}
  for(const[id,si]of Object.entries(sd.items))if(!doc.items[id]&&!m.patch[id]){const s=byName[si.type+'|'+si.name]||{};doc.items[id]={...si,...Object.fromEntries(['done','ticks','answer'].filter(k=>s[k]!==undefined&&!si.link).map(k=>[k,s[k]])),u:now};pending[id]=1;}
  doc.meta={...doc.meta,...Object.fromEntries(Object.entries(sd.meta).filter(([k])=>k!=='u')),...Object.fromEntries(['rate','nokRate','sekRate'].filter(k=>doc.meta[k]!=null).map(k=>[k,doc.meta[k]])),u:now};pending.__meta=1;
- set.mig=m.id;saveSet();saveLocal();}
+ }
 (async()=>{applyFont();$('#ttl').textContent=C.flag+' '+C.country;
  doc=JSON.parse(localStorage.getItem(LK+':doc')||'null');
- if(!doc){try{doc=await (await fetch('seed.json',{cache:'no-store'})).json();if(doc.mig){set.mig=doc.mig.id;saveSet();delete doc.mig;}}catch(e){m.innerHTML='<div class="banner">No data yet. Open once with internet.</div>';return;}saveLocal();}
+ if(!doc){try{doc=await (await fetch('seed.json',{cache:'no-store'})).json();if(doc.mig){set.migs=[].concat(doc.mig).map(m=>m.id);saveSet();delete doc.mig;}}catch(e){m.innerHTML='<div class="banner">No data yet. Open once with internet.</div>';return;}saveLocal();}
  else{try{const sd=await (await fetch('seed.json',{cache:'no-store'})).json();migrate(sd);}catch(e){}}
  if(!set.mig&&doc.mig)set.mig=doc.mig;
  render();sync();fetchLive();setInterval(fetchLive,30*60e3);document.addEventListener('visibilitychange',()=>{if(!document.hidden)fetchLive()});if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');})();
