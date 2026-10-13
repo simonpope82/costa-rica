@@ -103,6 +103,42 @@ add("spend",id="sp_hampton",date="2026-10-13",what="Hampton by Hilton SJO, night
 add("spend",id="sp_car",date="2026-10-13",what="Vamos car rental, 14 days (paid by Simon, assumed)",amount=1211.18,cur="USD",who="Simon",cat="car")
 NEW={"st_hampton","st_rb","sp_hampton"}
 NEW2={"car","todo_car","sp_car"}
-for it in items: it["u"]=1791000000000 if it["id"] in NEW2 else (1760352000000 if it["id"] in NEW else 1)
+# Colombia removed (Simon, 13 Oct)
+items[:]=[i for i in items if "Colombia" not in json.dumps(i,ensure_ascii=False)]
+DEL=set()
+for it in items: it["u"]=1791900000000 if it["id"] in DEL else 1791000000000 if it["id"] in NEW2 else (1760352000000 if it["id"] in NEW else 1)
+# Keep ids stable with the first published seed (tools/seed-v1.json), so phones don't get duplicates
+import os
+here=os.path.dirname(os.path.abspath(__file__))
+v1=json.load(open(os.path.join(here,"seed-v1.json")))["items"]
+key=lambda i:(i["type"],i.get("name"),i.get("group"),i.get("day"),i.get("label"),i.get("area"),i.get("leg"),i.get("stay"))
+oldmap={key(i):i for i in v1.values()}
+oldmap_name={(i["type"],i.get("name")):i for i in v1.values()}
+seen=set()
+for it in items:
+    if it.get("del"): continue
+    o=oldmap.get(key(it)) or (oldmap_name.get(("todo",v1[next(k for k,v in v1.items() if v["type"]=="todo" and v["name"].startswith("4x4 SUV"))]["name"])) if it["id"]=="todo_car" else None) or oldmap_name.get((it["type"],it.get("name")))
+    if o and o["id"] not in seen and it["id"] not in ("st_hampton","sp_hampton","sp_car"):
+        it["id"]=o["id"]; it["o"]=o["o"]; seen.add(o["id"])
+# tombstone ids from v1 that are gone, and ids that only existed in the 13 Oct seeds (372d481, cd4f07a)
+cur={i["id"] for i in items}
+gone=[k for k in v1 if k not in cur]
+for f in ("seed-372d481.json","seed-cd4f07a.json"):
+    p=os.path.join(here,f)
+    if os.path.exists(p):
+        for k in json.load(open(p))["items"]:
+            if k not in cur and k not in gone: gone.append(k)
+for k in gone:
+    items.append({"id":k,"type":(v1.get(k) or {}).get("type","x"),"o":0,"del":True,"u":1791900000000})
+for it in items:
+    if it["id"] in ("info60","todo82","pack98","question136"): it["u"]=1791900000000
+# ids reused with other content in the 13 Oct seeds: force the right content
+for f in ("seed-372d481.json","seed-cd4f07a.json"):
+    p=os.path.join(here,f)
+    if os.path.exists(p):
+        old=json.load(open(p))["items"]
+        for it in items:
+            o=old.get(it["id"])
+            if o and not it.get("del") and o.get("name")!=it.get("name") or (o and o.get("type")!=it.get("type")): it["u"]=max(it.get("u",1),1791900000000)
 json.dump({"v":1,"meta":meta,"items":{i["id"]:i for i in items}},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
 print(len(items))
