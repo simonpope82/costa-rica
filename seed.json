@@ -759,18 +759,19 @@
 },
 "car": {
 "id": "car",
-"name": "Rental car (4x4 SUV)",
-"company": "",
+"name": "Rental car: Full Size SUV 4x4",
+"company": "Vamos Rent-A-Car",
 "ref": "",
-"status": "To book",
-"pickup": "SJO airport, Wed 28 Oct about 18:30",
-"ret": "SJO airport, Wed 11 Nov by about 16:30 (3 h before flight)",
-"days": "14 rental days (check the contract)",
-"car": "4x4 SUV, mid-size or bigger (RAV4 / Vitara / Montero Sport). 4 big bags.",
+"status": "Booked",
+"pickup": "San José International Airport (SJO), Thu 29 Oct 2026, 12:00",
+"ret": "SJO, Thu 12 Nov 2026, 12:00",
+"warn": "⚠️ Change return to Wed 11 Nov ~16:30 (flight leaves Wed 11 Nov 19:30)",
+"days": "14 days (as booked)",
+"car": "Full Size SUV 4x4, 2500cc, automatic, petrol. Check 4 big bags fit.",
 "insurance": "SLI/TPL is required; a credit card can't replace it. Ask for an all-in price with SLI. CDW can sometimes be skipped with a card letter.",
 "watch": "Returning after 18:30 can cost an extra day. Check grace period. Ask about Quick Pass for tolls. Add Stian as driver?",
 "licence": "Norwegian licence OK, no international permit. Carry passport.",
-"price": "",
+"price": "$1,211.18 total",
 "deposit": "",
 "phone": "",
 "lat": 9.9939,
@@ -778,7 +779,7 @@
 "area": "SJO airport (Juan Santamaría)",
 "type": "car",
 "o": 52,
-"u": 1
+"u": 1791000000000
 },
 "info53": {
 "name": "Fuel prices",
@@ -961,17 +962,17 @@
 "o": 69,
 "u": 1
 },
-"todo70": {
+"todo_car": {
+"id": "todo_car",
 "name": "4x4 SUV: 28 Oct 18:30 → 11 Nov 16:30, with SLI, grace period, Quick Pass, Stian as driver, 4 bags fit",
-"done": false,
-"status": "To book",
+"done": true,
+"status": "Booked",
 "ref": "",
-"price": "",
-"notes": "",
+"price": "$1,211.18",
+"notes": "Vamos, booked. ⚠️ Return date is wrong (12 Nov 12:00): change to Wed 11 Nov ~16:30.",
 "type": "todo",
-"id": "todo70",
 "o": 70,
-"u": 1
+"u": 1791000000000
 },
 "todo71": {
 "name": "Credit card coverage letter (only to skip CDW)",
@@ -2161,6 +2162,18 @@
 "type": "spend",
 "o": 167,
 "u": 1760352000000
+},
+"sp_car": {
+"id": "sp_car",
+"date": "2026-10-13",
+"what": "Vamos car rental, 14 days (paid by Simon, assumed)",
+"amount": 1211.18,
+"cur": "USD",
+"who": "Simon",
+"cat": "car",
+"type": "spend",
+"o": 168,
+"u": 1791000000000
 }
 }
 }

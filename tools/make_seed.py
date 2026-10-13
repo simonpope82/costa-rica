@@ -41,11 +41,11 @@ for i,(d,r,km,tm,lb,fs,no) in enumerate(L,1):
 for f in [("Wed 28 Oct","KL 1198","Oslo → Amsterdam","09:30","11:25"),("Wed 28 Oct","KL 759","Amsterdam → San José (SJO)","12:40","17:30"),
 ("Wed 11 Nov","KL 760","San José → Amsterdam","19:30","12:50 Thu 12 Nov"),("Thu 12 Nov","KL 1203","Amsterdam → Oslo","14:20","16:10")]:
     add("flight",date=f[0],name=f[1],route=f[2],leaves=f[3],lands=f[4],status="Booked")
-add("car",id="car",name="Rental car (4x4 SUV)",company="",ref="",status="To book",pickup="SJO airport, Wed 28 Oct about 18:30",ret="SJO airport, Wed 11 Nov by about 16:30 (3 h before flight)",
- days="14 rental days (check the contract)",car="4x4 SUV, mid-size or bigger (RAV4 / Vitara / Montero Sport). 4 big bags.",
+add("car",id="car",name="Rental car: Full Size SUV 4x4",company="Vamos Rent-A-Car",ref="",status="Booked",pickup="San José International Airport (SJO), Thu 29 Oct 2026, 12:00",ret="SJO, Thu 12 Nov 2026, 12:00",warn="⚠️ Change return to Wed 11 Nov ~16:30 (flight leaves Wed 11 Nov 19:30)",
+ days="14 days (as booked)",car="Full Size SUV 4x4, 2500cc, automatic, petrol. Check 4 big bags fit.",
  insurance="SLI/TPL is required; a credit card can't replace it. Ask for an all-in price with SLI. CDW can sometimes be skipped with a card letter.",
  watch="Returning after 18:30 can cost an extra day. Check grace period. Ask about Quick Pass for tolls. Add Stian as driver?",
- licence="Norwegian licence OK, no international permit. Carry passport.",price="",deposit="",phone="",lat=9.9939,lng=-84.2088,area="SJO airport (Juan Santamaría)")
+ licence="Norwegian licence OK, no international permit. Carry passport.",price="$1,211.18 total",deposit="",phone="",lat=9.9939,lng=-84.2088,area="SJO airport (Juan Santamaría)")
 add("info",name="Fuel prices",text="From 3 Oct 2026: Súper 764 CRC/L, Plus 91 719 CRC/L, Diesel 785 CRC/L, same at every station. One tank covers any single drive.")
 add("info",name="Tolls",text="Small, on Ruta 27 (e.g. Pozón 570 CRC, Atenas 750 CRC): card, cash or Quick Pass.")
 T=[("Hacienda Doka, Sabanilla de Alajuela",2,"09:00","1 h","28 USD (43 with lunch)","To book","Top pick. Old working wet mill + roaster. Mon–Fri 08:00–15:30, Sat–Sun 08:00–14:30. 17 km from Rosa Blanca"),
@@ -72,7 +72,9 @@ B=[("Flights, ref on Flights screen",True,"Booked"),("4x4 SUV: 28 Oct 18:30 → 
 ("Yellow fever jab by about 20 Oct (only if doing Colombia, both)",False,"Question"),("Waze + offline maps downloaded",False,"To book"),("Local SIM or eSIM",False,"To book"),
 ("Some colones + card for tolls",False,"To book"),("Ask each hotel for GPS location and safe parking",False,"To book"),("Check in online for KL 760 (24 h before)",False,"To book"),
 ("Check for an online arrival form for Costa Rica",False,"To book")]
-for n,d,s in B: add("todo",name=n,done=d,status=s,ref="",price="",notes="")
+for n,d,s in B:
+    if n.startswith("4x4 SUV"): add("todo",id="todo_car",name=n,done=True,status="Booked",ref="",price="$1,211.18",notes="Vamos, booked. ⚠️ Return date is wrong (12 Nov 12:00): change to Wed 11 Nov ~16:30.")
+    else: add("todo",name=n,done=d,status=s,ref="",price="",notes="")
 P={"Documents and money":["Passport (6+ months left is safest)","Norwegian driving licence (both, if Stian drives)","Credit card in the driver's name (for the car deposit)","Debit card + backup card","Some US dollars in cash","Card coverage letter (if skipping CDW)","Travel insurance details","E-ticket and booking refs (also offline on phone)","Copies of passport and licence (photo on phone + paper)","Yellow fever certificate (only if Colombia)"],
 "Tech":["Phone + charger","Power bank","Plug adapter for Costa Rica (US-type plugs, 120 V: check chargers say 100–240 V)","Car phone holder","Car USB charger + cable","Headphones","Head torch (night walk in Monteverde)"],
 "Clothes":["Rain jacket (October is the wettest month)","Warm layer / fleece (Monteverde and Dota are cold at night)","Long trousers (hiking, mosquitoes)","Light quick-dry shirts and shorts","Swimwear","Walking shoes or light hiking boots (mud)","Sandals / flip-flops","Cap or sun hat","Clothes for a nice dinner"],
@@ -98,7 +100,9 @@ F=[("st_lf","Don Rufino","https://donrufino.com/","Costa Rican, smart dinner. Bo
 town={"st_lf":"La Fortuna","st_mv":"Santa Elena Monteverde","st_ma":"Manuel Antonio","st_uv":"Uvita","st_sm":"Santa María de Dota"}
 for s,n,u,no in F: add("food",stay=s,name=n,link=u,notes=no,area=town[s],lat=None,lng=None)
 add("spend",id="sp_hampton",date="2026-10-13",what="Hampton by Hilton SJO, night 1",amount=1305,cur="SEK",who="Simon",cat="hotel")
+add("spend",id="sp_car",date="2026-10-13",what="Vamos car rental, 14 days (paid by Simon, assumed)",amount=1211.18,cur="USD",who="Simon",cat="car")
 NEW={"st_hampton","st_rb","sp_hampton"}
-for it in items: it["u"]=1760352000000 if it["id"] in NEW else 1
+NEW2={"car","todo_car","sp_car"}
+for it in items: it["u"]=1791000000000 if it["id"] in NEW2 else (1760352000000 if it["id"] in NEW else 1)
 json.dump({"v":1,"meta":meta,"items":{i["id"]:i for i in items}},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
 print(len(items))
