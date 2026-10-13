@@ -1,0 +1,1 @@
+# Costa Rica trip checklist
