@@ -16,6 +16,11 @@ function addItem(type,f){const o=Math.max(0,...Object.values(doc.items).map(i=>i
 function del(id){upd(id,{del:true});}
 function setMeta(ch){doc.meta={...doc.meta,...ch,u:Date.now()};pending.__meta=1;saveLocal();queueSync();}
 function swap(a,b){const x=get(a),y=get(b);const t=x.o;upd(a,{o:y.o});upd(b,{o:t});}
+const lnk=x=>x&&x.link?get(x.link):null;
+const tdone=x=>{const t=lnk(x);return t&&!t.del?t.status==='Booked':!!x.done};
+const tstat=x=>{const t=lnk(x);return t&&!t.del?t.status:x.status};
+function toggleTodo(id){const x=get(id),t=lnk(x);if(t&&!t.del){const nb=t.status!=='Booked';upd(t.id,{status:nb?'Booked':'To book'});upd(id,{done:nb,status:nb?'Booked':'To book'});}else upd(id,{done:!x.done});}
+function setStatus(id,st){const it=get(id);all('todo').filter(x=>x.link===id).forEach(x=>upd(x.id,{done:st==='Booked',status:st}));}
 const days=()=>all('day');const dayOf=n=>days().find(d=>d.day==n);
 const stayFor=n=>all('stay').find(s=>!s.backupOf&&n>=s.fromDay&&n<=s.toDay);
 const RATE=c=>c==='USD'?1:c==='CRC'?(doc.meta.rate||456.61):c==='NOK'?(doc.meta.nokRate||9.57):c==='SEK'?(doc.meta.sekRate||10.04):1;
@@ -38,18 +43,26 @@ function homeTime(hhmm){if(!/^\d\d:\d\d/.test(hhmm||''))return '';let [h,mm]=hhm
 // ---------- screens
 const R={};
 R.more=()=>`<h2>☰ All screens</h2><div class="banner">📱 iPhone: Share → Add to Home Screen</div><div class="tiles">${[['today','🏠','Today'],['map','🗺️','Map'],['days','📅','Day by day'],['stays','🛏️','Stays'],['car','🚙','Car'],['flights','✈️','Flights'],['spend','💸','Spend'],['places','📍','Places'],['lists','✅','Checklists'],['info','ℹ️','Info + notes'],['settings','⚙️','Sync + export']].map(([h,e,t])=>`<a class="tile" href="#${h}"><b>${e}</b>${t}</a>`).join('')}</div>`;
+function liveSpot(){const t=crNow(),ds=days(),d=ds.find(x=>x.date===t);const s=d?stayFor(d.day):null;
+ if(s&&s.lat!=null&&s.lat!=='')return{name:s.area,lat:+s.lat,lng:+s.lng};return{name:'San José / Alajuela',lat:9.9939,lng:-84.2088};}
+let wxBusy=false;async function fetchLive(){const sp=liveSpot();if(wxBusy)return;wxBusy=true;
+ try{const r=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${sp.lat}&longitude=${sp.lng}&daily=weather_code,temperature_2m_max,temperature_2m_min,precipitation_probability_max,precipitation_sum&timezone=America%2FCosta_Rica&forecast_days=7`);
+  if(!r.ok)throw 0;const j=await r.json();localStorage.setItem(LK+':wx',JSON.stringify({at:Date.now(),place:sp.name,d:j.daily}));if((location.hash||'#today')==='#today')render();}catch(e){}wxBusy=false;}
+function liveHtml(){const c=JSON.parse(localStorage.getItem(LK+':wx')||'null');if(!c)return'<div class="card mut">🌦️ Live forecast loads when online.</div>';const D=c.d;
+ const wd=s=>['Sun','Mon','Tue','Wed','Thu','Fri','Sat'][new Date(s+'T12:00').getDay()];
+ return `<div class="card"><h3>🌦️ Next 7 days · ${esc(c.place)}</h3><div class="wxrow">${D.time.map((t,i)=>`<div class="wxd"><b>${wd(t)}</b><div style="font-size:30px">${wxIcon(D.precipitation_probability_max[i],D.weather_code[i])}</div>${Math.round(D.temperature_2m_max[i])}°<br><span class="mut">${Math.round(D.temperature_2m_min[i])}°</span><br>💧${D.precipitation_probability_max[i]??'?'}%</div>`).join('')}</div><div class="mut">Open-Meteo · updated ${new Date(c.at).toLocaleString([], {weekday:'short',hour:'2-digit',minute:'2-digit'})}${Date.now()-c.at>6*3600e3?' (old, offline?)':''}</div></div>`;}
 R.today=()=>{const t=crNow(),ds=days(),first=ds[0],last=ds[ds.length-1];let h='';
  if(first&&t<first.date){const n=Math.ceil((new Date(first.date)-new Date(t))/864e5);
-  const tb=[...all('todo').filter(x=>!x.done),...all('stay').filter(s=>s.status==='To book'&&!s.backupOf),...all('tour').filter(x=>x.status==='To book')];
-  h+=`<div class="card" style="text-align:center"><div class="big-num">${n}</div><div><b>days to go</b></div><div class="mut">Leave ${esc(first.label)} · CR time now ${crClock()}</div></div>`;
+  const L=new Set(all('todo').map(x=>x.link).filter(Boolean));const tb=[...all('todo').filter(x=>!tdone(x)).map(x=>({...x,status:tstat(x)})),...all('stay').filter(s=>s.status==='To book'&&!s.backupOf&&!L.has(s.id)),...all('tour').filter(x=>x.status==='To book'&&!L.has(x.id))];
+  h+=`<div class="card" style="text-align:center"><div class="big-num">${n}</div><div><b>days to go</b></div><div class="mut">Leave ${esc(first.label)} · CR time now ${crClock()}</div></div>`+liveHtml();
   h+=`<h2>🟡 Still to book / do (${tb.length})</h2>`+tb.map(x=>`<div class="row"><span class="t">${x.type==='stay'?'🛏️ '+esc(x.area):x.type==='tour'?'☕ '+esc(x.name):esc(x.name)}</span>${chip(x.status)}</div>`).join('')+`<a class="btn big pri" href="#lists">Open checklist</a>`;
   return h;}
  const d=ds.find(x=>x.date===t)||(t>last.date?last:first);
  if(t>last.date)h+=`<div class="banner">The trip is over. Showing the last day.</div>`;
- return `<h2>🏠 Today · CR ${crClock()}</h2>`+dayCard(d,true);};
+ return `<h2>🏠 Today · CR ${crClock()}</h2>`+liveHtml()+dayCard(d,true);};
 function dayCard(d,full){const s=stayFor(d.day),leg=all('leg').find(l=>l.day==d.day),fu=all('fuel').filter(f=>f.day==d.day);
  const tours=all('tour').filter(x=>x.day==d.day),pl=all('place').filter(p=>p.day==d.day);
- let h=`<div class="card"><h3>Day ${d.day} · ${esc(d.label)} · ${esc(d.title)}</h3><div>${esc(d.plan)}</div><div class="mut">🌅 ${esc(d.sunset||'')}</div>`;
+ let h=`<div class="card"><h3>Day ${d.day} · ${esc(d.label)} · ${esc(d.title)}</h3><div>${esc(d.plan)}</div><div class="mut">🌅 ${esc(d.sunset||'')}</div>${wxLine(d)}`;
  h+=s?`<div class="card" style="background:#eef6f1"><b>🛏️ Sleep:</b> ${esc(s.area)} ${chip(s.status)}<br>${esc(s.name)} <span class="mut">(night ${d.day-s.fromDay+1} of ${s.toDay-s.fromDay+1})</span><br>${waze(s)}${gmap(s)}</div>`:(d.day==days().length?`<div class="mut">🛫 No hotel tonight. Fly home.</div>`:'');
  if(leg){h+=`<div class="card" style="background:#f0f7ff"><b>🚗 Drive ${esc(leg.name)}:</b> ${esc(leg.route)}<br>${esc(leg.km)} km · ${esc(leg.time)}${leg.leaveBy?` · <b>leave by ${esc(leg.leaveBy)}</b>`:''}<div class="mut">${esc(leg.notes)}</div>`;
   const target=s&&d.day>1&&s.fromDay===d.day?s:(d.day==days().length?get('car'):s);
@@ -62,6 +75,8 @@ function dayCard(d,full){const s=stayFor(d.day),leg=all('leg').find(l=>l.day==d.
  if(food.length&&full!==false)h+=`<details><summary><b>🍽️ Food nearby (${food.length})</b></summary>`+food.map(f=>`<div class="row"><span class="t">${f.link?`<a href="${esc(f.link)}" target="_blank">${esc(f.name)}</a>`:esc(f.name)}<br><span class="mut">${esc(f.notes)}</span></span>${gmap(f)}</div>`).join('')+`<div class="mut">Found by the bot on the web, 13 Oct. Not checked by you.</div></details>`;
  h+=`<label>📝 Notes for this day</label><textarea data-note="${d.id}">${esc(d.notes)}</textarea>`;
  h+=`<div>${editBtn(d.id)}<button class="btn" data-addact="${d.day}">＋ Activity</button></div></div>`;return h;}
+function wxIcon(pop,code){if(code!=null){if(code>=95)return'⛈️';if(code>=61)return'🌧️';if(code>=51)return'🌦️';if(code>=3)return'☁️';if(code>=1)return'⛅';return'☀️';}return pop>=80?'🌧️':pop>=50?'🌦️':'⛅';}
+function wxLine(d){const w=d.wx;if(!w)return'';return `<div class="wx">${wxIcon(w.pop,w.code)} <b>${w.tmin}–${w.tmax}°C</b> · rain ${w.pop}% · ${w.mm} mm <span class="mut">${w.kind==='forecast'?'forecast':'typical, not a forecast'} · ${esc(w.place)}</span></div>`;}
 R.days=()=>`<h2>📅 Day by day</h2>`+days().map(d=>dayCard(d,true)).join('');
 R.stays=()=>`<h2>🛏️ Stays</h2>`+all('stay').filter(s=>!s.backupOf).map(s=>{const b=all('stay').filter(x=>x.backupOf===s.id);
  return `<div class="card"><h3>${esc(s.area)} ${chip(s.status)}</h3><div><b>${esc(s.name)}</b></div>
@@ -85,8 +100,8 @@ R.places=()=>{const kinds=['all','beach','coffee','nature','food','nightlife','a
 R.lists=()=>{let h=`<h2>✅ Checklists</h2><div class="tabs"><button class="${ui.list==='booking'?'on':''}" data-lt="booking">📋 Booking</button><button class="${ui.list==='packing'?'on':''}" data-lt="packing">🎒 Packing</button></div>
  <button class="btn" data-editmode>${ui.edit?'✔ Done editing':'✏️ Edit list'}</button>`;
  const ctl=(arr,i)=>ui.edit?`${i>0?`<button class="sm" data-sw="${arr[i].id}:${arr[i-1].id}">▲</button>`:''}${i<arr.length-1?`<button class="sm" data-sw="${arr[i].id}:${arr[i+1].id}">▼</button>`:''}<button class="sm" data-ed="${arr[i].id}">✏️</button><button class="sm" data-del="${arr[i].id}">✕</button>`:'';
- if(ui.list==='booking'){const a=all('todo'),n=a.filter(x=>x.done).length;
-  h+=`<div><b>${n} of ${a.length} done</b></div><div class="bar"><i style="width:${a.length?n/a.length*100:0}%"></i></div>`+a.map((x,i)=>`<div class="row ${x.done?'done':''}"><button class="ck ${x.done?'on':''}" data-tg="${x.id}:done">${x.done?'✓':''}</button><span class="t">${esc(x.name)} ${chip(x.status)}${x.ref?`<br><span class="mut">Ref ${esc(x.ref)}</span>`:''}${x.price?`<span class="mut"> · ${esc(x.price)}</span>`:''}${x.notes?`<br><span class="mut">${esc(x.notes)}</span>`:''}</span>${ctl(a,i)}</div>`).join('')+
+ if(ui.list==='booking'){const a=all('todo'),n=a.filter(tdone).length;
+  h+=`<div><b>${n} of ${a.length} done</b></div><div class="bar"><i style="width:${a.length?n/a.length*100:0}%"></i></div>`+a.map((x,i)=>`<div class="row ${tdone(x)?'done':''}"><button class="ck ${tdone(x)?'on':''}" data-tg="${x.id}:done">${tdone(x)?'✓':''}</button><span class="t">${esc(x.name)} ${chip(tstat(x))}${x.link?' 🔗':''}${x.ref?`<br><span class="mut">Ref ${esc(x.ref)}</span>`:''}${x.price?`<span class="mut"> · ${esc(x.price)}</span>`:''}${x.notes?`<br><span class="mut">${esc(x.notes)}</span>`:''}</span>${ctl(a,i)}</div>`).join('')+
   `<div class="row"><input id="new-todo" placeholder="New item"><button class="btn pri" data-quick="todo">＋</button></div>`;}
  else{const P=doc.meta.travellers||['A','B'],a=all('pack');const groups=[...new Set(a.map(x=>x.group))];
   h+=P.map((p,pi)=>{const n=a.filter(x=>x.ticks?.[p]).length;return `<div><b>${esc(p)}: ${n} of ${a.length} packed</b></div><div class="bar"><i style="width:${a.length?n/a.length*100:0}%;background:${pi?'#b45309':''}"></i></div>`}).join('');
@@ -122,15 +137,20 @@ R.spend=()=>{const P=doc.meta.travellers||['Simon','Stian'],e=all('spend').sort(
 // ---------- map
 let lmap=null;
 R.map=()=>`<h2>🗺️ Map</h2><div class="tabs">${[['all','All'],['sleep','🛏️ Sleep'],['coffee','☕ Coffee'],['ideas','💡 Ideas']].map(([k,t])=>`<button class="${ui.mapF===k?'on':''}" data-mf="${k}">${t}</button>`).join('')}</div><div id="map"></div><div id="nogps" class="mut"></div>`;
-function drawMap(){if(!window.L){$('#map').innerHTML='<div class="banner">Map needs internet the first time.</div>';return;}
- lmap=L.map('map').setView([9.9,-84.2],8);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(lmap);
- const f=ui.mapF,types=f==='sleep'?['stay']:f==='coffee'?['tour']:f==='ideas'?['place']:['stay','tour','place','fuel','car'];
- const its=all().filter(i=>types.includes(i.type)&&!(i.type==='stay'&&i.backupOf));let no=0;
- its.forEach(i=>{if(i.lat==null||i.lat===''){no++;return;}const e={stay:'🛏️',tour:'☕',place:'📍',fuel:'⛽',car:'✈️'}[i.type];
-  L.marker([+i.lat,+i.lng],{icon:L.divIcon({html:`<div style="font-size:28px">${e}</div>`,className:'',iconSize:[30,30]})}).addTo(lmap).bindPopup(`<b>${esc(i.type==='stay'?i.area:i.name)}</b><br>${chip(i.status)}<br>${waze(i)}`);});
- const route=[get('car'),...all('stay').filter(s=>!s.backupOf).sort((a,b)=>a.fromDay-b.fromDay),get('car')].filter(s=>s&&s.lat!=null&&s.lat!=='').map(s=>[+s.lat,+s.lng]);
- if(f!=='ideas'&&route.length>1)L.polyline(route,{color:'#0a6b45',weight:5,opacity:.7,dashArray:'8 8'}).addTo(lmap);
- $('#nogps').textContent=no?`${no} items have no GPS yet, so they are not on the map. Add GPS with ✏️ Edit. Route line is straight lines between towns.`:'Route line is straight lines between towns.';}
+let ROUTE=null;
+async function drawMap(){if(!window.L){$('#map').innerHTML='<div class="banner">Map needs internet the first time.</div>';return;}
+ lmap=L.map('map',{zoomSnap:0.25});L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OpenStreetMap'}).addTo(lmap);
+ const f=ui.mapF,b=[];if(!ROUTE){try{ROUTE=await (await fetch('route.json')).json();}catch(e){ROUTE={};}}if(!lmap)return;
+ if(f!=='ideas')for(const leg of all('leg')){const r=ROUTE[leg.id];if(r){L.polyline(r.pts,{color:'#d9480f',weight:5,opacity:.85}).addTo(lmap);r.pts.forEach(p=>b.push(p));}}
+ const pin=(i,html,pop)=>{L.marker([+i.lat,+i.lng],{zIndexOffset:-500,icon:L.divIcon({html,className:'',iconSize:[30,30],iconAnchor:[f==='all'?-8:15,f==='all'?36:15]})}).addTo(lmap).bindPopup(pop);b.push([+i.lat,+i.lng]);};
+ const has=i=>i.lat!=null&&i.lat!=='';let no=0;
+ if(f==='all'||f==='sleep'){const st=all('stay').filter(s=>!s.backupOf).sort((x,y)=>x.fromDay-y.fromDay);const seenAt={};
+  st.forEach((s,i)=>{if(!has(s)){no++;return;}const k=s.lat+','+s.lng,off=seenAt[k]=(seenAt[k]||0)+1;const n=i+1;
+   L.marker([+s.lat,+s.lng],{icon:L.divIcon({html:`<div class="pinn" style="transform:translate(${(off-1)*34}px,0)">${n}</div>`,className:'',iconSize:[34,34],iconAnchor:[17,17]})}).addTo(lmap).bindPopup(`<b>${n}. ${esc(s.area)}</b><br>${esc(dayOf(s.fromDay)?.label)} · ${s.toDay-s.fromDay+1} night(s)<br>${chip(s.status)}<br>${waze(s)}`);b.push([+s.lat,+s.lng]);});}
+ if(f==='all'||f==='coffee')all('tour').filter(x=>x.day||f==='coffee').forEach(x=>has(x)?pin(x,'<div class="pinc">☕</div>',`<b>${esc(x.name)}</b><br>${esc(x.when)}<br>${chip(x.status)}<br>${waze(x)}`):no++);
+ if(f==='ideas')all('place').forEach(p=>has(p)?pin(p,'<div class="pinc">💡</div>',`<b>${esc(p.name)}</b><br>${esc(p.why)}<br>${chip(p.status)}<br>${waze(p)}`):no++);
+ if(b.length)lmap.fitBounds(b,{padding:[20,20]});else lmap.setView([9.9,-84.2],7);
+ $('#nogps').innerHTML=(f!=='ideas'?'Numbers = where you sleep, in day order. Orange line = real roads.<br>':'')+(no?`${no} items have no GPS yet, so they are not on the map.`:'');}
 // ---------- editor
 const F={day:'label,title,plan,sunset,notes',stay:'name,area,status,fromDay:n,toDay:n,address,gps,price,ref,checkin,checkout,phone,link,notes',leg:'name,day:day,route,km:n,time,leaveBy,notes',fuel:'name,day:day,km:n,gps',
  flight:'date,name,route,leaves,lands',car:'name,status,warn,company,ref,pickup,ret,days,car,insurance,watch,licence,price,deposit,phone,gps',tour:'name,day:day,when,length,price,status,link,gps,notes',
@@ -153,7 +173,7 @@ function openEd(id,type,preset){const it=id?get(id):{type,...preset};const fs=F[
   if('here' in b.dataset)navigator.geolocation?.getCurrentPosition(p=>{sh.querySelector('[data-gps]').value=p.coords.latitude.toFixed(6)+', '+p.coords.longitude.toFixed(6)},()=>alert('No location. Allow location in settings.'));
   if('sv' in b.dataset){const ch={};sh.querySelectorAll('[data-f]').forEach(i=>{let v=i.value;if(i.hasAttribute('data-num'))v=v===''?null:+v;ch[i.dataset.f]=v;});
    const g=sh.querySelector('[data-gps]');if(g){const p=parseGps(g.value);if(g.value.trim()&&!p){alert('Could not read GPS. Use "9.99, -84.20" or a Google Maps link.');return;}ch.lat=p?p[0]:null;ch.lng=p?p[1]:null;}
-   if(id)upd(id,ch);else addItem(it.type,{...preset,...ch});close();}};}
+   if(id){upd(id,ch);if('status' in ch&&['stay','car','tour'].includes(get(id).type))setStatus(id,ch.status);if(get(id).type==='todo'&&get(id).link&&'status' in ch){upd(get(id).link,{status:ch.status});upd(id,{done:ch.status==='Booked'});}}else addItem(it.type,{...preset,...ch});close();}};}
 function close(){$('#ov').classList.add('hide');render();}
 function parseGps(s){s=decodeURIComponent(s||'');let r=s.match(/!3d(-?\d+\.\d+)!4d(-?\d+\.\d+)/)||s.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/)||s.match(/(-?\d{1,2}\.\d+)\s*,\s*(-?\d{1,3}\.\d+)/);return r?[+r[1],+r[2]]:null;}
 // ---------- sync
@@ -174,7 +194,7 @@ async function sync(){if(!set.pw){setSync('Set password',false);return;}if(synci
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b||b.closest('#sheet'))return;const d=b.dataset;
  if(d.ed)return openEd(d.ed);if(d.new==='spend')return openEd(null,'spend',{date:crNow(),cur:'USD',who:set.me||'Simon',cat:'food'});if(d.new)return openEd(null,d.new,{status:'Idea'});
  if(d.addact)return openEd(null,'tour',{day:+d.addact,status:'Idea'});
- if(d.tg){const[id,k]=d.tg.split(':');upd(id,{[k]:!get(id)[k]});}
+ if(d.tg){const[id,k]=d.tg.split(':');if(get(id).type==='todo'&&k==='done')toggleTodo(id);else upd(id,{[k]:!get(id)[k]});}
  else if(d.pk){const[id,p]=d.pk.split(':');const t={...(get(id).ticks||{})};t[p]=!t[p];upd(id,{ticks:t});}
  else if(d.sw){const[a,c]=d.sw.split(':');swap(a,c);}
  else if(d.del){if(confirm('Remove "'+get(d.del).name+'"?'))del(d.del);}
@@ -200,10 +220,20 @@ $('#ov').addEventListener('click',e=>{if(e.target.id==='ov')close();});
 function applyFont(){document.body.classList.toggle('lexend',!!set.lexend);if(set.lexend&&!$('#lexend')){const l=document.createElement('link');l.id='lexend';l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap';document.head.appendChild(l);}}
 function render(){const r=(location.hash||'#today').slice(1);const f=R[r]||R.today;const y=scrollY;
  document.querySelectorAll('nav a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+r));
- if(lmap){lmap.remove();lmap=null;}m.innerHTML=f();if(r==='map')drawMap();if(render.last===r)scrollTo(0,y);else scrollTo(0,0);render.last=r;}
+ if(lmap){lmap.remove();lmap=null;}m.innerHTML=f();if(r==='map')setTimeout(drawMap,0);if(render.last===r)scrollTo(0,y);else scrollTo(0,0);render.last=r;}
 addEventListener('hashchange',render);addEventListener('online',sync);setInterval(()=>{if(!document.hidden)sync()},30000);document.addEventListener('visibilitychange',()=>{if(!document.hidden)sync()});
+function migrate(sd){const m=sd.mig;if(!m||set.mig===m.id)return;const now=Date.now();const byName={};for(const x of Object.values(doc.items))if(!x.del)byName[x.type+'|'+x.name]={...x};
+ for(const[id,p]of Object.entries(m.patch)){const loc=doc.items[id],si=sd.items[id];let it=null;
+  if(p.del){if(loc&&!loc.del)it={id,type:loc.type,o:loc.o,del:true};}
+  else if(p.full||p.auto){if(!loc||loc.del||p.full||loc.name!==si.name||loc.type!==si.type){const src=p.full&&loc&&!loc.del&&loc.type===si.type?loc:byName[si.type+'|'+si.name];const keep=src?{done:src.done,ticks:src.ticks,answer:src.answer}:{};it={...si,...Object.fromEntries(Object.entries(keep).filter(([k,v])=>v!==undefined&&!(si.link&&k==='done')))};}}
+  else if(loc&&!loc.del)it={...loc,...p};else if(si)it={...si};
+  if(it){it.u=now;doc.items[id]=it;pending[id]=1;}}
+ for(const[id,si]of Object.entries(sd.items))if(!doc.items[id]&&!m.patch[id]){const s=byName[si.type+'|'+si.name]||{};doc.items[id]={...si,...Object.fromEntries(['done','ticks','answer'].filter(k=>s[k]!==undefined&&!si.link).map(k=>[k,s[k]])),u:now};pending[id]=1;}
+ doc.meta={...doc.meta,...Object.fromEntries(Object.entries(sd.meta).filter(([k])=>k!=='u')),...Object.fromEntries(['rate','nokRate','sekRate'].filter(k=>doc.meta[k]!=null).map(k=>[k,doc.meta[k]])),u:now};pending.__meta=1;
+ set.mig=m.id;saveSet();saveLocal();}
 (async()=>{applyFont();$('#ttl').textContent=C.flag+' '+C.country;
  doc=JSON.parse(localStorage.getItem(LK+':doc')||'null');
- if(!doc){try{doc=await (await fetch('seed.json',{cache:'no-store'})).json();}catch(e){m.innerHTML='<div class="banner">No data yet. Open once with internet.</div>';return;}saveLocal();}
- else{try{const sd=await (await fetch('seed.json',{cache:'no-store'})).json();let n=0;for(const[id,it]of Object.entries(sd.items)){const c=doc.items[id];if(!c||(it.u||0)>(c.u||0)){doc.items[id]=it;pending[id]=1;n++;}}if(n)saveLocal();}catch(e){}}
- render();sync();if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');})();
+ if(!doc){try{doc=await (await fetch('seed.json',{cache:'no-store'})).json();if(doc.mig){set.mig=doc.mig.id;saveSet();delete doc.mig;}}catch(e){m.innerHTML='<div class="banner">No data yet. Open once with internet.</div>';return;}saveLocal();}
+ else{try{const sd=await (await fetch('seed.json',{cache:'no-store'})).json();migrate(sd);}catch(e){}}
+ if(!set.mig&&doc.mig)set.mig=doc.mig;
+ render();sync();fetchLive();setInterval(fetchLive,30*60e3);document.addEventListener('visibilitychange',()=>{if(!document.hidden)fetchLive()});if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js');})();
