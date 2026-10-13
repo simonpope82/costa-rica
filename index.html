@@ -1,25 +1,13 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Costa Rica</title><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#0a7d4f">
-<style>
-*{box-sizing:border-box}body{margin:0;font:18px/1.4 -apple-system,system-ui,sans-serif;background:#f4f7f5;color:#111;padding-bottom:90px}
-header{background:#0a7d4f;color:#fff;padding:calc(env(safe-area-inset-top) + 12px) 16px 12px;font-size:22px;font-weight:700}
-nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:#fff;border-top:1px solid #ccc;padding-bottom:env(safe-area-inset-bottom);z-index:5}
-nav button{flex:1;border:0;background:none;padding:10px 2px;font-size:13px;color:#555}nav button b{display:block;font-size:24px}nav button.on{color:#0a7d4f;font-weight:700}
-main{padding:12px}h2{font-size:20px;margin:18px 4px 8px}
-.row{display:flex;align-items:center;gap:8px;background:#fff;border-radius:12px;padding:10px;margin:6px 0;box-shadow:0 1px 2px #0002}
-.row.done .t{color:#999;text-decoration:line-through}.t{flex:1}
-.ck{width:34px;height:34px;flex:none;border:2px solid #0a7d4f;border-radius:8px;background:#fff;font-size:20px;color:#fff;padding:0}
-.ck.on{background:#0a7d4f}.ck.st{border-color:#c25a00}.ck.st.on{background:#c25a00}
-.who{font-size:11px;text-align:center;color:#666}
-.sm{border:0;background:#eee;border-radius:8px;width:32px;height:32px;font-size:16px;padding:0;flex:none}
-.add{display:flex;gap:6px;margin:6px 0 4px}.add input{flex:1;font-size:17px;padding:10px;border:1px solid #bbb;border-radius:10px}
-.add button,.btn{background:#0a7d4f;color:#fff;border:0;border-radius:10px;padding:0 14px;font-size:17px}
-.ans{width:100%;margin-top:6px;font-size:17px;padding:8px;border:1px solid #bbb;border-radius:8px}
-.card{background:#fff;border-radius:12px;padding:14px;margin:8px 0}.card h3{margin:0 0 6px}
-.bar{height:8px;background:#ddd;border-radius:4px;margin:4px;overflow:hidden}.bar i{display:block;height:100%;background:#0a7d4f}
-.edit{float:right;font-size:15px;background:#fff;color:#0a7d4f;border:0;border-radius:8px;padding:4px 10px}
-.legend{font-size:14px;color:#555;margin:4px}
-.day{background:#fff;border-radius:14px;padding:12px;margin:10px 0;box-shadow:0 1px 2px #0002}.day h3{margin:0 0 6px;font-size:20px}.stay{background:#eef6f1;border-radius:10px;padding:8px;margin:8px 0}.nb{color:#c25a00;font-weight:700}.go{display:inline-block;margin:4px 6px 0 0;padding:8px 12px;border-radius:10px;color:#fff;text-decoration:none;font-size:15px}.wz{background:#33ccff}.gm{background:#4285f4}.rs{margin:6px 0;padding-left:4px}.rs a{color:#0a7d4f}</style></head><body>
-<header id="h">🇨🇷 Costa Rica</header><main id="m"></main>
-<nav><button data-t="days"><b>📅</b>Days</button><button data-t="todo"><b>✅</b>To do</button><button data-t="pack"><b>🎒</b>Pack</button><button data-t="info"><b>ℹ️</b>Info</button><button data-t="qs"><b>❓</b>Questions</button></nav>
-<script src="data.js"></script><script src="app.js"></script></body></html>
+<title>Trip</title><link rel="manifest" href="manifest.json"><link rel="apple-touch-icon" href="icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="theme-color" content="#0a6b45">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"><link rel="stylesheet" href="style.css">
+</head><body>
+<header><span id="ttl">🇨🇷 Trip</span><span id="sync" class="sync">…</span></header>
+<main id="m"></main>
+<div id="ov" class="ov hide"><div class="sheet" id="sheet"></div></div>
+<nav id="nav">
+<a href="#today"><b>🏠</b>Today</a><a href="#days"><b>📅</b>Days</a><a href="#map"><b>🗺️</b>Map</a><a href="#lists"><b>✅</b>Lists</a><a href="#more"><b>☰</b>More</a>
+</nav>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="config.js"></script><script src="app.js"></script></body></html>
