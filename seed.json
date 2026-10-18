@@ -31,7 +31,7 @@
 },
 "day2": {
 "title": "Car → Starbucks farm → La Fortuna",
-"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight.",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to The Springs Resort (La Fortuna, about 3 h 30), arrive about 18:15. Dark about 17:30: an earlier car = arrive in daylight.",
 "wx": {
 "kind": "typical",
 "place": "La Fortuna",
@@ -55,7 +55,7 @@
 },
 "day4": {
 "title": "Río Celeste (maybe)",
-"plan": "Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
+"plan": "Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
 "wx": {
 "kind": "typical",
 "place": "La Fortuna",
@@ -600,244 +600,253 @@
 "todo_t_alsacia": {
 "auto": true
 },
-"food156": {
-"del": true
+"st_lf2": {
+"auto": true
 },
-"fuel35": {
-"del": true
+"todo_st_lf2": {
+"auto": true
 },
-"st_ma": {
-"del": true
+"sp_springs": {
+"auto": true
 },
-"tour54": {
-"del": true
-},
-"todo80": {
-"del": true
-},
-"food159": {
-"del": true
-},
-"fuel43": {
-"del": true
-},
-"tour56": {
-"del": true
-},
-"info60": {
-"del": true
-},
-"fuel34": {
-"del": true
-},
-"tour59": {
-"del": true
-},
-"st_sm": {
-"del": true
-},
-"fuel42": {
-"del": true
-},
-"todo75": {
-"del": true
-},
-"todo72": {
-"del": true
-},
-"fuel30": {
-"del": true
-},
-"fuel26": {
-"del": true
-},
-"tour58": {
-"del": true
-},
-"food162": {
-"del": true
-},
-"fuel44": {
-"del": true
-},
-"fuel40": {
-"del": true
-},
-"todo71": {
-"del": true
-},
-"question135": {
-"del": true
-},
-"fuel28": {
-"del": true
-},
-"todo79": {
-"del": true
-},
-"L7": {
-"del": true
-},
-"fuel32": {
-"del": true
-},
-"food153": {
-"del": true
-},
-"food158": {
-"del": true
-},
-"fuel45": {
-"del": true
-},
-"pack105": {
-"del": true
-},
-"food157": {
-"del": true
-},
-"pack107": {
-"del": true
-},
-"food165": {
-"del": true
-},
-"todo82": {
-"del": true
-},
-"fuel36": {
-"del": true
-},
-"question137": {
-"del": true
-},
-"question130": {
-"del": true
-},
-"tour55": {
-"del": true
-},
-"todo76": {
-"del": true
-},
-"food163": {
-"del": true
-},
-"food166": {
-"del": true
-},
-"info61": {
-"del": true
-},
-"st_mv": {
-"del": true
-},
-"fuel46": {
-"del": true
-},
-"todo77": {
-"del": true
-},
-"todo74": {
-"del": true
-},
-"fuel29": {
-"del": true
-},
-"todo73": {
-"del": true
-},
-"good63": {
-"del": true
-},
-"pack129": {
-"del": true
-},
-"fuel39": {
-"del": true
-},
-"fuel27": {
+"food160": {
 "del": true
 },
 "place150": {
 "del": true
 },
-"L8": {
+"st_mv": {
 "del": true
 },
-"flight51": {
+"todo82": {
+"del": true
+},
+"fuel34": {
+"del": true
+},
+"fuel45": {
 "del": true
 },
 "good68": {
 "del": true
 },
-"fuel33": {
+"food153": {
 "del": true
 },
-"food154": {
+"L7": {
 "del": true
 },
-"fuel25": {
+"todo73": {
 "del": true
 },
-"fuel47": {
+"fuel36": {
 "del": true
 },
-"food155": {
-"del": true
-},
-"todo69": {
-"del": true
-},
-"tour57": {
-"del": true
-},
-"fuel41": {
-"del": true
-},
-"question138": {
+"fuel43": {
 "del": true
 },
 "todo78": {
 "del": true
 },
+"fuel42": {
+"del": true
+},
+"food163": {
+"del": true
+},
+"tour55": {
+"del": true
+},
+"fuel26": {
+"del": true
+},
+"food165": {
+"del": true
+},
+"pack107": {
+"del": true
+},
+"fuel29": {
+"del": true
+},
+"fuel41": {
+"del": true
+},
 "question136": {
 "del": true
 },
-"food161": {
+"question137": {
 "del": true
 },
-"todo89": {
+"fuel39": {
 "del": true
 },
-"question129": {
+"tour56": {
+"del": true
+},
+"todo79": {
 "del": true
 },
 "food164": {
 "del": true
 },
-"food160": {
+"fuel28": {
 "del": true
 },
-"st_uv": {
+"tour59": {
 "del": true
 },
-"pack98": {
-"del": true
-},
-"question134": {
-"del": true
-},
-"fuel37": {
-"del": true
-},
-"info54": {
+"food154": {
 "del": true
 },
 "fuel31": {
 "del": true
 },
+"fuel32": {
+"del": true
+},
+"st_ma": {
+"del": true
+},
+"food155": {
+"del": true
+},
+"fuel30": {
+"del": true
+},
+"fuel40": {
+"del": true
+},
+"food166": {
+"del": true
+},
+"food157": {
+"del": true
+},
+"todo74": {
+"del": true
+},
+"flight51": {
+"del": true
+},
+"todo89": {
+"del": true
+},
+"question130": {
+"del": true
+},
+"todo80": {
+"del": true
+},
+"fuel37": {
+"del": true
+},
+"todo69": {
+"del": true
+},
+"tour58": {
+"del": true
+},
+"food158": {
+"del": true
+},
+"question138": {
+"del": true
+},
+"fuel25": {
+"del": true
+},
+"fuel35": {
+"del": true
+},
 "fuel38": {
+"del": true
+},
+"todo77": {
+"del": true
+},
+"question135": {
+"del": true
+},
+"pack129": {
+"del": true
+},
+"st_sm": {
+"del": true
+},
+"pack98": {
+"del": true
+},
+"good63": {
+"del": true
+},
+"pack105": {
+"del": true
+},
+"todo72": {
+"del": true
+},
+"question134": {
+"del": true
+},
+"fuel44": {
+"del": true
+},
+"info61": {
+"del": true
+},
+"food161": {
+"del": true
+},
+"info54": {
+"del": true
+},
+"fuel33": {
+"del": true
+},
+"tour54": {
+"del": true
+},
+"fuel47": {
+"del": true
+},
+"food156": {
+"del": true
+},
+"st_uv": {
+"del": true
+},
+"todo75": {
+"del": true
+},
+"fuel46": {
+"del": true
+},
+"food162": {
+"del": true
+},
+"question129": {
+"del": true
+},
+"todo71": {
+"del": true
+},
+"fuel27": {
+"del": true
+},
+"food159": {
+"del": true
+},
+"todo76": {
+"del": true
+},
+"L8": {
+"del": true
+},
+"info60": {
+"del": true
+},
+"tour57": {
 "del": true
 }
 }
@@ -855,7 +864,7 @@
 "patch": {
 "day2": {
 "title": "Car → Starbucks farm → La Fortuna",
-"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight.",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to The Springs Resort (La Fortuna, about 3 h 30), arrive about 18:15. Dark about 17:30: an earlier car = arrive in daylight.",
 "wx": {
 "kind": "typical",
 "place": "La Fortuna",
@@ -879,7 +888,7 @@
 },
 "day4": {
 "title": "Río Celeste (maybe)",
-"plan": "Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
+"plan": "Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
 "wx": {
 "kind": "typical",
 "place": "La Fortuna",
@@ -1011,8 +1020,7 @@
 "plan": "Slow morning, pack. Fill up. Car back at SJO by 14:00 (saves a day) or 17:00 (change asked). Fly 19:30."
 },
 "st_lf": {
-"fromDay": 2,
-"toDay": 5
+"auto": true
 },
 "st_tam": {
 "auto": true
@@ -1030,11 +1038,11 @@
 "lng": -82.717119
 },
 "L1": {
-"route": "SJO → Hacienda Alsacia → La Fortuna",
-"km": 128,
-"time": "4 h",
+"route": "SJO → Hacienda Alsacia → The Springs (La Fortuna)",
+"km": 140,
+"time": "4 h 30",
 "leaveBy": "12:15",
-"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 107 km / 3 h 15 to La Fortuna (mountain roads, slow). Leave the farm by 14:45."
+"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 119 km / 3 h 30 to The Springs Resort (mountain roads, slow). Leave the farm by 14:45."
 },
 "fuel_c1": {
 "auto": true
@@ -1195,130 +1203,139 @@
 "todo_t_alsacia": {
 "auto": true
 },
-"fuel_c18": {
-"del": true
+"st_lf2": {
+"auto": true
 },
-"food163": {
-"del": true
+"todo_st_lf2": {
+"auto": true
 },
-"food156": {
+"sp_springs": {
+"auto": true
+},
+"t_tab": {
 "del": true
 },
 "st_at": {
 "del": true
 },
-"st_ma": {
+"question130": {
 "del": true
 },
-"food155": {
-"del": true
-},
-"L7": {
-"del": true
-},
-"todo_st_at": {
-"del": true
-},
-"todo_st_sm": {
-"del": true
-},
-"todo_t_dj": {
-"del": true
-},
-"todo_st_ma": {
-"del": true
-},
-"food159": {
-"del": true
-},
-"t_dj": {
-"del": true
-},
-"st_mv": {
-"del": true
-},
-"todo_t_tab": {
-"del": true
-},
-"food153": {
-"del": true
-},
-"food158": {
-"del": true
-},
-"fuel_c13": {
-"del": true
-},
-"fuel_c15": {
-"del": true
-},
-"t_als": {
-"del": true
-},
-"todo_st_mv": {
-"del": true
-},
-"pack105": {
-"del": true
-},
-"good63": {
-"del": true
-},
-"fuel_c17": {
-"del": true
-},
-"food157": {
-"del": true
-},
-"pack107": {
+"food163": {
 "del": true
 },
 "todo_c20": {
 "del": true
 },
-"st_sm": {
-"del": true
-},
 "food165": {
 "del": true
 },
-"question129": {
+"st_mv": {
 "del": true
 },
-"question130": {
+"pack107": {
+"del": true
+},
+"food158": {
+"del": true
+},
+"food156": {
 "del": true
 },
 "question137": {
 "del": true
 },
+"fuel_c14": {
+"del": true
+},
+"food153": {
+"del": true
+},
 "food164": {
-"del": true
-},
-"fuel_c16": {
-"del": true
-},
-"t_tab": {
-"del": true
-},
-"question134": {
-"del": true
-},
-"fuel_c19": {
-"del": true
-},
-"t_coop": {
-"del": true
-},
-"food154": {
 "del": true
 },
 "question135": {
 "del": true
 },
-"fuel_c14": {
+"st_sm": {
+"del": true
+},
+"t_dj": {
+"del": true
+},
+"todo_st_mv": {
+"del": true
+},
+"question129": {
 "del": true
 },
 "todo_t_coop": {
+"del": true
+},
+"food154": {
+"del": true
+},
+"todo_st_ma": {
+"del": true
+},
+"fuel_c17": {
+"del": true
+},
+"fuel_c18": {
+"del": true
+},
+"food159": {
+"del": true
+},
+"L7": {
+"del": true
+},
+"todo_t_tab": {
+"del": true
+},
+"good63": {
+"del": true
+},
+"todo_st_at": {
+"del": true
+},
+"fuel_c19": {
+"del": true
+},
+"fuel_c16": {
+"del": true
+},
+"pack105": {
+"del": true
+},
+"t_als": {
+"del": true
+},
+"food157": {
+"del": true
+},
+"st_ma": {
+"del": true
+},
+"t_coop": {
+"del": true
+},
+"todo_t_dj": {
+"del": true
+},
+"todo_st_sm": {
+"del": true
+},
+"food155": {
+"del": true
+},
+"fuel_c15": {
+"del": true
+},
+"question134": {
+"del": true
+},
+"fuel_c13": {
 "del": true
 }
 }
@@ -1328,18 +1345,68 @@
 "patch": {
 "day2": {
 "title": "Car → Starbucks farm → La Fortuna",
-"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight."
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to The Springs Resort (La Fortuna, about 3 h 30), arrive about 18:15. Dark about 17:30: an earlier car = arrive in daylight."
+},
+"day4": {
+"plan": "Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs."
+},
+"st_lf": {
+"auto": true
 },
 "L1": {
-"route": "SJO → Hacienda Alsacia → La Fortuna",
-"km": 128,
-"time": "4 h",
-"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 107 km / 3 h 15 to La Fortuna (mountain roads, slow). Leave the farm by 14:45."
+"route": "SJO → Hacienda Alsacia → The Springs (La Fortuna)",
+"km": 140,
+"time": "4 h 30",
+"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 119 km / 3 h 30 to The Springs Resort (mountain roads, slow). Leave the farm by 14:45."
+},
+"todo_st_lf": {
+"auto": true
 },
 "t_alsacia": {
 "auto": true
 },
 "todo_t_alsacia": {
+"auto": true
+},
+"st_lf2": {
+"auto": true
+},
+"todo_st_lf2": {
+"auto": true
+},
+"sp_springs": {
+"auto": true
+}
+}
+},
+{
+"id": "m7-springs",
+"patch": {
+"day2": {
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to The Springs Resort (La Fortuna, about 3 h 30), arrive about 18:15. Dark about 17:30: an earlier car = arrive in daylight."
+},
+"day4": {
+"plan": "Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs."
+},
+"st_lf": {
+"auto": true
+},
+"L1": {
+"route": "SJO → Hacienda Alsacia → The Springs (La Fortuna)",
+"km": 140,
+"time": "4 h 30",
+"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 119 km / 3 h 30 to The Springs Resort (mountain roads, slow). Leave the farm by 14:45."
+},
+"todo_st_lf": {
+"auto": true
+},
+"st_lf2": {
+"auto": true
+},
+"todo_st_lf2": {
+"auto": true
+},
+"sp_springs": {
 "auto": true
 }
 }
@@ -1373,7 +1440,7 @@
 "date": "2026-10-29",
 "label": "Thu 29 Oct",
 "title": "Car → Starbucks farm → La Fortuna",
-"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight.",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to The Springs Resort (La Fortuna, about 3 h 30), arrive about 18:15. Dark about 17:30: an earlier car = arrive in daylight.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -1415,7 +1482,7 @@
 "date": "2026-10-31",
 "label": "Sat 31 Oct",
 "title": "Río Celeste (maybe)",
-"plan": "Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
+"plan": "Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -1687,21 +1754,21 @@
 },
 "st_lf": {
 "id": "st_lf",
-"name": "Not chosen (hotel with hot springs)",
-"area": "La Fortuna / Arenal",
+"name": "The Springs Resort & Spa",
+"area": "La Fortuna / Arenal (9 km west + 3.5 km north of town)",
 "address": "",
-"checkin": "",
-"checkout": "",
-"price": "",
+"checkin": "Thu 29 Oct",
+"checkout": "Sat 31 Oct",
+"price": "NOK 7,761.16 (paid, non-refundable)",
 "fromDay": 2,
-"toDay": 5,
-"status": "To book",
-"notes": "Want: hotel with hot springs. Tabacón is an option.",
-"phone": "",
+"toDay": 3,
+"status": "Booked",
+"notes": "2 nights: Thu 29 + Fri 30 Oct. Vista Grande Double Queen (2 queen beds). Hot springs included. No breakfast. Paid, non-refundable. Booked on Booking.com 18 Oct: waiting for the hotel confirmation email. https://www.thespringscostarica.com/ · GPS approx (OpenStreetMap).",
+"phone": "+506 2401 3300",
 "backupOf": "",
 "ref": "",
-"lat": 10.47168,
-"lng": -84.64444,
+"lat": 10.5191,
+"lng": -84.6883,
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
@@ -1905,11 +1972,11 @@
 "id": "L1",
 "name": "L1",
 "day": 2,
-"route": "SJO → Hacienda Alsacia → La Fortuna",
-"km": 128,
-"time": "4 h",
+"route": "SJO → Hacienda Alsacia → The Springs (La Fortuna)",
+"km": 140,
+"time": "4 h 30",
 "leaveBy": "12:15",
-"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 107 km / 3 h 15 to La Fortuna (mountain roads, slow). Leave the farm by 14:45.",
+"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 119 km / 3 h 30 to The Springs Resort (mountain roads, slow). Leave the farm by 14:45.",
 "type": "leg",
 "o": 26,
 "u": 1
@@ -2441,9 +2508,9 @@
 },
 "todo_st_lf": {
 "id": "todo_st_lf",
-"name": "Hotel 29 Oct – 1 Nov (4 nights): La Fortuna, with hot springs",
-"done": false,
-"status": "To book",
+"name": "Hotel 29–30 Oct (2 nights): The Springs Resort & Spa, La Fortuna",
+"done": true,
+"status": "Booked",
 "link": "st_lf",
 "ref": "",
 "price": "",
@@ -3478,6 +3545,55 @@
 "notes": "",
 "type": "todo",
 "o": 155,
+"u": 1
+},
+"st_lf2": {
+"id": "st_lf2",
+"name": "Not chosen (hotel 2)",
+"area": "La Fortuna / Arenal",
+"address": "",
+"checkin": "Sat 31 Oct",
+"checkout": "Mon 2 Nov",
+"price": "",
+"fromDay": 4,
+"toDay": 5,
+"status": "To book",
+"notes": "2 nights: Sat 31 Oct + Sun 1 Nov. The Springs covers only 29 + 30 Oct.",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 10.47168,
+"lng": -84.64444,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 17.5,
+"u": 1
+},
+"todo_st_lf2": {
+"id": "todo_st_lf2",
+"name": "Hotel 31 Oct – 1 Nov (2 nights): La Fortuna, hotel 2",
+"done": false,
+"status": "To book",
+"link": "st_lf2",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 71.5,
+"u": 1
+},
+"sp_springs": {
+"id": "sp_springs",
+"date": "2026-10-18",
+"what": "The Springs Resort & Spa, 2 nights (29–30 Oct), Booking.com, paid",
+"amount": 7761.16,
+"cur": "NOK",
+"who": "Simon",
+"cat": "hotel",
+"type": "spend",
+"o": 158,
 "u": 1
 }
 }
