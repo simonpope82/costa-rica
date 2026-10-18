@@ -1,0 +1,3421 @@
+{
+"v": 1,
+"meta": {
+"title": "Costa Rica road trip",
+"travellers": [
+"Simon",
+"Stian"
+],
+"start": "2026-10-28",
+"end": "2026-11-11",
+"tz": "Costa Rica UTC−6 · Oslo is 7 h ahead",
+"rate": 456.61,
+"rateNote": "456.61 CRC = 1 USD (10 Oct 2026)",
+"basics": "Route: draft D2 (approved 13 Oct). 14 nights · about 1,180 km, about 32 h driving over 6 days · fuel: to check"
+},
+"mig": [
+{
+"id": "m3-draftC",
+"patch": {
+"day1": {
+"title": "Arrive · taxi",
+"plan": "Land 17:30. Taxi to the Hampton (at the airport). No car today. Early night.",
+"wx": {
+"kind": "typical",
+"place": "SJO / Alajuela",
+"tmax": 25,
+"tmin": 18,
+"mm": 19.8,
+"pop": 96
+}
+},
+"day2": {
+"title": "Car → La Fortuna",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). Drive to La Fortuna, arrive about 16:00.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 18.0,
+"pop": 95
+}
+},
+"day3": {
+"title": "Volcano + waterfall + hot springs",
+"plan": "Full-day tour (10 h, pickup from the hotel): La Fortuna waterfall, Maleku lunch, Arenal volcano walk, hot springs. No driving.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 16.3,
+"pop": 95
+}
+},
+"day4": {
+"title": "Río Celeste (maybe)",
+"plan": "Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 16.7,
+"pop": 97
+}
+},
+"day5": {
+"title": "Don Juan coffee + chocolate",
+"plan": "Don Juan Arenal tour (2 h; 09:00, 10:00, 14:00 or 15:00). Afternoon: hot springs. No driving.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 17.3,
+"pop": 100
+}
+},
+"day6": {
+"title": "To Tamarindo",
+"plan": "Leave 08:00. Long drive (5 h 30). Afternoon: beach.",
+"wx": {
+"kind": "typical",
+"place": "Tamarindo",
+"tmax": 29,
+"tmin": 24,
+"mm": 12.8,
+"pop": 91
+}
+},
+"day7": {
+"title": "Tamarindo beach",
+"plan": "Beach, surf, sunset. No driving.",
+"wx": {
+"kind": "typical",
+"place": "Tamarindo",
+"tmax": 29,
+"tmin": 24,
+"mm": 12.2,
+"pop": 91
+}
+},
+"day8": {
+"title": "To Fiesta Resort",
+"plan": "Leave 09:00, arrive about 14:00. All inclusive: pool + food.",
+"wx": {
+"kind": "typical",
+"place": "Puntarenas (El Roble)",
+"tmax": 27,
+"tmin": 23,
+"mm": 15.8,
+"pop": 83
+}
+},
+"day9": {
+"title": "To Tortuguero (car + boat)",
+"plan": "Leave 07:00. Via San José + Ruta 32 to La Pavona (5 h 15). Park the car (secure lot). 15:15 boat (12:45 if early), about 1 h.",
+"wx": {
+"kind": "typical",
+"place": "Tortuguero",
+"tmax": 28,
+"tmin": 23,
+"mm": 11.7,
+"pop": 96
+}
+},
+"day10": {
+"title": "Tortuguero",
+"plan": "Canal boat tour + national park. No car.",
+"wx": {
+"kind": "typical",
+"place": "Tortuguero",
+"tmax": 28,
+"tmin": 23,
+"mm": 11.4,
+"pop": 95
+}
+},
+"day11": {
+"title": "To Punta Cocles",
+"plan": "06:40 or 08:40 boat back to La Pavona. Drive via Guápiles + Limón (4 h 45).",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 9.1,
+"pop": 79
+}
+},
+"day12": {
+"title": "Ride The Rainforest",
+"plan": "Horse ride on the beach + jungle (Ride The Rainforest, Punta Cocles). Book ahead.",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 10.2,
+"pop": 78
+}
+},
+"day13": {
+"title": "Cahuita",
+"plan": "Cahuita National Park (open every day 8–16; about 20 min drive). Beach.",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 10.2,
+"pop": 79
+}
+},
+"day14": {
+"title": "Back to SJO",
+"plan": "Long day: leave 07:00 (6 h 30). Ruta 32 over Braulio Carrillo. Fog + landslides possible.",
+"wx": {
+"kind": "typical",
+"place": "SJO / Alajuela",
+"tmax": 26,
+"tmin": 18,
+"mm": 13.6,
+"pop": 86
+}
+},
+"day15": {
+"plan": "Slow morning, pack. Fill up. Car back at SJO by 14:00 (saves a day) or 17:00 (change asked). Fly 19:30.",
+"wx": {
+"kind": "typical",
+"place": "SJO / Alajuela",
+"tmax": 26,
+"tmin": 18,
+"mm": 13.8,
+"pop": 84
+}
+},
+"st_hampton": {
+"full": true
+},
+"st_lf": {
+"full": true
+},
+"st_tam": {
+"auto": true
+},
+"st_fr": {
+"auto": true
+},
+"st_tor": {
+"auto": true
+},
+"st_pvj": {
+"full": true
+},
+"st_sjo2": {
+"full": true
+},
+"st_pv": {
+"fromDay": 14,
+"toDay": 14,
+"phone": "+506 2430 2929",
+"backupOf": "st_sjo2"
+},
+"st_bv": {
+"fromDay": 14,
+"toDay": 14,
+"backupOf": "st_sjo2"
+},
+"st_rb": {
+"fromDay": 14,
+"toDay": 14,
+"status": "Idea",
+"backupOf": "st_sjo2",
+"lat": 10.04566,
+"lng": -84.15062
+},
+"L1": {
+"full": true
+},
+"fuel_c1": {
+"auto": true
+},
+"fuel_c2": {
+"auto": true
+},
+"L2": {
+"full": true
+},
+"fuel_c3": {
+"auto": true
+},
+"fuel_c4": {
+"auto": true
+},
+"L3": {
+"full": true
+},
+"fuel_c5": {
+"auto": true
+},
+"fuel_c6": {
+"auto": true
+},
+"L4": {
+"full": true
+},
+"fuel_c7": {
+"auto": true
+},
+"fuel_c8": {
+"auto": true
+},
+"L5": {
+"full": true
+},
+"fuel_c9": {
+"auto": true
+},
+"fuel_c10": {
+"auto": true
+},
+"L6": {
+"full": true
+},
+"fuel_c11": {
+"auto": true
+},
+"fuel_c12": {
+"auto": true
+},
+"flight48": {
+"auto": true
+},
+"flight49": {
+"auto": true
+},
+"flight50": {
+"auto": true
+},
+"car": {
+"full": true
+},
+"info53": {
+"auto": true
+},
+"t_doka": {
+"auto": true
+},
+"t_rb": {
+"auto": true
+},
+"t_volc": {
+"auto": true
+},
+"t_dja": {
+"auto": true
+},
+"t_rc": {
+"auto": true
+},
+"t_tortboat": {
+"auto": true
+},
+"t_ride": {
+"auto": true
+},
+"good62": {
+"auto": true
+},
+"good_c13": {
+"auto": true
+},
+"good64": {
+"auto": true
+},
+"good65": {
+"auto": true
+},
+"good66": {
+"auto": true
+},
+"good67": {
+"auto": true
+},
+"todo68": {
+"link": ""
+},
+"todo_car": {
+"full": true
+},
+"todo70": {
+"auto": true
+},
+"todo_st_hampton": {
+"full": true
+},
+"todo_st_lf": {
+"auto": true
+},
+"todo_st_tam": {
+"auto": true
+},
+"todo_st_fr": {
+"auto": true
+},
+"todo_st_tor": {
+"auto": true
+},
+"todo_st_pvj": {
+"auto": true
+},
+"todo_st_sjo2": {
+"auto": true
+},
+"todo_t_volc": {
+"auto": true
+},
+"todo_t_dja": {
+"auto": true
+},
+"todo_t_tortboat": {
+"auto": true
+},
+"todo_t_ride": {
+"auto": true
+},
+"todo_c14": {
+"auto": true
+},
+"todo_c15": {
+"auto": true
+},
+"todo81": {
+"auto": true
+},
+"todo83": {
+"auto": true
+},
+"todo84": {
+"auto": true
+},
+"todo85": {
+"auto": true
+},
+"todo86": {
+"auto": true
+},
+"todo87": {
+"auto": true
+},
+"todo88": {
+"auto": true
+},
+"pack90": {
+"auto": true
+},
+"pack91": {
+"auto": true
+},
+"pack92": {
+"auto": true
+},
+"pack93": {
+"auto": true
+},
+"pack94": {
+"auto": true
+},
+"pack95": {
+"auto": true
+},
+"pack96": {
+"auto": true
+},
+"pack97": {
+"auto": true
+},
+"pack99": {
+"auto": true
+},
+"pack100": {
+"auto": true
+},
+"pack101": {
+"auto": true
+},
+"pack102": {
+"auto": true
+},
+"pack103": {
+"auto": true
+},
+"pack104": {
+"auto": true
+},
+"pack_c16": {
+"auto": true
+},
+"pack106": {
+"auto": true
+},
+"pack_c17": {
+"auto": true
+},
+"pack108": {
+"auto": true
+},
+"pack109": {
+"auto": true
+},
+"pack110": {
+"auto": true
+},
+"pack111": {
+"auto": true
+},
+"pack112": {
+"auto": true
+},
+"pack113": {
+"auto": true
+},
+"pack114": {
+"auto": true
+},
+"pack115": {
+"auto": true
+},
+"pack116": {
+"auto": true
+},
+"pack117": {
+"auto": true
+},
+"pack118": {
+"auto": true
+},
+"pack119": {
+"auto": true
+},
+"pack120": {
+"auto": true
+},
+"pack121": {
+"auto": true
+},
+"pack122": {
+"auto": true
+},
+"pack123": {
+"auto": true
+},
+"pack124": {
+"auto": true
+},
+"pack125": {
+"auto": true
+},
+"pack126": {
+"auto": true
+},
+"pack127": {
+"auto": true
+},
+"pack128": {
+"auto": true
+},
+"question_c18": {
+"auto": true
+},
+"question_c19": {
+"auto": true
+},
+"question131": {
+"auto": true
+},
+"question132": {
+"auto": true
+},
+"question133": {
+"auto": true
+},
+"question_c20": {
+"auto": true
+},
+"place138": {
+"lat": 10.52735,
+"lng": -85.74737
+},
+"place139": {
+"auto": true
+},
+"place140": {
+"auto": true
+},
+"place141": {
+"auto": true
+},
+"place142": {
+"auto": true
+},
+"place143": {
+"auto": true
+},
+"place144": {
+"auto": true
+},
+"place145": {
+"auto": true
+},
+"place146": {
+"auto": true
+},
+"place147": {
+"auto": true
+},
+"place148": {
+"auto": true
+},
+"place149": {
+"auto": true
+},
+"food151": {
+"auto": true
+},
+"food152": {
+"auto": true
+},
+"sp_hampton": {
+"auto": true
+},
+"sp_car": {
+"auto": true
+},
+"question135": {
+"del": true
+},
+"todo75": {
+"del": true
+},
+"tour58": {
+"del": true
+},
+"fuel39": {
+"del": true
+},
+"fuel45": {
+"del": true
+},
+"todo76": {
+"del": true
+},
+"fuel42": {
+"del": true
+},
+"food161": {
+"del": true
+},
+"flight51": {
+"del": true
+},
+"todo82": {
+"del": true
+},
+"todo72": {
+"del": true
+},
+"food162": {
+"del": true
+},
+"todo69": {
+"del": true
+},
+"tour54": {
+"del": true
+},
+"todo89": {
+"del": true
+},
+"food155": {
+"del": true
+},
+"info60": {
+"del": true
+},
+"fuel28": {
+"del": true
+},
+"info54": {
+"del": true
+},
+"fuel33": {
+"del": true
+},
+"fuel25": {
+"del": true
+},
+"food166": {
+"del": true
+},
+"place150": {
+"del": true
+},
+"fuel41": {
+"del": true
+},
+"question130": {
+"del": true
+},
+"food154": {
+"del": true
+},
+"fuel38": {
+"del": true
+},
+"todo74": {
+"del": true
+},
+"todo78": {
+"del": true
+},
+"pack107": {
+"del": true
+},
+"todo73": {
+"del": true
+},
+"question136": {
+"del": true
+},
+"question134": {
+"del": true
+},
+"food157": {
+"del": true
+},
+"question129": {
+"del": true
+},
+"tour56": {
+"del": true
+},
+"todo71": {
+"del": true
+},
+"st_ma": {
+"del": true
+},
+"food163": {
+"del": true
+},
+"fuel37": {
+"del": true
+},
+"fuel40": {
+"del": true
+},
+"fuel44": {
+"del": true
+},
+"pack98": {
+"del": true
+},
+"fuel35": {
+"del": true
+},
+"L7": {
+"del": true
+},
+"st_sm": {
+"del": true
+},
+"fuel34": {
+"del": true
+},
+"fuel43": {
+"del": true
+},
+"st_mv": {
+"del": true
+},
+"todo80": {
+"del": true
+},
+"food165": {
+"del": true
+},
+"tour57": {
+"del": true
+},
+"L8": {
+"del": true
+},
+"todo77": {
+"del": true
+},
+"fuel29": {
+"del": true
+},
+"fuel30": {
+"del": true
+},
+"question137": {
+"del": true
+},
+"fuel36": {
+"del": true
+},
+"fuel47": {
+"del": true
+},
+"good68": {
+"del": true
+},
+"fuel26": {
+"del": true
+},
+"food160": {
+"del": true
+},
+"todo79": {
+"del": true
+},
+"fuel46": {
+"del": true
+},
+"question138": {
+"del": true
+},
+"pack129": {
+"del": true
+},
+"food153": {
+"del": true
+},
+"tour55": {
+"del": true
+},
+"fuel27": {
+"del": true
+},
+"food158": {
+"del": true
+},
+"st_uv": {
+"del": true
+},
+"info61": {
+"del": true
+},
+"good63": {
+"del": true
+},
+"pack105": {
+"del": true
+},
+"tour59": {
+"del": true
+},
+"food156": {
+"del": true
+},
+"food159": {
+"del": true
+},
+"food164": {
+"del": true
+},
+"fuel32": {
+"del": true
+},
+"fuel31": {
+"del": true
+}
+}
+},
+{
+"id": "m4-hampton-ok",
+"patch": {
+"st_hampton": {
+"notes": "1 night (Wed 28 Oct only), prepaid SEK 1,305, non-refundable. Confirmed by Trip.com 13 Oct. Check-in after 14:00. Non-refundable. Alamo car rental station is at this hotel. GPS = airport (approx)."
+}
+}
+},
+{
+"id": "m5-draftD2",
+"patch": {
+"day2": {
+"title": "Car → La Fortuna",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). Drive to La Fortuna, arrive about 16:00.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 18.0,
+"pop": 95
+}
+},
+"day3": {
+"title": "Volcano + waterfall + hot springs",
+"plan": "Full-day tour (10 h, pickup from the hotel): La Fortuna waterfall, Maleku lunch, Arenal volcano walk, hot springs. No driving.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 16.3,
+"pop": 95
+}
+},
+"day4": {
+"title": "Río Celeste (maybe)",
+"plan": "Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 16.7,
+"pop": 97
+}
+},
+"day5": {
+"title": "Don Juan coffee + chocolate",
+"plan": "Don Juan Arenal tour (2 h; 09:00, 10:00, 14:00 or 15:00). Afternoon: hot springs. No driving.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 17.3,
+"pop": 100
+}
+},
+"day6": {
+"title": "To Tamarindo",
+"plan": "Leave 08:00. Long drive (5 h 30). Afternoon: beach.",
+"wx": {
+"kind": "typical",
+"place": "Tamarindo",
+"tmax": 29,
+"tmin": 24,
+"mm": 12.8,
+"pop": 91
+}
+},
+"day7": {
+"title": "Tamarindo beach",
+"plan": "Beach, surf, sunset. No driving.",
+"wx": {
+"kind": "typical",
+"place": "Tamarindo",
+"tmax": 29,
+"tmin": 24,
+"mm": 12.2,
+"pop": 91
+}
+},
+"day8": {
+"title": "To Fiesta Resort",
+"plan": "Leave 09:00, arrive about 14:00. All inclusive: pool + food.",
+"wx": {
+"kind": "typical",
+"place": "Puntarenas (El Roble)",
+"tmax": 27,
+"tmin": 23,
+"mm": 15.8,
+"pop": 83
+}
+},
+"day9": {
+"title": "To Tortuguero (car + boat)",
+"plan": "Leave 07:00. Via San José + Ruta 32 to La Pavona (5 h 15). Park the car (secure lot). 15:15 boat (12:45 if early), about 1 h.",
+"wx": {
+"kind": "typical",
+"place": "Tortuguero",
+"tmax": 28,
+"tmin": 23,
+"mm": 11.7,
+"pop": 96
+}
+},
+"day10": {
+"title": "Tortuguero",
+"plan": "Canal boat tour + national park. No car.",
+"wx": {
+"kind": "typical",
+"place": "Tortuguero",
+"tmax": 28,
+"tmin": 23,
+"mm": 11.4,
+"pop": 95
+}
+},
+"day11": {
+"title": "To Punta Cocles",
+"plan": "06:40 or 08:40 boat back to La Pavona. Drive via Guápiles + Limón (4 h 45).",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 9.1,
+"pop": 79
+}
+},
+"day12": {
+"title": "Ride The Rainforest",
+"plan": "Horse ride on the beach + jungle (Ride The Rainforest, Punta Cocles). Book ahead.",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 10.2,
+"pop": 78
+}
+},
+"day13": {
+"plan": "Cahuita National Park (open every day 8–16; about 20 min drive). Beach.",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 10.2,
+"pop": 79
+}
+},
+"day14": {
+"plan": "Long day: leave 07:00 (6 h 30). Ruta 32 over Braulio Carrillo. Fog + landslides possible.",
+"wx": {
+"kind": "typical",
+"place": "SJO / Alajuela",
+"tmax": 26,
+"tmin": 18,
+"mm": 13.6,
+"pop": 86
+}
+},
+"day15": {
+"plan": "Slow morning, pack. Fill up. Car back at SJO by 14:00 (saves a day) or 17:00 (change asked). Fly 19:30."
+},
+"st_lf": {
+"fromDay": 2,
+"toDay": 5
+},
+"st_tam": {
+"auto": true
+},
+"st_fr": {
+"auto": true
+},
+"st_tor": {
+"auto": true
+},
+"st_pvj": {
+"area": "Punta Cocles, Puerto Viejo de Talamanca",
+"fromDay": 11,
+"lat": 9.638944,
+"lng": -82.717119
+},
+"L1": {
+"route": "SJO → La Fortuna",
+"time": "3 h 30",
+"leaveBy": "12:15",
+"notes": ""
+},
+"fuel_c1": {
+"auto": true
+},
+"fuel_c2": {
+"auto": true
+},
+"L2": {
+"day": 6,
+"route": "La Fortuna → Tamarindo",
+"km": 247,
+"time": "5 h 30",
+"leaveBy": "08:00",
+"notes": "Long drive."
+},
+"fuel_c3": {
+"auto": true
+},
+"fuel_c4": {
+"auto": true
+},
+"L3": {
+"day": 8,
+"route": "Tamarindo → Fiesta Resort (Puntarenas)",
+"km": 174,
+"time": "4 h 45",
+"leaveBy": "09:00"
+},
+"fuel_c5": {
+"auto": true
+},
+"fuel_c6": {
+"auto": true
+},
+"L4": {
+"day": 9,
+"route": "Fiesta Resort → La Pavona (via San José + Ruta 32)",
+"km": 198,
+"time": "5 h 15",
+"leaveBy": "07:00",
+"notes": "Car stays at La Pavona secure parking (about 20–23 USD/night). Boats about 07:00, 09:15, 11:15, 12:45, 15:15, 16:15."
+},
+"fuel_c7": {
+"auto": true
+},
+"fuel_c8": {
+"auto": true
+},
+"L5": {
+"day": 11,
+"route": "La Pavona → Punta Cocles",
+"km": 201,
+"time": "4 h 45",
+"leaveBy": "09:30",
+"notes": "Boat back first: 06:40 or 08:40."
+},
+"fuel_c9": {
+"auto": true
+},
+"fuel_c10": {
+"auto": true
+},
+"L6": {
+"day": 14,
+"route": "Punta Cocles → near SJO",
+"km": 237,
+"time": "6 h 30",
+"notes": "Long day. Fog + landslides possible on Braulio Carrillo."
+},
+"fuel_c11": {
+"auto": true
+},
+"fuel_c12": {
+"auto": true
+},
+"t_volc": {
+"auto": true
+},
+"t_dja": {
+"auto": true
+},
+"t_rc": {
+"auto": true
+},
+"t_tortboat": {
+"auto": true
+},
+"t_ride": {
+"auto": true
+},
+"good_c13": {
+"auto": true
+},
+"todo_st_lf": {
+"auto": true
+},
+"todo_st_tam": {
+"auto": true
+},
+"todo_st_fr": {
+"auto": true
+},
+"todo_st_tor": {
+"auto": true
+},
+"todo_st_pvj": {
+"auto": true
+},
+"todo_t_volc": {
+"auto": true
+},
+"todo_t_dja": {
+"auto": true
+},
+"todo_t_tortboat": {
+"auto": true
+},
+"todo_t_ride": {
+"auto": true
+},
+"todo_c14": {
+"auto": true
+},
+"todo_c15": {
+"auto": true
+},
+"pack_c16": {
+"auto": true
+},
+"pack_c17": {
+"auto": true
+},
+"question_c18": {
+"auto": true
+},
+"question_c19": {
+"auto": true
+},
+"question_c20": {
+"auto": true
+},
+"place141": {
+"why": "For variety",
+"status": "Idea"
+},
+"place142": {
+"why": "Cloud forest (dropped in D2)",
+"status": "Idea"
+},
+"place144": {
+"status": "In plan",
+"lat": 10.2993,
+"lng": -85.8371
+},
+"todo_st_sm": {
+"del": true
+},
+"question135": {
+"del": true
+},
+"todo_st_mv": {
+"del": true
+},
+"question130": {
+"del": true
+},
+"L7": {
+"del": true
+},
+"food154": {
+"del": true
+},
+"st_sm": {
+"del": true
+},
+"fuel_c13": {
+"del": true
+},
+"fuel_c18": {
+"del": true
+},
+"food153": {
+"del": true
+},
+"pack107": {
+"del": true
+},
+"st_mv": {
+"del": true
+},
+"fuel_c16": {
+"del": true
+},
+"t_coop": {
+"del": true
+},
+"question134": {
+"del": true
+},
+"food158": {
+"del": true
+},
+"food157": {
+"del": true
+},
+"fuel_c17": {
+"del": true
+},
+"todo_t_dj": {
+"del": true
+},
+"todo_st_at": {
+"del": true
+},
+"food165": {
+"del": true
+},
+"question129": {
+"del": true
+},
+"t_als": {
+"del": true
+},
+"st_ma": {
+"del": true
+},
+"good63": {
+"del": true
+},
+"fuel_c19": {
+"del": true
+},
+"fuel_c14": {
+"del": true
+},
+"food155": {
+"del": true
+},
+"food163": {
+"del": true
+},
+"t_tab": {
+"del": true
+},
+"pack105": {
+"del": true
+},
+"todo_st_ma": {
+"del": true
+},
+"question137": {
+"del": true
+},
+"t_dj": {
+"del": true
+},
+"food156": {
+"del": true
+},
+"food159": {
+"del": true
+},
+"food164": {
+"del": true
+},
+"todo_t_tab": {
+"del": true
+},
+"todo_c20": {
+"del": true
+},
+"todo_t_coop": {
+"del": true
+},
+"fuel_c15": {
+"del": true
+},
+"st_at": {
+"del": true
+}
+}
+}
+],
+"items": {
+"day1": {
+"id": "day1",
+"day": 1,
+"date": "2026-10-28",
+"label": "Wed 28 Oct",
+"title": "Arrive · taxi",
+"plan": "Land 17:30. Taxi to the Hampton (at the airport). No car today. Early night.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "SJO / Alajuela",
+"tmax": 25,
+"tmin": 18,
+"mm": 19.8,
+"pop": 96
+},
+"type": "day",
+"o": 1,
+"u": 1
+},
+"day2": {
+"id": "day2",
+"day": 2,
+"date": "2026-10-29",
+"label": "Thu 29 Oct",
+"title": "Car → La Fortuna",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). Drive to La Fortuna, arrive about 16:00.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 18.0,
+"pop": 95
+},
+"type": "day",
+"o": 2,
+"u": 1
+},
+"day3": {
+"id": "day3",
+"day": 3,
+"date": "2026-10-30",
+"label": "Fri 30 Oct",
+"title": "Volcano + waterfall + hot springs",
+"plan": "Full-day tour (10 h, pickup from the hotel): La Fortuna waterfall, Maleku lunch, Arenal volcano walk, hot springs. No driving.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 16.3,
+"pop": 95
+},
+"type": "day",
+"o": 3,
+"u": 1
+},
+"day4": {
+"id": "day4",
+"day": 4,
+"date": "2026-10-31",
+"label": "Sat 31 Oct",
+"title": "Río Celeste (maybe)",
+"plan": "Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 16.7,
+"pop": 97
+},
+"type": "day",
+"o": 4,
+"u": 1
+},
+"day5": {
+"id": "day5",
+"day": 5,
+"date": "2026-11-01",
+"label": "Sun 1 Nov",
+"title": "Don Juan coffee + chocolate",
+"plan": "Don Juan Arenal tour (2 h; 09:00, 10:00, 14:00 or 15:00). Afternoon: hot springs. No driving.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna",
+"tmax": 27,
+"tmin": 21,
+"mm": 17.3,
+"pop": 100
+},
+"type": "day",
+"o": 5,
+"u": 1
+},
+"day6": {
+"id": "day6",
+"day": 6,
+"date": "2026-11-02",
+"label": "Mon 2 Nov",
+"title": "To Tamarindo",
+"plan": "Leave 08:00. Long drive (5 h 30). Afternoon: beach.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "Tamarindo",
+"tmax": 29,
+"tmin": 24,
+"mm": 12.8,
+"pop": 91
+},
+"type": "day",
+"o": 6,
+"u": 1
+},
+"day7": {
+"id": "day7",
+"day": 7,
+"date": "2026-11-03",
+"label": "Tue 3 Nov",
+"title": "Tamarindo beach",
+"plan": "Beach, surf, sunset. No driving.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "Tamarindo",
+"tmax": 29,
+"tmin": 24,
+"mm": 12.2,
+"pop": 91
+},
+"type": "day",
+"o": 7,
+"u": 1
+},
+"day8": {
+"id": "day8",
+"day": 8,
+"date": "2026-11-04",
+"label": "Wed 4 Nov",
+"title": "To Fiesta Resort",
+"plan": "Leave 09:00, arrive about 14:00. All inclusive: pool + food.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "Puntarenas (El Roble)",
+"tmax": 27,
+"tmin": 23,
+"mm": 15.8,
+"pop": 83
+},
+"type": "day",
+"o": 8,
+"u": 1
+},
+"day9": {
+"id": "day9",
+"day": 9,
+"date": "2026-11-05",
+"label": "Thu 5 Nov",
+"title": "To Tortuguero (car + boat)",
+"plan": "Leave 07:00. Via San José + Ruta 32 to La Pavona (5 h 15). Park the car (secure lot). 15:15 boat (12:45 if early), about 1 h.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "Tortuguero",
+"tmax": 28,
+"tmin": 23,
+"mm": 11.7,
+"pop": 96
+},
+"type": "day",
+"o": 9,
+"u": 1
+},
+"day10": {
+"id": "day10",
+"day": 10,
+"date": "2026-11-06",
+"label": "Fri 6 Nov",
+"title": "Tortuguero",
+"plan": "Canal boat tour + national park. No car.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "Tortuguero",
+"tmax": 28,
+"tmin": 23,
+"mm": 11.4,
+"pop": 95
+},
+"type": "day",
+"o": 10,
+"u": 1
+},
+"day11": {
+"id": "day11",
+"day": 11,
+"date": "2026-11-07",
+"label": "Sat 7 Nov",
+"title": "To Punta Cocles",
+"plan": "06:40 or 08:40 boat back to La Pavona. Drive via Guápiles + Limón (4 h 45).",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 9.1,
+"pop": 79
+},
+"type": "day",
+"o": 11,
+"u": 1
+},
+"day12": {
+"id": "day12",
+"day": 12,
+"date": "2026-11-08",
+"label": "Sun 8 Nov",
+"title": "Ride The Rainforest",
+"plan": "Horse ride on the beach + jungle (Ride The Rainforest, Punta Cocles). Book ahead.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 10.2,
+"pop": 78
+},
+"type": "day",
+"o": 12,
+"u": 1
+},
+"day13": {
+"id": "day13",
+"day": 13,
+"date": "2026-11-09",
+"label": "Mon 9 Nov",
+"title": "Cahuita",
+"plan": "Cahuita National Park (open every day 8–16; about 20 min drive). Beach.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "Punta Cocles",
+"tmax": 28,
+"tmin": 23,
+"mm": 10.2,
+"pop": 79
+},
+"type": "day",
+"o": 13,
+"u": 1
+},
+"day14": {
+"id": "day14",
+"day": 14,
+"date": "2026-11-10",
+"label": "Tue 10 Nov",
+"title": "Back to SJO",
+"plan": "Long day: leave 07:00 (6 h 30). Ruta 32 over Braulio Carrillo. Fog + landslides possible.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "SJO / Alajuela",
+"tmax": 26,
+"tmin": 18,
+"mm": 13.6,
+"pop": 86
+},
+"type": "day",
+"o": 14,
+"u": 1
+},
+"day15": {
+"id": "day15",
+"day": 15,
+"date": "2026-11-11",
+"label": "Wed 11 Nov",
+"title": "Fly home",
+"plan": "Slow morning, pack. Fill up. Car back at SJO by 14:00 (saves a day) or 17:00 (change asked). Fly 19:30.",
+"notes": "",
+"sunset": "Dark about 17:15–17:30",
+"wx": {
+"kind": "typical",
+"place": "SJO / Alajuela",
+"tmax": 26,
+"tmin": 18,
+"mm": 13.8,
+"pop": 84
+},
+"type": "day",
+"o": 15,
+"u": 1
+},
+"st_hampton": {
+"id": "st_hampton",
+"name": "Hampton by Hilton San Jose Airport",
+"area": "Alajuela (at SJO airport)",
+"address": "Airport Blvd 1, Alajuela",
+"checkin": "Wed 28 Oct",
+"checkout": "Thu 29 Oct",
+"price": "SEK 1,305 (prepaid)",
+"fromDay": 1,
+"toDay": 1,
+"status": "Booked",
+"notes": "1 night (Wed 28 Oct only), prepaid SEK 1,305, non-refundable. Confirmed by Trip.com 13 Oct. Check-in after 14:00. Non-refundable. Alamo car rental station is at this hotel. GPS = airport (approx).",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 9.9939,
+"lng": -84.2088,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 16,
+"u": 1
+},
+"st_lf": {
+"id": "st_lf",
+"name": "Not chosen (hotel with hot springs)",
+"area": "La Fortuna / Arenal",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 2,
+"toDay": 5,
+"status": "To book",
+"notes": "Want: hotel with hot springs. Tabacón is an option.",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 10.47168,
+"lng": -84.64444,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 17,
+"u": 1
+},
+"st_tam": {
+"id": "st_tam",
+"name": "Not chosen",
+"area": "Tamarindo",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 6,
+"toDay": 7,
+"status": "To book",
+"notes": "",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 10.2993,
+"lng": -85.8371,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 18,
+"u": 1
+},
+"st_fr": {
+"id": "st_fr",
+"name": "Fiesta Resort All Inclusive",
+"area": "El Roble, Chacarita, Puntarenas 5400",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 8,
+"toDay": 8,
+"status": "To book",
+"notes": "1 night, all inclusive. GPS approx (El Roble).",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 9.9555,
+"lng": -84.7695,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 19,
+"u": 1
+},
+"st_tor": {
+"id": "st_tor",
+"name": "Hotel Serendipity",
+"area": "1809 Playa, Tortuguero, Limón",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 9,
+"toDay": 10,
+"status": "To book",
+"notes": "No road: car stays at La Pavona, boat about 1 h. GPS = village (approx).",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 10.542,
+"lng": -83.5024,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 20,
+"u": 1
+},
+"st_pvj": {
+"id": "st_pvj",
+"name": "Not chosen",
+"area": "Punta Cocles, Puerto Viejo de Talamanca",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 11,
+"toDay": 13,
+"status": "To book",
+"notes": "",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 9.638944,
+"lng": -82.717119,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 21,
+"u": 1
+},
+"st_sjo2": {
+"id": "st_sjo2",
+"name": "Not chosen",
+"area": "Near SJO (Tuetal / Alajuela hills / Belén)",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 14,
+"toDay": 14,
+"status": "To book",
+"notes": "Last night, near the airport.",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 9.9939,
+"lng": -84.2088,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 22,
+"u": 1
+},
+"st_pv": {
+"id": "st_pv",
+"name": "Pura Vida Hotel",
+"area": "Tuetal, Alajuela (4 km from SJO)",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 14,
+"toDay": 14,
+"status": "Idea",
+"notes": "99–129 USD/night + 13% tax (1 Sep–15 Nov), breakfast, free airport pickup for arrivals",
+"phone": "+506 2430 2929",
+"backupOf": "st_sjo2",
+"ref": "",
+"lat": null,
+"lng": null,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 23,
+"u": 1
+},
+"st_bv": {
+"id": "st_bv",
+"name": "Buena Vista Chic Hotel",
+"area": "Alajuela hills (9 km from SJO)",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 14,
+"toDay": 14,
+"status": "Idea",
+"notes": "From about 144 USD/night, breakfast + airport shuttle",
+"phone": "",
+"backupOf": "st_sjo2",
+"ref": "",
+"lat": null,
+"lng": null,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 24,
+"u": 1
+},
+"st_rb": {
+"id": "st_rb",
+"name": "Finca Rosa Blanca coffee farm",
+"area": "Santa Bárbara de Heredia",
+"address": "",
+"checkin": "",
+"checkout": "",
+"price": "",
+"fromDay": 14,
+"toDay": 14,
+"status": "Idea",
+"notes": "Junior Suite from about 315 USD/night + 13% tax.",
+"phone": "+506 2269 9392",
+"backupOf": "st_sjo2",
+"ref": "",
+"lat": 10.04566,
+"lng": -84.15062,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 25,
+"u": 1
+},
+"L1": {
+"id": "L1",
+"name": "L1",
+"day": 2,
+"route": "SJO → La Fortuna",
+"km": 124,
+"time": "3 h 30",
+"leaveBy": "12:15",
+"notes": "",
+"type": "leg",
+"o": 26,
+"u": 1
+},
+"fuel_c1": {
+"name": "Fill up near SJO (to check)",
+"day": 2,
+"leg": "L1",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c1",
+"o": 27,
+"u": 1
+},
+"fuel_c2": {
+"name": "La Fortuna (on arrival, to check)",
+"day": 2,
+"leg": "L1",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c2",
+"o": 28,
+"u": 1
+},
+"L2": {
+"id": "L2",
+"name": "L2",
+"day": 6,
+"route": "La Fortuna → Tamarindo",
+"km": 247,
+"time": "5 h 30",
+"leaveBy": "08:00",
+"notes": "Long drive.",
+"type": "leg",
+"o": 29,
+"u": 1
+},
+"fuel_c3": {
+"name": "La Fortuna (leave full)",
+"day": 6,
+"leg": "L2",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c3",
+"o": 30,
+"u": 1
+},
+"fuel_c4": {
+"name": "Liberia (to check)",
+"day": 6,
+"leg": "L2",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c4",
+"o": 31,
+"u": 1
+},
+"L3": {
+"id": "L3",
+"name": "L3",
+"day": 8,
+"route": "Tamarindo → Fiesta Resort (Puntarenas)",
+"km": 174,
+"time": "4 h 45",
+"leaveBy": "09:00",
+"notes": "",
+"type": "leg",
+"o": 32,
+"u": 1
+},
+"fuel_c5": {
+"name": "Tamarindo (leave full)",
+"day": 8,
+"leg": "L3",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c5",
+"o": 33,
+"u": 1
+},
+"fuel_c6": {
+"name": "Nicoya or Ruta 1 (to check)",
+"day": 8,
+"leg": "L3",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c6",
+"o": 34,
+"u": 1
+},
+"L4": {
+"id": "L4",
+"name": "L4",
+"day": 9,
+"route": "Fiesta Resort → La Pavona (via San José + Ruta 32)",
+"km": 198,
+"time": "5 h 15",
+"leaveBy": "07:00",
+"notes": "Car stays at La Pavona secure parking (about 20–23 USD/night). Boats about 07:00, 09:15, 11:15, 12:45, 15:15, 16:15.",
+"type": "leg",
+"o": 35,
+"u": 1
+},
+"fuel_c7": {
+"name": "Leave full (to check)",
+"day": 9,
+"leg": "L4",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c7",
+"o": 36,
+"u": 1
+},
+"fuel_c8": {
+"name": "Guápiles (to check)",
+"day": 9,
+"leg": "L4",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c8",
+"o": 37,
+"u": 1
+},
+"L5": {
+"id": "L5",
+"name": "L5",
+"day": 11,
+"route": "La Pavona → Punta Cocles",
+"km": 201,
+"time": "4 h 45",
+"leaveBy": "09:30",
+"notes": "Boat back first: 06:40 or 08:40.",
+"type": "leg",
+"o": 38,
+"u": 1
+},
+"fuel_c9": {
+"name": "Guápiles (to check)",
+"day": 11,
+"leg": "L5",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c9",
+"o": 39,
+"u": 1
+},
+"fuel_c10": {
+"name": "Limón (to check)",
+"day": 11,
+"leg": "L5",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c10",
+"o": 40,
+"u": 1
+},
+"L6": {
+"id": "L6",
+"name": "L6",
+"day": 14,
+"route": "Punta Cocles → near SJO",
+"km": 237,
+"time": "6 h 30",
+"leaveBy": "07:00",
+"notes": "Long day. Fog + landslides possible on Braulio Carrillo.",
+"type": "leg",
+"o": 41,
+"u": 1
+},
+"fuel_c11": {
+"name": "Leave full in Puerto Viejo (to check)",
+"day": 14,
+"leg": "L6",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c11",
+"o": 42,
+"u": 1
+},
+"fuel_c12": {
+"name": "Guápiles (to check)",
+"day": 14,
+"leg": "L6",
+"km": null,
+"lat": null,
+"lng": null,
+"type": "fuel",
+"id": "fuel_c12",
+"o": 43,
+"u": 1
+},
+"flight47": {
+"date": "Wed 28 Oct",
+"name": "KL 1198",
+"route": "Oslo → Amsterdam",
+"leaves": "09:30",
+"lands": "11:25",
+"status": "Booked",
+"type": "flight",
+"id": "flight47",
+"o": 47,
+"u": 1
+},
+"flight48": {
+"date": "Wed 28 Oct",
+"name": "KL 759",
+"route": "Amsterdam → San José (SJO)",
+"leaves": "12:40",
+"lands": "17:30",
+"status": "Booked",
+"type": "flight",
+"id": "flight48",
+"o": 48,
+"u": 1
+},
+"flight49": {
+"date": "Wed 11 Nov",
+"name": "KL 760",
+"route": "San José → Amsterdam",
+"leaves": "19:30",
+"lands": "12:50 Thu 12 Nov",
+"status": "Booked",
+"type": "flight",
+"id": "flight49",
+"o": 49,
+"u": 1
+},
+"flight50": {
+"date": "Thu 12 Nov",
+"name": "KL 1203",
+"route": "Amsterdam → Oslo",
+"leaves": "14:20",
+"lands": "16:10",
+"status": "Booked",
+"type": "flight",
+"id": "flight50",
+"o": 50,
+"u": 1
+},
+"car": {
+"id": "car",
+"name": "Rental car: Full Size SUV 4x4",
+"company": "Vamos Rent-A-Car",
+"ref": "",
+"status": "Booked",
+"pickup": "San José International Airport (SJO), Thu 29 Oct 2026, 12:00",
+"ret": "As booked: SJO, Thu 12 Nov 2026, 12:00",
+"warn": "⚠️ Return change asked: Wed 11 Nov 17:00 at SJO. Email sent, waiting for Vamos.",
+"days": "14 days as booked (13 needed)",
+"car": "Full Size SUV 4x4, 2500cc, automatic, petrol. Check 4 big bags fit.",
+"insurance": "SLI/TPL is required; a credit card can't replace it. Ask for an all-in price with SLI. CDW can sometimes be skipped with a card letter.",
+"watch": "Returning after 18:30 can cost an extra day. Check grace period. Ask about Quick Pass for tolls. Add Stian as driver?",
+"licence": "Norwegian licence OK, no international permit. Carry passport.",
+"price": "$1,211.18 total",
+"deposit": "",
+"phone": "",
+"lat": 9.9939,
+"lng": -84.2088,
+"area": "SJO airport (Juan Santamaría)",
+"type": "car",
+"o": 48,
+"u": 1
+},
+"info52": {
+"name": "Fuel prices",
+"text": "From 3 Oct 2026: Súper 764 CRC/L, Plus 91 719 CRC/L, Diesel 785 CRC/L, same at every station. One tank covers any single drive.",
+"type": "info",
+"id": "info52",
+"o": 52,
+"u": 1
+},
+"info53": {
+"name": "Tolls",
+"text": "Small, on Ruta 27 (e.g. Pozón 570 CRC, Atenas 750 CRC): card, cash or Quick Pass.",
+"type": "info",
+"id": "info53",
+"o": 53,
+"u": 1
+},
+"t_doka": {
+"id": "t_doka",
+"name": "Hacienda Doka, Sabanilla de Alajuela",
+"day": null,
+"when": "Option",
+"length": "1 h",
+"price": "28 USD (43 with lunch)",
+"status": "Idea",
+"notes": "Old working wet mill + roaster.",
+"lat": 10.09771,
+"lng": -84.20952,
+"link": "",
+"type": "tour",
+"o": 51,
+"u": 1
+},
+"t_rb": {
+"id": "t_rb",
+"name": "Finca Rosa Blanca tour + cupping",
+"day": null,
+"when": "Option",
+"length": "2.5 h",
+"price": "40 USD per person",
+"status": "Idea",
+"notes": "Organic, own mill. +506 2269 9392",
+"lat": 10.04566,
+"lng": -84.15062,
+"link": "",
+"type": "tour",
+"o": 52,
+"u": 1
+},
+"t_volc": {
+"id": "t_volc",
+"name": "Arenal volcano + La Fortuna waterfall + hot springs (GetYourGuide)",
+"day": 3,
+"when": "Fri 30 Oct, pickup (time at booking)",
+"length": "10 h",
+"price": "about 95–105 USD pp",
+"status": "To book",
+"notes": "Pickup in La Fortuna. Lunch, park fees, hot springs + 1 cocktail included. https://www.getyourguide.com/la-fortuna-l1904/arenal-volcano-la-fortuna-waterfall-and-hot-springs-tour-t192264/",
+"lat": 10.4627,
+"lng": -84.7032,
+"link": "",
+"type": "tour",
+"o": 53,
+"u": 1
+},
+"t_dja": {
+"id": "t_dja",
+"name": "Don Juan Arenal coffee + chocolate (La Fortuna)",
+"day": 5,
+"when": "Sun 1 Nov 09:00/10:00/14:00/15:00",
+"length": "2 h",
+"price": "50 USD pp",
+"status": "To book",
+"notes": "The La Fortuna farm (not Monteverde). Free pickup from most town hotels. https://donjuantoursarenal.com/",
+"lat": 10.484,
+"lng": -84.642,
+"link": "",
+"type": "tour",
+"o": 54,
+"u": 1
+},
+"t_rc": {
+"id": "t_rc",
+"name": "Río Celeste waterfall (Tenorio park)",
+"day": 4,
+"when": "Sat 31 Oct (maybe)",
+"length": "6 h tour or self-drive",
+"price": "Tour from 165 USD; park ticket about 32 USD",
+"status": "Idea",
+"notes": "250 steps down. 1 h 45 each way from La Fortuna. https://www.getyourguide.com/bijagua-de-upala-l215361/rio-celeste-fossen-luksustur-sertifisert-guide-lunsj-t1381037/",
+"lat": 10.7158,
+"lng": -84.9969,
+"link": "",
+"type": "tour",
+"o": 55,
+"u": 1
+},
+"t_tortboat": {
+"id": "t_tortboat",
+"name": "Tortuguero: La Pavona parking + boats",
+"day": 9,
+"when": "Thu 5 Nov (15:15 boat) · back Sat 7 Nov (06:40/08:40)",
+"length": "about 1 h each way",
+"price": "Boat about 8–10 USD pp each way; parking about 20–23 USD/night",
+"status": "To book",
+"notes": "Book boat + parking bundle (pavonaparking.com or smithtortugueroboats.com). Times change with the river: confirm.",
+"lat": 10.4517,
+"lng": -83.596,
+"link": "",
+"type": "tour",
+"o": 56,
+"u": 1
+},
+"t_ride": {
+"id": "t_ride",
+"name": "Ride The Rainforest (horse riding), Punta Cocles",
+"day": 12,
+"when": "Sun 8 Nov",
+"length": "1–2.5 h",
+"price": "from about 65 USD/h",
+"status": "To book",
+"notes": "Guided horse rides, beach + jungle. +506 6192 8939 · ridetherainforest.com",
+"lat": 9.638944,
+"lng": -82.717119,
+"link": "",
+"type": "tour",
+"o": 57,
+"u": 1
+},
+"info59": {
+"name": "Coffee: skip",
+"text": "Skip: Café Britt (a show, not a working farm) and Hacienda Espíritu Santo (closed since 30 May 2025). Ask farms whether the mill runs in late Oct / early Nov.",
+"type": "info",
+"id": "info59",
+"o": 59,
+"u": 1
+},
+"good61": {
+"name": "Entry",
+"text": "No visa for Norwegians, up to 180 days. May be asked for a return ticket (we have one) and about 100 USD per person per month.",
+"type": "good",
+"id": "good61",
+"o": 61,
+"u": 1
+},
+"good62": {
+"name": "Driving",
+"text": "Drive on the right. Limits: 40 km/h towns, 60–80 rural, 100 max. Speed cameras, big fines. No driving after dark (dark about 17:30); arrive by 16:30–17:00. Never drive into water you can't see the bottom of. One-lane bridge: the side with the CEDA sign waits. Right on red only if clear and no sign. Seatbelts on.",
+"type": "good",
+"id": "good62",
+"o": 62,
+"u": 1
+},
+"good_c13": {
+"name": "Tortuguero",
+"text": "No road. Park at La Pavona (secure, staffed lot), boat about 1 h. Take only a small bag. No valuables in the car.",
+"type": "good",
+"id": "good_c13",
+"o": 62,
+"u": 1
+},
+"good64": {
+"name": "Weather",
+"text": "End of rainy season. October is the wettest; drier in November. Sunny mornings, rainy afternoons. Caribbean side is dry Sep–Oct, wet in Nov (backup if the Pacific is bad).",
+"type": "good",
+"id": "good64",
+"o": 64,
+"u": 1
+},
+"good65": {
+"name": "Money",
+"text": "Colones (CRC). US dollars OK in tourist areas. Cards work almost everywhere.",
+"type": "good",
+"id": "good65",
+"o": 65,
+"u": 1
+},
+"good66": {
+"name": "Day 1",
+"text": "Land in the dark. Taxi to the Hampton at the airport. Car on 29 Oct.",
+"type": "good",
+"id": "good66",
+"o": 66,
+"u": 1
+},
+"good67": {
+"name": "Waze",
+"text": "Download Waze offline areas or Google Maps offline maps before the trip.",
+"type": "good",
+"id": "good67",
+"o": 67,
+"u": 1
+},
+"todo68": {
+"id": "todo68",
+"name": "Flights, ref on Flights screen",
+"done": true,
+"status": "Booked",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 68,
+"u": 1
+},
+"todo_car": {
+"id": "todo_car",
+"name": "4x4 SUV (Vamos): 29 Oct 12:00 → return change to 11 Nov 17:00 asked. With SLI? Quick Pass, Stian as driver, 4 bags fit",
+"done": true,
+"status": "Booked",
+"link": "car",
+"ref": "",
+"price": "$1,211.18",
+"notes": "Return date: change to Wed 11 Nov 17:00 asked (email sent, waiting for Vamos).",
+"type": "todo",
+"o": 68,
+"u": 1
+},
+"todo70": {
+"id": "todo70",
+"name": "Credit card coverage letter (only to skip CDW)",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 70,
+"u": 1
+},
+"todo_st_hampton": {
+"id": "todo_st_hampton",
+"name": "Hotel 28 Oct (1 night): Hampton by Hilton SJO Airport",
+"done": true,
+"status": "Booked",
+"link": "st_hampton",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 70,
+"u": 1
+},
+"todo_st_lf": {
+"id": "todo_st_lf",
+"name": "Hotel 29 Oct – 1 Nov (4 nights): La Fortuna, with hot springs",
+"done": false,
+"status": "To book",
+"link": "st_lf",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 71,
+"u": 1
+},
+"todo_st_tam": {
+"id": "todo_st_tam",
+"name": "Hotel 2–3 Nov (2 nights): Tamarindo",
+"done": false,
+"status": "To book",
+"link": "st_tam",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 72,
+"u": 1
+},
+"todo_st_fr": {
+"id": "todo_st_fr",
+"name": "Hotel 4 Nov (1 night): Fiesta Resort All Inclusive",
+"done": false,
+"status": "To book",
+"link": "st_fr",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 73,
+"u": 1
+},
+"todo_st_tor": {
+"id": "todo_st_tor",
+"name": "Hotel 5–6 Nov (2 nights): Hotel Serendipity, Tortuguero",
+"done": false,
+"status": "To book",
+"link": "st_tor",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 74,
+"u": 1
+},
+"todo_st_pvj": {
+"id": "todo_st_pvj",
+"name": "Hotel 7–9 Nov (3 nights): Punta Cocles",
+"done": false,
+"status": "To book",
+"link": "st_pvj",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 75,
+"u": 1
+},
+"todo_st_sjo2": {
+"id": "todo_st_sjo2",
+"name": "Hotel 10 Nov (1 night): near SJO",
+"done": false,
+"status": "To book",
+"link": "st_sjo2",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 76,
+"u": 1
+},
+"todo_t_volc": {
+"id": "todo_t_volc",
+"name": "Volcano + waterfall + hot springs tour, Fri 30 Oct",
+"done": false,
+"status": "To book",
+"link": "t_volc",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 77,
+"u": 1
+},
+"todo_t_dja": {
+"id": "todo_t_dja",
+"name": "Don Juan Arenal tour, Sun 1 Nov",
+"done": false,
+"status": "To book",
+"link": "t_dja",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 78,
+"u": 1
+},
+"todo_t_tortboat": {
+"id": "todo_t_tortboat",
+"name": "Tortuguero: La Pavona parking + boats, 5 Nov / 7 Nov",
+"done": false,
+"status": "To book",
+"link": "t_tortboat",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 79,
+"u": 1
+},
+"todo_t_ride": {
+"id": "todo_t_ride",
+"name": "Ride The Rainforest, Sun 8 Nov",
+"done": false,
+"status": "To book",
+"link": "t_ride",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 80,
+"u": 1
+},
+"todo_c14": {
+"id": "todo_c14",
+"name": "Cancel Coopedota tour 7 Nov if booked",
+"done": false,
+"status": "Question",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 81,
+"u": 1
+},
+"todo_c15": {
+"id": "todo_c15",
+"name": "Cahuita: pay at the gate. Tortuguero park ticket: online or at the gate",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 82,
+"u": 1
+},
+"todo81": {
+"id": "todo81",
+"name": "Travel insurance for both",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 81,
+"u": 1
+},
+"todo83": {
+"id": "todo83",
+"name": "Waze + offline maps downloaded",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 83,
+"u": 1
+},
+"todo84": {
+"id": "todo84",
+"name": "Local SIM or eSIM",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 84,
+"u": 1
+},
+"todo85": {
+"id": "todo85",
+"name": "Some colones + card for tolls",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 85,
+"u": 1
+},
+"todo86": {
+"id": "todo86",
+"name": "Ask each hotel for GPS location and safe parking",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 86,
+"u": 1
+},
+"todo87": {
+"id": "todo87",
+"name": "Check in online for KL 760 (24 h before)",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 87,
+"u": 1
+},
+"todo88": {
+"id": "todo88",
+"name": "Check for an online arrival form for Costa Rica",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 88,
+"u": 1
+},
+"pack89": {
+"group": "Documents and money",
+"name": "Passport (6+ months left is safest)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack89",
+"o": 89,
+"u": 1
+},
+"pack90": {
+"group": "Documents and money",
+"name": "Norwegian driving licence (both, if Stian drives)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack90",
+"o": 90,
+"u": 1
+},
+"pack91": {
+"group": "Documents and money",
+"name": "Credit card in the driver's name (for the car deposit)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack91",
+"o": 91,
+"u": 1
+},
+"pack92": {
+"group": "Documents and money",
+"name": "Debit card + backup card",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack92",
+"o": 92,
+"u": 1
+},
+"pack93": {
+"group": "Documents and money",
+"name": "Some US dollars in cash",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack93",
+"o": 93,
+"u": 1
+},
+"pack94": {
+"group": "Documents and money",
+"name": "Card coverage letter (if skipping CDW)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack94",
+"o": 94,
+"u": 1
+},
+"pack95": {
+"group": "Documents and money",
+"name": "Travel insurance details",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack95",
+"o": 95,
+"u": 1
+},
+"pack96": {
+"group": "Documents and money",
+"name": "E-ticket and booking refs (also offline on phone)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack96",
+"o": 96,
+"u": 1
+},
+"pack97": {
+"group": "Documents and money",
+"name": "Copies of passport and licence (photo on phone + paper)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack97",
+"o": 97,
+"u": 1
+},
+"pack99": {
+"group": "Tech",
+"name": "Phone + charger",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack99",
+"o": 99,
+"u": 1
+},
+"pack100": {
+"group": "Tech",
+"name": "Power bank",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack100",
+"o": 100,
+"u": 1
+},
+"pack101": {
+"group": "Tech",
+"name": "Plug adapter for Costa Rica (US-type plugs, 120 V: check chargers say 100–240 V)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack101",
+"o": 101,
+"u": 1
+},
+"pack102": {
+"group": "Tech",
+"name": "Car phone holder",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack102",
+"o": 102,
+"u": 1
+},
+"pack103": {
+"group": "Tech",
+"name": "Car USB charger + cable",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack103",
+"o": 103,
+"u": 1
+},
+"pack104": {
+"group": "Tech",
+"name": "Headphones",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack104",
+"o": 104,
+"u": 1
+},
+"pack_c16": {
+"group": "Tech",
+"name": "Head torch (night walks)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack_c16",
+"o": 106,
+"u": 1
+},
+"pack106": {
+"group": "Clothes",
+"name": "Rain jacket (October is the wettest month)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack106",
+"o": 106,
+"u": 1
+},
+"pack_c17": {
+"group": "Clothes",
+"name": "Warm layer / fleece (cool evenings, plane)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack_c17",
+"o": 108,
+"u": 1
+},
+"pack108": {
+"group": "Clothes",
+"name": "Long trousers (hiking, mosquitoes)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack108",
+"o": 108,
+"u": 1
+},
+"pack109": {
+"group": "Clothes",
+"name": "Light quick-dry shirts and shorts",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack109",
+"o": 109,
+"u": 1
+},
+"pack110": {
+"group": "Clothes",
+"name": "Swimwear",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack110",
+"o": 110,
+"u": 1
+},
+"pack111": {
+"group": "Clothes",
+"name": "Walking shoes or light hiking boots (mud)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack111",
+"o": 111,
+"u": 1
+},
+"pack112": {
+"group": "Clothes",
+"name": "Sandals / flip-flops",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack112",
+"o": 112,
+"u": 1
+},
+"pack113": {
+"group": "Clothes",
+"name": "Cap or sun hat",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack113",
+"o": 113,
+"u": 1
+},
+"pack114": {
+"group": "Clothes",
+"name": "Clothes for a nice dinner",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack114",
+"o": 114,
+"u": 1
+},
+"pack115": {
+"group": "Health and comfort",
+"name": "Personal medicines (enough for the whole trip)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack115",
+"o": 115,
+"u": 1
+},
+"pack116": {
+"group": "Health and comfort",
+"name": "Insect repellent (strong, DEET)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack116",
+"o": 116,
+"u": 1
+},
+"pack117": {
+"group": "Health and comfort",
+"name": "Sunscreen (reef-safe for the beaches)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack117",
+"o": 117,
+"u": 1
+},
+"pack118": {
+"group": "Health and comfort",
+"name": "Sunglasses",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack118",
+"o": 118,
+"u": 1
+},
+"pack119": {
+"group": "Health and comfort",
+"name": "Small first aid kit + plasters",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack119",
+"o": 119,
+"u": 1
+},
+"pack120": {
+"group": "Health and comfort",
+"name": "Travel sickness tablets (lots of curvy roads)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack120",
+"o": 120,
+"u": 1
+},
+"pack121": {
+"group": "Health and comfort",
+"name": "Stomach tablets",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack121",
+"o": 121,
+"u": 1
+},
+"pack122": {
+"group": "Health and comfort",
+"name": "Hand sanitiser",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack122",
+"o": 122,
+"u": 1
+},
+"pack123": {
+"group": "Day trips",
+"name": "Small daypack",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack123",
+"o": 123,
+"u": 1
+},
+"pack124": {
+"group": "Day trips",
+"name": "Dry bag (rafting, boat trips, rain)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack124",
+"o": 124,
+"u": 1
+},
+"pack125": {
+"group": "Day trips",
+"name": "Water bottle",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack125",
+"o": 125,
+"u": 1
+},
+"pack126": {
+"group": "Day trips",
+"name": "Binoculars (birds, sloths, whales)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack126",
+"o": 126,
+"u": 1
+},
+"pack127": {
+"group": "Day trips",
+"name": "Snorkel mask (optional)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack127",
+"o": 127,
+"u": 1
+},
+"pack128": {
+"group": "Day trips",
+"name": "Quick-dry towel",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"type": "pack",
+"id": "pack128",
+"o": 128,
+"u": 1
+},
+"question_c18": {
+"name": "Río Celeste on Sat 31 Oct: go, or rest day?",
+"done": false,
+"answer": "",
+"type": "question",
+"id": "question_c18",
+"o": 130,
+"u": 1
+},
+"question_c19": {
+"name": "Last night near SJO, or drive from Punta Cocles on 11 Nov (leave 06:30)?",
+"done": false,
+"answer": "",
+"type": "question",
+"id": "question_c19",
+"o": 131,
+"u": 1
+},
+"question131": {
+"name": "Budget per night? One room or two?",
+"done": false,
+"answer": "",
+"type": "question",
+"id": "question131",
+"o": 131,
+"u": 1
+},
+"question132": {
+"name": "Add Stian as a driver?",
+"done": false,
+"answer": "",
+"type": "question",
+"id": "question132",
+"o": 132,
+"u": 1
+},
+"question133": {
+"name": "Must-dos: zip-line, rafting, hot springs, whales, fishing, surfing?",
+"done": false,
+"answer": "",
+"type": "question",
+"id": "question133",
+"o": 133,
+"u": 1
+},
+"question_c20": {
+"name": "Fiesta Resort: is 1 night enough?",
+"done": false,
+"answer": "",
+"type": "question",
+"id": "question_c20",
+"o": 136,
+"u": 1
+},
+"place138": {
+"name": "Papagayo Peninsula",
+"why": "Hotels and food (pricey but nice)",
+"status": "Idea",
+"kind": "food",
+"area": "",
+"lat": 10.52735,
+"lng": -85.74737,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place138",
+"o": 138,
+"u": 1
+},
+"place139": {
+"name": "San José",
+"why": "Culture and nightlife",
+"status": "Idea",
+"kind": "nightlife",
+"area": "",
+"lat": 9.9333,
+"lng": -84.0833,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place139",
+"o": 139,
+"u": 1
+},
+"place140": {
+"name": "Nosara",
+"why": "Yoga and spa",
+"status": "Idea",
+"kind": "activity",
+"area": "",
+"lat": 9.97837,
+"lng": -85.6279,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place140",
+"o": 140,
+"u": 1
+},
+"place141": {
+"name": "Jacó",
+"why": "For variety",
+"status": "Idea",
+"kind": "food",
+"area": "",
+"lat": 9.6144,
+"lng": -84.6286,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place141",
+"o": 141,
+"u": 1
+},
+"place142": {
+"name": "Monteverde",
+"why": "Cloud forest (dropped in D2)",
+"status": "Idea",
+"kind": "nature",
+"area": "",
+"lat": 10.31651,
+"lng": -84.82434,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place142",
+"o": 142,
+"u": 1
+},
+"place143": {
+"name": "Puerto Viejo de Talamanca",
+"why": "Beach and activities",
+"status": "In plan",
+"kind": "beach",
+"area": "",
+"lat": 9.64965,
+"lng": -82.77509,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place143",
+"o": 143,
+"u": 1
+},
+"place144": {
+"name": "Tamarindo",
+"why": "Best for surfing",
+"status": "In plan",
+"kind": "beach",
+"area": "",
+"lat": 10.2993,
+"lng": -85.8371,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place144",
+"o": 144,
+"u": 1
+},
+"place145": {
+"name": "Drake Bay",
+"why": "Only reachable by boat or plane",
+"status": "Idea",
+"kind": "nature",
+"area": "",
+"lat": null,
+"lng": null,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place145",
+"o": 145,
+"u": 1
+},
+"place146": {
+"name": "La Fortuna",
+"why": "Volcano scenery",
+"status": "In plan",
+"kind": "nature",
+"area": "",
+"lat": 10.47168,
+"lng": -84.64444,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place146",
+"o": 146,
+"u": 1
+},
+"place147": {
+"name": "Playa Conchal",
+"why": "Snorkelling and scuba",
+"status": "Idea",
+"kind": "beach",
+"area": "",
+"lat": null,
+"lng": null,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place147",
+"o": 147,
+"u": 1
+},
+"place148": {
+"name": "Pacuare River",
+"why": "White water rafting, kayak",
+"status": "Idea",
+"kind": "activity",
+"area": "",
+"lat": null,
+"lng": null,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place148",
+"o": 148,
+"u": 1
+},
+"place149": {
+"name": "\"Tico beach\" (local favourite)",
+"why": "Name to check",
+"status": "Question",
+"kind": "beach",
+"area": "",
+"lat": null,
+"lng": null,
+"link": "",
+"day": null,
+"type": "place",
+"id": "place149",
+"o": 149,
+"u": 1
+},
+"food150": {
+"stay": "st_lf",
+"name": "Don Rufino",
+"link": "https://donrufino.com/",
+"notes": "Costa Rican, smart dinner. Book.",
+"area": "La Fortuna",
+"lat": null,
+"lng": null,
+"type": "food",
+"id": "food150",
+"o": 150,
+"u": 1
+},
+"food151": {
+"stay": "st_lf",
+"name": "Soda La Hormiga",
+"link": "",
+"notes": "Cheap local food",
+"area": "La Fortuna",
+"lat": null,
+"lng": null,
+"type": "food",
+"id": "food151",
+"o": 151,
+"u": 1
+},
+"food152": {
+"stay": "st_lf",
+"name": "Arenal Puesta del Sol",
+"link": "https://www.arenalpuestadelsol.com/",
+"notes": "Volcano view. Book.",
+"area": "La Fortuna",
+"lat": null,
+"lng": null,
+"type": "food",
+"id": "food152",
+"o": 152,
+"u": 1
+},
+"sp_hampton": {
+"id": "sp_hampton",
+"date": "2026-10-13",
+"what": "Hampton by Hilton SJO, night 1",
+"amount": 1305,
+"cur": "SEK",
+"who": "Simon",
+"cat": "hotel",
+"type": "spend",
+"o": 152,
+"u": 1
+},
+"sp_car": {
+"id": "sp_car",
+"date": "2026-10-13",
+"what": "Vamos car rental, 14 days (paid by Simon, assumed)",
+"amount": 1211.18,
+"cur": "USD",
+"who": "Simon",
+"cat": "car",
+"type": "spend",
+"o": 153,
+"u": 1
+}
+}
+}

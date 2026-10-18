@@ -30,8 +30,8 @@
 }
 },
 "day2": {
-"title": "Car → La Fortuna",
-"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). Drive to La Fortuna, arrive about 16:00.",
+"title": "Car → Starbucks farm → La Fortuna",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight.",
 "wx": {
 "kind": "typical",
 "place": "La Fortuna",
@@ -594,244 +594,250 @@
 "sp_car": {
 "auto": true
 },
-"question135": {
-"del": true
+"t_alsacia": {
+"auto": true
 },
-"todo75": {
-"del": true
+"todo_t_alsacia": {
+"auto": true
 },
-"tour58": {
-"del": true
-},
-"fuel39": {
-"del": true
-},
-"fuel45": {
-"del": true
-},
-"todo76": {
-"del": true
-},
-"fuel42": {
-"del": true
-},
-"food161": {
-"del": true
-},
-"flight51": {
-"del": true
-},
-"todo82": {
-"del": true
-},
-"todo72": {
-"del": true
-},
-"food162": {
-"del": true
-},
-"todo69": {
-"del": true
-},
-"tour54": {
-"del": true
-},
-"todo89": {
-"del": true
-},
-"food155": {
-"del": true
-},
-"info60": {
-"del": true
-},
-"fuel28": {
-"del": true
-},
-"info54": {
-"del": true
-},
-"fuel33": {
-"del": true
-},
-"fuel25": {
-"del": true
-},
-"food166": {
-"del": true
-},
-"place150": {
-"del": true
-},
-"fuel41": {
-"del": true
-},
-"question130": {
-"del": true
-},
-"food154": {
-"del": true
-},
-"fuel38": {
-"del": true
-},
-"todo74": {
-"del": true
-},
-"todo78": {
-"del": true
-},
-"pack107": {
-"del": true
-},
-"todo73": {
-"del": true
-},
-"question136": {
-"del": true
-},
-"question134": {
-"del": true
-},
-"food157": {
-"del": true
-},
-"question129": {
-"del": true
-},
-"tour56": {
-"del": true
-},
-"todo71": {
-"del": true
-},
-"st_ma": {
-"del": true
-},
-"food163": {
-"del": true
-},
-"fuel37": {
-"del": true
-},
-"fuel40": {
-"del": true
-},
-"fuel44": {
-"del": true
-},
-"pack98": {
+"food156": {
 "del": true
 },
 "fuel35": {
 "del": true
 },
-"L7": {
+"st_ma": {
 "del": true
 },
-"st_sm": {
-"del": true
-},
-"fuel34": {
-"del": true
-},
-"fuel43": {
-"del": true
-},
-"st_mv": {
+"tour54": {
 "del": true
 },
 "todo80": {
 "del": true
 },
-"food165": {
+"food159": {
 "del": true
 },
-"tour57": {
+"fuel43": {
 "del": true
 },
-"L8": {
+"tour56": {
 "del": true
 },
-"todo77": {
+"info60": {
 "del": true
 },
-"fuel29": {
-"del": true
-},
-"fuel30": {
-"del": true
-},
-"question137": {
-"del": true
-},
-"fuel36": {
-"del": true
-},
-"fuel47": {
-"del": true
-},
-"good68": {
-"del": true
-},
-"fuel26": {
-"del": true
-},
-"food160": {
-"del": true
-},
-"todo79": {
-"del": true
-},
-"fuel46": {
-"del": true
-},
-"question138": {
-"del": true
-},
-"pack129": {
-"del": true
-},
-"food153": {
-"del": true
-},
-"tour55": {
-"del": true
-},
-"fuel27": {
-"del": true
-},
-"food158": {
-"del": true
-},
-"st_uv": {
-"del": true
-},
-"info61": {
-"del": true
-},
-"good63": {
-"del": true
-},
-"pack105": {
+"fuel34": {
 "del": true
 },
 "tour59": {
 "del": true
 },
-"food156": {
+"st_sm": {
 "del": true
 },
-"food159": {
+"fuel42": {
 "del": true
 },
-"food164": {
+"todo75": {
+"del": true
+},
+"todo72": {
+"del": true
+},
+"fuel30": {
+"del": true
+},
+"fuel26": {
+"del": true
+},
+"tour58": {
+"del": true
+},
+"food162": {
+"del": true
+},
+"fuel44": {
+"del": true
+},
+"fuel40": {
+"del": true
+},
+"todo71": {
+"del": true
+},
+"question135": {
+"del": true
+},
+"fuel28": {
+"del": true
+},
+"todo79": {
+"del": true
+},
+"L7": {
 "del": true
 },
 "fuel32": {
 "del": true
 },
+"food153": {
+"del": true
+},
+"food158": {
+"del": true
+},
+"fuel45": {
+"del": true
+},
+"pack105": {
+"del": true
+},
+"food157": {
+"del": true
+},
+"pack107": {
+"del": true
+},
+"food165": {
+"del": true
+},
+"todo82": {
+"del": true
+},
+"fuel36": {
+"del": true
+},
+"question137": {
+"del": true
+},
+"question130": {
+"del": true
+},
+"tour55": {
+"del": true
+},
+"todo76": {
+"del": true
+},
+"food163": {
+"del": true
+},
+"food166": {
+"del": true
+},
+"info61": {
+"del": true
+},
+"st_mv": {
+"del": true
+},
+"fuel46": {
+"del": true
+},
+"todo77": {
+"del": true
+},
+"todo74": {
+"del": true
+},
+"fuel29": {
+"del": true
+},
+"todo73": {
+"del": true
+},
+"good63": {
+"del": true
+},
+"pack129": {
+"del": true
+},
+"fuel39": {
+"del": true
+},
+"fuel27": {
+"del": true
+},
+"place150": {
+"del": true
+},
+"L8": {
+"del": true
+},
+"flight51": {
+"del": true
+},
+"good68": {
+"del": true
+},
+"fuel33": {
+"del": true
+},
+"food154": {
+"del": true
+},
+"fuel25": {
+"del": true
+},
+"fuel47": {
+"del": true
+},
+"food155": {
+"del": true
+},
+"todo69": {
+"del": true
+},
+"tour57": {
+"del": true
+},
+"fuel41": {
+"del": true
+},
+"question138": {
+"del": true
+},
+"todo78": {
+"del": true
+},
+"question136": {
+"del": true
+},
+"food161": {
+"del": true
+},
+"todo89": {
+"del": true
+},
+"question129": {
+"del": true
+},
+"food164": {
+"del": true
+},
+"food160": {
+"del": true
+},
+"st_uv": {
+"del": true
+},
+"pack98": {
+"del": true
+},
+"question134": {
+"del": true
+},
+"fuel37": {
+"del": true
+},
+"info54": {
+"del": true
+},
 "fuel31": {
+"del": true
+},
+"fuel38": {
 "del": true
 }
 }
@@ -848,8 +854,8 @@
 "id": "m5-draftD2",
 "patch": {
 "day2": {
-"title": "Car → La Fortuna",
-"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). Drive to La Fortuna, arrive about 16:00.",
+"title": "Car → Starbucks farm → La Fortuna",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight.",
 "wx": {
 "kind": "typical",
 "place": "La Fortuna",
@@ -1024,10 +1030,11 @@
 "lng": -82.717119
 },
 "L1": {
-"route": "SJO → La Fortuna",
-"time": "3 h 30",
+"route": "SJO → Hacienda Alsacia → La Fortuna",
+"km": 128,
+"time": "4 h",
 "leaveBy": "12:15",
-"notes": ""
+"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 107 km / 3 h 15 to La Fortuna (mountain roads, slow). Leave the farm by 14:45."
 },
 "fuel_c1": {
 "auto": true
@@ -1182,64 +1189,94 @@
 "lat": 10.2993,
 "lng": -85.8371
 },
-"todo_st_sm": {
+"t_alsacia": {
+"auto": true
+},
+"todo_t_alsacia": {
+"auto": true
+},
+"fuel_c18": {
 "del": true
 },
-"question135": {
+"food163": {
 "del": true
 },
-"todo_st_mv": {
+"food156": {
 "del": true
 },
-"question130": {
+"st_at": {
+"del": true
+},
+"st_ma": {
+"del": true
+},
+"food155": {
 "del": true
 },
 "L7": {
 "del": true
 },
-"food154": {
+"todo_st_at": {
 "del": true
 },
-"st_sm": {
-"del": true
-},
-"fuel_c13": {
-"del": true
-},
-"fuel_c18": {
-"del": true
-},
-"food153": {
-"del": true
-},
-"pack107": {
-"del": true
-},
-"st_mv": {
-"del": true
-},
-"fuel_c16": {
-"del": true
-},
-"t_coop": {
-"del": true
-},
-"question134": {
-"del": true
-},
-"food158": {
-"del": true
-},
-"food157": {
-"del": true
-},
-"fuel_c17": {
+"todo_st_sm": {
 "del": true
 },
 "todo_t_dj": {
 "del": true
 },
-"todo_st_at": {
+"todo_st_ma": {
+"del": true
+},
+"food159": {
+"del": true
+},
+"t_dj": {
+"del": true
+},
+"st_mv": {
+"del": true
+},
+"todo_t_tab": {
+"del": true
+},
+"food153": {
+"del": true
+},
+"food158": {
+"del": true
+},
+"fuel_c13": {
+"del": true
+},
+"fuel_c15": {
+"del": true
+},
+"t_als": {
+"del": true
+},
+"todo_st_mv": {
+"del": true
+},
+"pack105": {
+"del": true
+},
+"good63": {
+"del": true
+},
+"fuel_c17": {
+"del": true
+},
+"food157": {
+"del": true
+},
+"pack107": {
+"del": true
+},
+"todo_c20": {
+"del": true
+},
+"st_sm": {
 "del": true
 },
 "food165": {
@@ -1248,65 +1285,62 @@
 "question129": {
 "del": true
 },
-"t_als": {
-"del": true
-},
-"st_ma": {
-"del": true
-},
-"good63": {
-"del": true
-},
-"fuel_c19": {
-"del": true
-},
-"fuel_c14": {
-"del": true
-},
-"food155": {
-"del": true
-},
-"food163": {
-"del": true
-},
-"t_tab": {
-"del": true
-},
-"pack105": {
-"del": true
-},
-"todo_st_ma": {
+"question130": {
 "del": true
 },
 "question137": {
 "del": true
 },
-"t_dj": {
-"del": true
-},
-"food156": {
-"del": true
-},
-"food159": {
-"del": true
-},
 "food164": {
 "del": true
 },
-"todo_t_tab": {
+"fuel_c16": {
 "del": true
 },
-"todo_c20": {
+"t_tab": {
+"del": true
+},
+"question134": {
+"del": true
+},
+"fuel_c19": {
+"del": true
+},
+"t_coop": {
+"del": true
+},
+"food154": {
+"del": true
+},
+"question135": {
+"del": true
+},
+"fuel_c14": {
 "del": true
 },
 "todo_t_coop": {
 "del": true
+}
+}
 },
-"fuel_c15": {
-"del": true
+{
+"id": "m6-alsacia",
+"patch": {
+"day2": {
+"title": "Car → Starbucks farm → La Fortuna",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight."
 },
-"st_at": {
-"del": true
+"L1": {
+"route": "SJO → Hacienda Alsacia → La Fortuna",
+"km": 128,
+"time": "4 h",
+"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 107 km / 3 h 15 to La Fortuna (mountain roads, slow). Leave the farm by 14:45."
+},
+"t_alsacia": {
+"auto": true
+},
+"todo_t_alsacia": {
+"auto": true
 }
 }
 }
@@ -1338,8 +1372,8 @@
 "day": 2,
 "date": "2026-10-29",
 "label": "Thu 29 Oct",
-"title": "Car → La Fortuna",
-"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). Drive to La Fortuna, arrive about 16:00.",
+"title": "Car → Starbucks farm → La Fortuna",
+"plan": "12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -1871,11 +1905,11 @@
 "id": "L1",
 "name": "L1",
 "day": 2,
-"route": "SJO → La Fortuna",
-"km": 124,
-"time": "3 h 30",
+"route": "SJO → Hacienda Alsacia → La Fortuna",
+"km": 128,
+"time": "4 h",
 "leaveBy": "12:15",
-"notes": "",
+"notes": "Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 107 km / 3 h 15 to La Fortuna (mountain roads, slow). Leave the farm by 14:45.",
 "type": "leg",
 "o": 26,
 "u": 1
@@ -3415,6 +3449,35 @@
 "cat": "car",
 "type": "spend",
 "o": 153,
+"u": 1
+},
+"t_alsacia": {
+"id": "t_alsacia",
+"name": "Hacienda Alsacia (Starbucks coffee farm), Poás",
+"day": 2,
+"when": "Thu 29 Oct ~13:00 (tours 08:00–15:00)",
+"length": "1 h 30 (+ café)",
+"price": "about 30–36 USD pp",
+"status": "To book",
+"notes": "Real coffee farm on Poás volcano: coffee trees, nursery, wet mill, roaster + tasting. Visitor centre 8–16, café to 18. About 45 min from SJO. Book online: https://starbuckscoffeefarm.com/en/",
+"lat": 10.1013,
+"lng": -84.2009,
+"link": "",
+"type": "tour",
+"o": 154,
+"u": 1
+},
+"todo_t_alsacia": {
+"id": "todo_t_alsacia",
+"name": "Hacienda Alsacia (Starbucks farm) tour, Thu 29 Oct ~13:00",
+"done": false,
+"status": "To book",
+"link": "t_alsacia",
+"ref": "",
+"price": "",
+"notes": "",
+"type": "todo",
+"o": 155,
 "u": 1
 }
 }

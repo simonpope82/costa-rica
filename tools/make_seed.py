@@ -10,7 +10,7 @@ WX=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"wx.js
 RT=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","route.json")))
 fmt=lambda m:(f"{m//60} h {m%60:02d}" if m%60 else f"{m//60} h")
 D=[("Wed 28 Oct","Arrive · taxi","Land 17:30. Taxi to the Hampton (at the airport). No car today. Early night."),
-("Thu 29 Oct","Car → La Fortuna","12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). Drive to La Fortuna, arrive about 16:00."),
+("Thu 29 Oct","Car → Starbucks farm → La Fortuna","12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to La Fortuna (about 3 h 15), arrive about 18:00. Dark about 17:30: an earlier car = arrive in daylight."),
 ("Fri 30 Oct","Volcano + waterfall + hot springs","Full-day tour (10 h, pickup from the hotel): La Fortuna waterfall, Maleku lunch, Arenal volcano walk, hot springs. No driving."),
 ("Sat 31 Oct","Río Celeste (maybe)","Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs."),
 ("Sun 1 Nov","Don Juan coffee + chocolate","Don Juan Arenal tour (2 h; 09:00, 10:00, 14:00 or 15:00). Afternoon: hot springs. No driving."),
@@ -43,7 +43,7 @@ for sid,n,a,f,t,st,no,ph,bk,g in S:
     la,lo=(G[g] if g else (None,None))
     if sid=="st_rb": la,lo=10.04566,-84.15062
     add("stay",id=sid,name=n,area=a,address=("Airport Blvd 1, Alajuela" if sid=="st_hampton" else ""),checkin=("Wed 28 Oct" if sid=="st_hampton" else ""),checkout=("Thu 29 Oct" if sid=="st_hampton" else ""),price=("SEK 1,305 (prepaid)" if sid=="st_hampton" else ""),fromDay=f,toDay=t,status=st,notes=no,phone=ph,backupOf=bk or "",ref="",lat=la,lng=lo,link="",gpsAsked=False,parkingAsked=False)
-L=[(2,"L1","SJO → La Fortuna","12:15",[("Fill up near SJO (to check)",None),("La Fortuna (on arrival, to check)",None)],""),
+L=[(2,"L1","SJO → Hacienda Alsacia → La Fortuna","12:15",[("Fill up near SJO (to check)",None),("La Fortuna (on arrival, to check)",None)],"Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 107 km / 3 h 15 to La Fortuna (mountain roads, slow). Leave the farm by 14:45."),
 (6,"L2","La Fortuna → Tamarindo","08:00",[("La Fortuna (leave full)",None),("Liberia (to check)",None)],"Long drive."),
 (8,"L3","Tamarindo → Fiesta Resort (Puntarenas)","09:00",[("Tamarindo (leave full)",None),("Nicoya or Ruta 1 (to check)",None)],""),
 (9,"L4","Fiesta Resort → La Pavona (via San José + Ruta 32)","07:00",[("Leave full (to check)",None),("Guápiles (to check)",None)],"Car stays at La Pavona secure parking (about 20–23 USD/night). Boats about 07:00, 09:15, 11:15, 12:45, 15:15, 16:15."),
@@ -118,6 +118,9 @@ town={"st_lf":"La Fortuna"}
 for s,n,u,no in F: add("food",stay=s,name=n,link=u,notes=no,area=town[s],lat=None,lng=None)
 add("spend",id="sp_hampton",date="2026-10-13",what="Hampton by Hilton SJO, night 1",amount=1305,cur="SEK",who="Simon",cat="hotel")
 add("spend",id="sp_car",date="2026-10-13",what="Vamos car rental, 14 days (paid by Simon, assumed)",amount=1211.18,cur="USD",who="Simon",cat="car")
+# Hacienda Alsacia on day 2 (Simon, 18 Oct). Added at the end so other items keep their order.
+add("tour",id="t_alsacia",name="Hacienda Alsacia (Starbucks coffee farm), Poás",day=2,when="Thu 29 Oct ~13:00 (tours 08:00–15:00)",length="1 h 30 (+ café)",price="about 30–36 USD pp",status="To book",notes="Real coffee farm on Poás volcano: coffee trees, nursery, wet mill, roaster + tasting. Visitor centre 8–16, café to 18. About 45 min from SJO. Book online: https://starbuckscoffeefarm.com/en/",lat=10.1013,lng=-84.2009,link="")
+add("todo",id="todo_t_alsacia",name="Hacienda Alsacia (Starbucks farm) tour, Thu 29 Oct ~13:00",done=False,status="To book",link="t_alsacia",ref="",price="",notes="")
 # Colombia removed (Simon, 13 Oct)
 items[:]=[i for i in items if "Colombia" not in json.dumps(i,ensure_ascii=False)]
 here=os.path.dirname(os.path.abspath(__file__))
@@ -155,5 +158,14 @@ for k,it in final.items():
         ch={f:v for f,v in it.items() if (f not in KEEP or (f=="notes" and it["type"]=="leg")) and b.get(f)!=v}
         if ch: p5[k]=ch
 for k in set(C)-set(final): p5[k]={"del":True}
-json.dump({"v":1,"meta":meta,"mig":[{"id":"m3-draftC","patch":patch},{"id":"m4-hampton-ok","patch":{"st_hampton":{"notes":final["st_hampton"]["notes"]}}},{"id":"m5-draftD2","patch":p5}],"items":final},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
+D2=json.load(open(os.path.join(here,"seed-D2.json")))["items"];p6={}
+for k,it in final.items():
+    b=D2.get(k)
+    if not b or b.get("type")!=it["type"] or b.get("name")!=it.get("name"): p6[k]={"auto":True}
+    else:
+        ch={f:v for f,v in it.items() if (f not in KEEP or (f=="notes" and it["type"]=="leg")) and b.get(f)!=v}
+        if ch: p6[k]=ch
+for k in set(D2)-set(final): p6[k]={"del":True}
+print("m6 patch:",json.dumps(p6,ensure_ascii=False))
+json.dump({"v":1,"meta":meta,"mig":[{"id":"m3-draftC","patch":patch},{"id":"m4-hampton-ok","patch":{"st_hampton":{"notes":final["st_hampton"]["notes"]}}},{"id":"m5-draftD2","patch":p5},{"id":"m6-alsacia","patch":p6}],"items":final},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
 print(len(final),"items;",len(patch),"patches;",sum(1 for p in patch.values() if p.get("del")),"deletes")
