@@ -10,7 +10,7 @@ WX=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"wx.js
 RT=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","route.json")))
 fmt=lambda m:(f"{m//60} h {m%60:02d}" if m%60 else f"{m//60} h")
 D=[("Wed 28 Oct","Arrive · taxi","Land 17:30. Taxi to the Hampton (at the airport). No car today. Early night."),
-("Thu 29 Oct","Car → Starbucks farm → La Fortuna","12:00 pick up the car (Vamos desk, SJO airport; Vamos may deliver earlier, ask). 13:00 Hacienda Alsacia (Starbucks coffee farm) tour, 1 h 30, to book. Leave by 14:45. Drive to The Springs Resort (La Fortuna, about 3 h 30), arrive about 18:15. Dark about 17:30: an earlier car = arrive in daylight."),
+("Thu 29 Oct","Car → Poás volcano → Starbucks farm → The Springs","08:30 Vamos brings the car to the Hampton (hotel delivery 9 USD, to ask Vamos). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."),
 ("Fri 30 Oct","Volcano + waterfall + hot springs","Full-day tour (10 h, pickup from the hotel): La Fortuna waterfall, Maleku lunch, Arenal volcano walk, hot springs. No driving."),
 ("Sat 31 Oct","Río Celeste (maybe)","Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs."),
 ("Sun 1 Nov","Don Juan coffee + chocolate","Don Juan Arenal tour (2 h; 09:00, 10:00, 14:00 or 15:00). Afternoon: hot springs. No driving."),
@@ -44,7 +44,7 @@ for sid,n,a,f,t,st,no,ph,bk,g in S:
     if sid=="st_rb": la,lo=10.04566,-84.15062
     if sid=="st_lf": la,lo=10.5191,-84.6883
     add("stay",id=sid,name=n,area=a,address=("Airport Blvd 1, Alajuela" if sid=="st_hampton" else ""),checkin={"st_hampton":"Wed 28 Oct","st_lf":"Thu 29 Oct"}.get(sid,""),checkout={"st_hampton":"Thu 29 Oct","st_lf":"Sat 31 Oct"}.get(sid,""),price={"st_hampton":"SEK 1,305 (prepaid)","st_lf":"NOK 7,761.16 (paid, non-refundable)"}.get(sid,""),fromDay=f,toDay=t,status=st,notes=no,phone=ph,backupOf=bk or "",ref="",lat=la,lng=lo,link="",gpsAsked=False,parkingAsked=False)
-L=[(2,"L1","SJO → Hacienda Alsacia → The Springs (La Fortuna)","12:15",[("Fill up near SJO (to check)",None),("La Fortuna (on arrival, to check)",None)],"Stop: Hacienda Alsacia (Starbucks farm), about 20 km / 45 min from SJO. Then about 119 km / 3 h 30 to The Springs Resort (mountain roads, slow). Leave the farm by 14:45."),
+L=[(2,"L1","Hampton → Poás volcano → Hacienda Alsacia → The Springs","08:45",[("Fill up near SJO (to check)",None),("La Fortuna (on arrival, to check)",None)],"Hampton → Poás crater about 36 km / 1 h–1 h 30. Poás → Hacienda Alsacia about 22 km / 45 min–1 h. Alsacia → The Springs about 119 km / 3 h 30 (mountain roads, slow). Tight: leave the farm by 13:45."),
 (6,"L2","La Fortuna → Tamarindo","08:00",[("La Fortuna (leave full)",None),("Liberia (to check)",None)],"Long drive."),
 (8,"L3","Tamarindo → Fiesta Resort (Puntarenas)","09:00",[("Tamarindo (leave full)",None),("Nicoya or Ruta 1 (to check)",None)],""),
 (9,"L4","Fiesta Resort → La Pavona (via San José + Ruta 32)","07:00",[("Leave full (to check)",None),("Guápiles (to check)",None)],"Car stays at La Pavona secure parking (about 20–23 USD/night). Boats about 07:00, 09:15, 11:15, 12:45, 15:15, 16:15."),
@@ -56,7 +56,7 @@ for d,lid,r,lb,fs,no in L:
 for f in [("Wed 28 Oct","KL 1198","Oslo → Amsterdam","09:30","11:25"),("Wed 28 Oct","KL 759","Amsterdam → San José (SJO)","12:40","17:30"),
 ("Wed 11 Nov","KL 760","San José → Amsterdam","19:30","12:50 Thu 12 Nov"),("Thu 12 Nov","KL 1203","Amsterdam → Oslo","14:20","16:10")]:
     add("flight",date=f[0],name=f[1],route=f[2],leaves=f[3],lands=f[4],status="Booked")
-add("car",id="car",name="Rental car: Full Size SUV 4x4",company="Vamos Rent-A-Car",ref="",status="Booked",pickup="San José International Airport (SJO), Thu 29 Oct 2026, 12:00",ret="As booked: SJO, Thu 12 Nov 2026, 12:00",warn="⚠️ Return change asked: Wed 11 Nov 17:00 at SJO. Email sent, waiting for Vamos.",
+add("car",id="car",name="Rental car: Full Size SUV 4x4",company="Vamos Rent-A-Car",ref="",status="Booked",pickup="As booked: San José International Airport (SJO), Thu 29 Oct 2026, 12:00 (Vamos wrote 10 Oct by mistake: waiting for Vamos). Plan: 08:30 delivery to the Hampton (9 USD), to ask Vamos.",ret="As booked: SJO, Thu 12 Nov 2026, 12:00",warn="⚠️ Return change asked: Wed 11 Nov 17:00 at SJO. Email sent, waiting for Vamos.",
  days="14 days as booked (13 needed)",car="Full Size SUV 4x4, 2500cc, automatic, petrol. Check 4 big bags fit.",
  insurance="SLI/TPL is required; a credit card can't replace it. Ask for an all-in price with SLI. CDW can sometimes be skipped with a card letter.",
  watch="Returning after 18:30 can cost an extra day. Check grace period. Ask about Quick Pass for tolls. Add Stian as driver?",
@@ -120,8 +120,11 @@ for s,n,u,no in F: add("food",stay=s,name=n,link=u,notes=no,area=town[s],lat=Non
 add("spend",id="sp_hampton",date="2026-10-13",what="Hampton by Hilton SJO, night 1",amount=1305,cur="SEK",who="Simon",cat="hotel")
 add("spend",id="sp_car",date="2026-10-13",what="Vamos car rental, 14 days (paid by Simon, assumed)",amount=1211.18,cur="USD",who="Simon",cat="car")
 # Hacienda Alsacia on day 2 (Simon, 18 Oct). Added at the end so other items keep their order.
-add("tour",id="t_alsacia",name="Hacienda Alsacia (Starbucks coffee farm), Poás",day=2,when="Thu 29 Oct ~13:00 (tours 08:00–15:00)",length="1 h 30 (+ café)",price="about 30–36 USD pp",status="To book",notes="Real coffee farm on Poás volcano: coffee trees, nursery, wet mill, roaster + tasting. Visitor centre 8–16, café to 18. About 45 min from SJO. Book online: https://starbuckscoffeefarm.com/en/",lat=10.1013,lng=-84.2009,link="")
-add("todo",id="todo_t_alsacia",name="Hacienda Alsacia (Starbucks farm) tour, Thu 29 Oct ~13:00",done=False,status="To book",link="t_alsacia",ref="",price="",notes="")
+add("tour",id="t_alsacia",name="Hacienda Alsacia (Starbucks coffee farm), Poás",day=2,when="Thu 29 Oct ~11:30 (tours 08:00–15:00)",length="1 h 30 + 30 min tasting",price="about 30–36 USD pp",status="To book",notes="Real coffee farm on Poás volcano: coffee trees, nursery, wet mill, roaster + tasting. Visitor centre 8–16, café to 18. About 45 min from Poás. Book online: https://starbuckscoffeefarm.com/en/",lat=10.1013,lng=-84.2009,link="")
+add("tour",id="t_poas",name="Poás Volcano National Park (crater)",day=2,when="Thu 29 Oct ~09:30 (fixed slot)",length="about 1 h",price="16.95 USD pp + parking about ₡2,000",status="To book",notes="Tickets ONLY online (SINAC SICORE), fixed time slot. No refunds, even for fog. Open 08:00–16:00, last entry 14:00. Mornings are clearer. https://serviciosenlinea.sinac.go.cr/",lat=10.1960,lng=-84.2316,link="")
+add("todo",id="todo_t_poas",name="Poás volcano tickets (SINAC online), Thu 29 Oct ~09:30 slot",done=False,status="To book",link="t_poas",ref="",price="",notes="")
+add("todo",id="todo_vamos_delivery",name="Ask Vamos: deliver the car to the Hampton Thu 29 Oct 08:30 (9 USD). Email about Wed 21 Oct",done=False,status="Question",link="",ref="",price="",notes="https://vamosrentacar.com/faq/")
+add("todo",id="todo_t_alsacia",name="Hacienda Alsacia (Starbucks farm) tour, Thu 29 Oct ~11:30",done=False,status="To book",link="t_alsacia",ref="",price="",notes="")
 # The Springs booked for 29-30 Oct (Simon, 18 Oct); 31 Oct-1 Nov still to book. o=17.5 keeps it next to st_lf.
 add("stay",id="st_lf2",name="Not chosen (hotel 2)",area="La Fortuna / Arenal",address="",checkin="Sat 31 Oct",checkout="Mon 2 Nov",price="",fromDay=4,toDay=5,status="To book",notes="2 nights: Sat 31 Oct + Sun 1 Nov. The Springs covers only 29 + 30 Oct.",phone="",backupOf="",ref="",lat=10.47168,lng=-84.64444,link="",gpsAsked=False,parkingAsked=False)["o"]=17.5
 add("todo",id="todo_st_lf2",name="Hotel 31 Oct – 1 Nov (2 nights): La Fortuna, hotel 2",done=False,status="To book",link="st_lf2",ref="",price="",notes="")["o"]=71.5
@@ -181,5 +184,14 @@ for k,it in final.items():
         if ch: p7[k]=ch
 for k in set(M6)-set(final): p7[k]={"del":True}
 print("m7 patch:",json.dumps(p7,ensure_ascii=False))
-json.dump({"v":1,"meta":meta,"mig":[{"id":"m3-draftC","patch":patch},{"id":"m4-hampton-ok","patch":{"st_hampton":{"notes":final["st_hampton"]["notes"]}}},{"id":"m5-draftD2","patch":p5},{"id":"m6-alsacia","patch":p6},{"id":"m7-springs","patch":p7}],"items":final},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
+M7=json.load(open(os.path.join(here,"seed-m7.json")))["items"];p8={}
+for k,it in final.items():
+    b=M7.get(k)
+    if not b or b.get("type")!=it["type"] or b.get("name")!=it.get("name"): p8[k]={"auto":True}
+    else:
+        ch={f:v for f,v in it.items() if (f not in KEEP or (f=="notes" and it["type"] in ("leg","stay","tour"))) and b.get(f)!=v}
+        if ch: p8[k]=ch
+for k in set(M7)-set(final): p8[k]={"del":True}
+print("m8 patch:",json.dumps(p8,ensure_ascii=False))
+json.dump({"v":1,"meta":meta,"mig":[{"id":"m3-draftC","patch":patch},{"id":"m4-hampton-ok","patch":{"st_hampton":{"notes":final["st_hampton"]["notes"]}}},{"id":"m5-draftD2","patch":p5},{"id":"m6-alsacia","patch":p6},{"id":"m7-springs","patch":p7},{"id":"m8-poas","patch":p8}],"items":final},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
 print(len(final),"items;",len(patch),"patches;",sum(1 for p in patch.values() if p.get("del")),"deletes")
