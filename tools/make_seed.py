@@ -10,7 +10,7 @@ WX=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"wx.js
 RT=json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)),"..","route.json")))
 fmt=lambda m:(f"{m//60} h {m%60:02d}" if m%60 else f"{m//60} h")
 D=[("Wed 28 Oct","Arrive · taxi","Land 17:30. Taxi to the Hampton (at the airport). No car today. Early night."),
-("Thu 29 Oct","Car → Poás volcano → Starbucks farm → The Springs","08:30 Vamos brings the car to the Hampton (hotel delivery 9 USD, to ask Vamos). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."),
+("Thu 29 Oct","Car → Poás volcano → Starbucks farm → The Springs","08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."),
 ("Fri 30 Oct","Volcano + waterfall + hot springs","Full-day tour (10 h, pickup from the hotel): La Fortuna waterfall, Maleku lunch, Arenal volcano walk, hot springs. No driving."),
 ("Sat 31 Oct","Río Celeste (maybe)","Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs."),
 ("Sun 1 Nov","Don Juan coffee + chocolate","Don Juan Arenal tour (2 h; 09:00, 10:00, 14:00 or 15:00). Afternoon: hot springs. No driving."),
@@ -23,7 +23,7 @@ D=[("Wed 28 Oct","Arrive · taxi","Land 17:30. Taxi to the Hampton (at the airpo
 ("Sun 8 Nov","Ride The Rainforest","Horse ride on the beach + jungle (Ride The Rainforest, Punta Cocles). Book ahead."),
 ("Mon 9 Nov","Cahuita","Cahuita National Park (open every day 8–16; about 20 min drive). Beach."),
 ("Tue 10 Nov","Back to SJO","Long day: leave 07:00 (6 h 30). Ruta 32 over Braulio Carrillo. Fog + landslides possible."),
-("Wed 11 Nov","Fly home","Slow morning, pack. Fill up. Car back at SJO by 14:00 (saves a day) or 17:00 (change asked). Fly 19:30.")]
+("Wed 11 Nov","Fly home","Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30.")]
 for i,(d,t,p) in enumerate(D,1):
     w=WX[str(i)]
     add("day",id=f"day{i}",day=i,date=f"2026-{'10' if 'Oct' in d else '11'}-{int(d.split()[1]):02d}",label=d,title=t,plan=p,notes="",sunset="Dark about 17:15–17:30",
@@ -56,11 +56,11 @@ for d,lid,r,lb,fs,no in L:
 for f in [("Wed 28 Oct","KL 1198","Oslo → Amsterdam","09:30","11:25"),("Wed 28 Oct","KL 759","Amsterdam → San José (SJO)","12:40","17:30"),
 ("Wed 11 Nov","KL 760","San José → Amsterdam","19:30","12:50 Thu 12 Nov"),("Thu 12 Nov","KL 1203","Amsterdam → Oslo","14:20","16:10")]:
     add("flight",date=f[0],name=f[1],route=f[2],leaves=f[3],lands=f[4],status="Booked")
-add("car",id="car",name="Rental car: Full Size SUV 4x4",company="Vamos Rent-A-Car",ref="",status="Booked",pickup="As booked: San José International Airport (SJO), Thu 29 Oct 2026, 12:00 (Vamos wrote 10 Oct by mistake: waiting for Vamos). Plan: 08:30 delivery to the Hampton (9 USD), to ask Vamos.",ret="As booked: SJO, Thu 12 Nov 2026, 12:00",warn="⚠️ Return change asked: Wed 11 Nov 17:00 at SJO. Email sent, waiting for Vamos.",
- days="14 days as booked (13 needed)",car="Full Size SUV 4x4, 2500cc, automatic, petrol. Check 4 big bags fit.",
- insurance="SLI/TPL is required; a credit card can't replace it. Ask for an all-in price with SLI. CDW can sometimes be skipped with a card letter.",
+add("car",id="car",name="Rental car: Full Size SUV 4x4",company="Vamos Rent-A-Car",ref="",status="Booked",pickup="Thu 29 Oct 2026, 08:30. Vamos office, just across the street from the Hampton. Walk over (no delivery).",ret="Wed 11 Nov 2026, 17:00. San José airport (SJO).",warn="✅ Confirmed by Vamos 21 Oct. Changes: tell Vamos 72 h before pickup (by Mon 26 Oct).",
+ days="13 days",car="Full Size SUV (Azkarra or similar), automatic. Check 4 big bags fit.",
+ insurance="Full cover (included in the price).",
  watch="Returning after 18:30 can cost an extra day. Check grace period. Ask about Quick Pass for tolls. Add Stian as driver?",
- licence="Norwegian licence OK, no international permit. Carry passport.",price="$1,211.18 total",deposit="",phone="",lat=9.9939,lng=-84.2088,area="SJO airport (Juan Santamaría)")
+ licence="Norwegian licence OK, no international permit. Carry passport.",price="1,211.18 USD total (VAT included)",deposit="",phone="",lat=9.9939,lng=-84.2088,area="Vamos office, across from the Hampton (SJO)")
 add("info",name="Fuel prices",text="From 3 Oct 2026: Súper 764 CRC/L, Plus 91 719 CRC/L, Diesel 785 CRC/L, same at every station. One tank covers any single drive.")
 add("info",name="Tolls",text="Small, on Ruta 27 (e.g. Pozón 570 CRC, Atenas 750 CRC): card, cash or Quick Pass.")
 T=[("t_doka","Hacienda Doka, Sabanilla de Alajuela",None,"Option","1 h","28 USD (43 with lunch)","Idea","Old working wet mill + roaster.",10.09771,-84.20952),
@@ -80,7 +80,7 @@ for k,v in [("Entry","No visa for Norwegians, up to 180 days. May be asked for a
 ("Money","Colones (CRC). US dollars OK in tourist areas. Cards work almost everywhere."),("Day 1","Land in the dark. Taxi to the Hampton at the airport. Car on 29 Oct."),
 ("Waze","Download Waze offline areas or Google Maps offline maps before the trip.")]:
     add("good",name=k,text=v)
-B=[("Flights, ref on Flights screen",True,"Booked",None),("4x4 SUV (Vamos): 29 Oct 12:00 → return change to 11 Nov 17:00 asked. With SLI? Quick Pass, Stian as driver, 4 bags fit",True,"Booked","car"),
+B=[("Flights, ref on Flights screen",True,"Booked",None),("SUV (Vamos): Thu 29 Oct 08:30 → Wed 11 Nov 17:00 ✅ Full cover. Quick Pass, Stian as driver, 4 bags fit",True,"Booked","car"),
 ("Credit card coverage letter (only to skip CDW)",False,"To book",None),
 ("Hotel 28 Oct (1 night): Hampton by Hilton SJO Airport",True,"Booked","st_hampton"),
 ("Hotel 29–30 Oct (2 nights): The Springs Resort & Spa, La Fortuna",True,"Booked","st_lf"),
@@ -96,7 +96,7 @@ B=[("Flights, ref on Flights screen",True,"Booked",None),("4x4 SUV (Vamos): 29 O
 ("Some colones + card for tolls",False,"To book",None),("Ask each hotel for GPS location and safe parking",False,"To book",None),("Check in online for KL 760 (24 h before)",False,"To book",None),
 ("Check for an online arrival form for Costa Rica",False,"To book",None)]
 for n,d,s_,lk in B:
-    add("todo",id=("todo_"+lk if lk else None),name=n,done=d,status=s_,link=lk or "",ref="",price=("$1,211.18" if lk=="car" else ""),notes=("Return date: change to Wed 11 Nov 17:00 asked (email sent, waiting for Vamos)." if lk=="car" else ""))
+    add("todo",id=("todo_"+lk if lk else None),name=n,done=d,status=s_,link=lk or "",ref="",price=("$1,211.18" if lk=="car" else ""),notes=("Confirmed by Vamos 21 Oct. Changes: 72 h before pickup (by Mon 26 Oct)." if lk=="car" else ""))
 P={"Documents and money":["Passport (6+ months left is safest)","Norwegian driving licence (both, if Stian drives)","Credit card in the driver's name (for the car deposit)","Debit card + backup card","Some US dollars in cash","Card coverage letter (if skipping CDW)","Travel insurance details","E-ticket and booking refs (also offline on phone)","Copies of passport and licence (photo on phone + paper)","Yellow fever certificate (only if Colombia)"],
 "Tech":["Phone + charger","Power bank","Plug adapter for Costa Rica (US-type plugs, 120 V: check chargers say 100–240 V)","Car phone holder","Car USB charger + cable","Headphones","Head torch (night walks)"],
 "Clothes":["Rain jacket (October is the wettest month)","Warm layer / fleece (cool evenings, plane)","Long trousers (hiking, mosquitoes)","Light quick-dry shirts and shorts","Swimwear","Walking shoes or light hiking boots (mud)","Sandals / flip-flops","Cap or sun hat","Clothes for a nice dinner"],
@@ -118,12 +118,11 @@ F=[("st_lf","Don Rufino","https://donrufino.com/","Costa Rican, smart dinner. Bo
 town={"st_lf":"La Fortuna"}
 for s,n,u,no in F: add("food",stay=s,name=n,link=u,notes=no,area=town[s],lat=None,lng=None)
 add("spend",id="sp_hampton",date="2026-10-13",what="Hampton by Hilton SJO, night 1",amount=1305,cur="SEK",who="Simon",cat="hotel")
-add("spend",id="sp_car",date="2026-10-13",what="Vamos car rental, 14 days (paid by Simon, assumed)",amount=1211.18,cur="USD",who="Simon",cat="car")
+add("spend",id="sp_car",date="2026-10-13",what="Vamos car rental, 13 days, full cover (paid by Simon, assumed)",amount=1211.18,cur="USD",who="Simon",cat="car")
 # Hacienda Alsacia on day 2 (Simon, 18 Oct). Added at the end so other items keep their order.
 add("tour",id="t_alsacia",name="Hacienda Alsacia (Starbucks coffee farm), Poás",day=2,when="Thu 29 Oct ~11:30 (tours 08:00–15:00)",length="1 h 30 + 30 min tasting",price="about 30–36 USD pp",status="To book",notes="Real coffee farm on Poás volcano: coffee trees, nursery, wet mill, roaster + tasting. Visitor centre 8–16, café to 18. About 45 min from Poás. Book online: https://starbuckscoffeefarm.com/en/",lat=10.1013,lng=-84.2009,link="")
 add("tour",id="t_poas",name="Poás Volcano National Park (crater)",day=2,when="Thu 29 Oct ~09:30 (fixed slot)",length="about 1 h",price="16.95 USD pp + parking about ₡2,000",status="To book",notes="Tickets ONLY online (SINAC SICORE), fixed time slot. No refunds, even for fog. Open 08:00–16:00, last entry 14:00. Mornings are clearer. https://serviciosenlinea.sinac.go.cr/",lat=10.1960,lng=-84.2316,link="")
 add("todo",id="todo_t_poas",name="Poás volcano tickets (SINAC online), Thu 29 Oct ~09:30 slot",done=False,status="To book",link="t_poas",ref="",price="",notes="")
-add("todo",id="todo_vamos_delivery",name="Ask Vamos: deliver the car to the Hampton Thu 29 Oct 08:30 (9 USD). Email about Wed 21 Oct",done=False,status="Question",link="",ref="",price="",notes="https://vamosrentacar.com/faq/")
 add("todo",id="todo_t_alsacia",name="Hacienda Alsacia (Starbucks farm) tour, Thu 29 Oct ~11:30",done=False,status="To book",link="t_alsacia",ref="",price="",notes="")
 # The Springs booked for 29-30 Oct (Simon, 18 Oct); 31 Oct-1 Nov still to book. o=17.5 keeps it next to st_lf.
 add("stay",id="st_lf2",name="Not chosen (hotel 2)",area="La Fortuna / Arenal",address="",checkin="Sat 31 Oct",checkout="Mon 2 Nov",price="",fromDay=4,toDay=5,status="To book",notes="2 nights: Sat 31 Oct + Sun 1 Nov. The Springs covers only 29 + 30 Oct.",phone="",backupOf="",ref="",lat=10.47168,lng=-84.64444,link="",gpsAsked=False,parkingAsked=False)["o"]=17.5
@@ -193,5 +192,14 @@ for k,it in final.items():
         if ch: p8[k]=ch
 for k in set(M7)-set(final): p8[k]={"del":True}
 print("m8 patch:",json.dumps(p8,ensure_ascii=False))
-json.dump({"v":1,"meta":meta,"mig":[{"id":"m3-draftC","patch":patch},{"id":"m4-hampton-ok","patch":{"st_hampton":{"notes":final["st_hampton"]["notes"]}}},{"id":"m5-draftD2","patch":p5},{"id":"m6-alsacia","patch":p6},{"id":"m7-springs","patch":p7},{"id":"m8-poas","patch":p8}],"items":final},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
+M8=json.load(open(os.path.join(here,"seed-m8.json")))["items"];p9={}
+for k,it in final.items():
+    b=M8.get(k)
+    if not b or b.get("type")!=it["type"] or b.get("name")!=it.get("name"): p9[k]={"auto":True}
+    else:
+        ch={f:v for f,v in it.items() if (f not in KEEP or (f=="notes" and it["type"] in ("leg","stay","tour"))) and b.get(f)!=v}
+        if ch: p9[k]=ch
+for k in set(M8)-set(final): p9[k]={"del":True}
+print("m9 patch:",json.dumps(p9,ensure_ascii=False))
+json.dump({"v":1,"meta":meta,"mig":[{"id":"m3-draftC","patch":patch},{"id":"m4-hampton-ok","patch":{"st_hampton":{"notes":final["st_hampton"]["notes"]}}},{"id":"m5-draftD2","patch":p5},{"id":"m6-alsacia","patch":p6},{"id":"m7-springs","patch":p7},{"id":"m8-poas","patch":p8},{"id":"m9-vamos-ok","patch":p9}],"items":final},open(sys.argv[1],"w"),ensure_ascii=False,indent=0)
 print(len(final),"items;",len(patch),"patches;",sum(1 for p in patch.values() if p.get("del")),"deletes")

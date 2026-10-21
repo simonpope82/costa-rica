@@ -31,7 +31,7 @@
 },
 "day2": {
 "title": "Car → Poás volcano → Starbucks farm → The Springs",
-"plan": "08:30 Vamos brings the car to the Hampton (hotel delivery 9 USD, to ask Vamos). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark.",
+"plan": "08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark.",
 "wx": {
 "kind": "typical",
 "place": "La Fortuna",
@@ -186,7 +186,7 @@
 }
 },
 "day15": {
-"plan": "Slow morning, pack. Fill up. Car back at SJO by 14:00 (saves a day) or 17:00 (change asked). Fly 19:30.",
+"plan": "Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30.",
 "wx": {
 "kind": "typical",
 "place": "SJO / Alajuela",
@@ -603,9 +603,6 @@
 "todo_t_poas": {
 "auto": true
 },
-"todo_vamos_delivery": {
-"auto": true
-},
 "todo_t_alsacia": {
 "auto": true
 },
@@ -618,109 +615,49 @@
 "sp_springs": {
 "auto": true
 },
-"fuel43": {
+"question134": {
 "del": true
 },
-"tour58": {
-"del": true
-},
-"todo82": {
+"todo80": {
 "del": true
 },
 "todo71": {
 "del": true
 },
-"food157": {
+"info54": {
 "del": true
 },
-"fuel35": {
+"pack107": {
 "del": true
 },
-"place150": {
-"del": true
-},
-"todo74": {
-"del": true
-},
-"tour55": {
-"del": true
-},
-"food164": {
-"del": true
-},
-"todo75": {
-"del": true
-},
-"pack105": {
+"question136": {
 "del": true
 },
 "fuel30": {
 "del": true
 },
-"todo73": {
-"del": true
-},
-"food166": {
-"del": true
-},
-"todo78": {
-"del": true
-},
-"todo72": {
-"del": true
-},
-"fuel47": {
-"del": true
-},
-"tour57": {
-"del": true
-},
-"st_mv": {
-"del": true
-},
-"food158": {
-"del": true
-},
-"info54": {
-"del": true
-},
-"food154": {
-"del": true
-},
-"fuel36": {
-"del": true
-},
-"fuel33": {
+"food164": {
 "del": true
 },
 "fuel31": {
 "del": true
 },
-"pack129": {
-"del": true
-},
-"st_uv": {
-"del": true
-},
 "L8": {
 "del": true
 },
-"fuel32": {
-"del": true
-},
-"food165": {
-"del": true
-},
-"question134": {
-"del": true
-},
-"fuel44": {
+"fuel42": {
 "del": true
 },
 "todo76": {
 "del": true
 },
-"good63": {
+"L7": {
+"del": true
+},
+"fuel47": {
+"del": true
+},
+"food157": {
 "del": true
 },
 "question138": {
@@ -729,133 +666,193 @@
 "fuel34": {
 "del": true
 },
-"st_sm": {
-"del": true
-},
-"question136": {
-"del": true
-},
-"fuel38": {
-"del": true
-},
 "todo89": {
 "del": true
 },
-"fuel25": {
-"del": true
-},
-"info61": {
-"del": true
-},
-"question129": {
-"del": true
-},
-"fuel26": {
-"del": true
-},
-"food160": {
-"del": true
-},
-"todo77": {
-"del": true
-},
-"tour59": {
-"del": true
-},
-"st_ma": {
-"del": true
-},
-"fuel37": {
-"del": true
-},
-"fuel27": {
-"del": true
-},
-"question130": {
-"del": true
-},
-"question135": {
-"del": true
-},
-"info60": {
-"del": true
-},
-"todo80": {
-"del": true
-},
-"food153": {
-"del": true
-},
-"fuel28": {
-"del": true
-},
-"pack98": {
+"todo82": {
 "del": true
 },
 "question137": {
 "del": true
 },
-"pack107": {
-"del": true
-},
-"L7": {
-"del": true
-},
 "fuel29": {
 "del": true
 },
-"food156": {
+"st_ma": {
 "del": true
 },
-"fuel39": {
+"tour55": {
 "del": true
 },
-"tour54": {
+"question129": {
 "del": true
 },
-"food161": {
+"fuel40": {
 "del": true
 },
-"tour56": {
+"pack129": {
 "del": true
 },
-"fuel42": {
+"st_mv": {
 "del": true
 },
-"flight51": {
-"del": true
-},
-"food159": {
-"del": true
-},
-"fuel41": {
-"del": true
-},
-"fuel46": {
+"todo77": {
 "del": true
 },
 "food155": {
 "del": true
 },
-"todo69": {
+"tour58": {
 "del": true
 },
-"food162": {
+"st_sm": {
 "del": true
 },
-"fuel45": {
+"fuel32": {
 "del": true
 },
-"food163": {
+"question130": {
+"del": true
+},
+"food156": {
+"del": true
+},
+"tour57": {
+"del": true
+},
+"question135": {
+"del": true
+},
+"fuel43": {
+"del": true
+},
+"food158": {
+"del": true
+},
+"food159": {
+"del": true
+},
+"tour56": {
 "del": true
 },
 "good68": {
 "del": true
 },
+"food163": {
+"del": true
+},
+"fuel39": {
+"del": true
+},
+"todo75": {
+"del": true
+},
+"pack105": {
+"del": true
+},
+"fuel45": {
+"del": true
+},
+"food160": {
+"del": true
+},
+"food162": {
+"del": true
+},
+"fuel35": {
+"del": true
+},
+"food154": {
+"del": true
+},
 "todo79": {
 "del": true
 },
-"fuel40": {
+"fuel26": {
+"del": true
+},
+"fuel46": {
+"del": true
+},
+"info61": {
+"del": true
+},
+"fuel25": {
+"del": true
+},
+"tour59": {
+"del": true
+},
+"food153": {
+"del": true
+},
+"good63": {
+"del": true
+},
+"place150": {
+"del": true
+},
+"st_uv": {
+"del": true
+},
+"food161": {
+"del": true
+},
+"fuel37": {
+"del": true
+},
+"todo73": {
+"del": true
+},
+"todo69": {
+"del": true
+},
+"todo78": {
+"del": true
+},
+"fuel28": {
+"del": true
+},
+"fuel38": {
+"del": true
+},
+"fuel36": {
+"del": true
+},
+"food165": {
+"del": true
+},
+"food166": {
+"del": true
+},
+"flight51": {
+"del": true
+},
+"info60": {
+"del": true
+},
+"fuel41": {
+"del": true
+},
+"fuel27": {
+"del": true
+},
+"fuel44": {
+"del": true
+},
+"todo72": {
+"del": true
+},
+"fuel33": {
+"del": true
+},
+"tour54": {
+"del": true
+},
+"pack98": {
+"del": true
+},
+"todo74": {
 "del": true
 }
 }
@@ -873,7 +870,7 @@
 "patch": {
 "day2": {
 "title": "Car → Poás volcano → Starbucks farm → The Springs",
-"plan": "08:30 Vamos brings the car to the Hampton (hotel delivery 9 USD, to ask Vamos). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark.",
+"plan": "08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark.",
 "wx": {
 "kind": "typical",
 "place": "La Fortuna",
@@ -1026,7 +1023,7 @@
 }
 },
 "day15": {
-"plan": "Slow morning, pack. Fill up. Car back at SJO by 14:00 (saves a day) or 17:00 (change asked). Fly 19:30."
+"plan": "Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30."
 },
 "st_lf": {
 "auto": true
@@ -1128,7 +1125,14 @@
 "auto": true
 },
 "car": {
-"pickup": "As booked: San José International Airport (SJO), Thu 29 Oct 2026, 12:00 (Vamos wrote 10 Oct by mistake: waiting for Vamos). Plan: 08:30 delivery to the Hampton (9 USD), to ask Vamos."
+"pickup": "Thu 29 Oct 2026, 08:30. Vamos office, just across the street from the Hampton. Walk over (no delivery).",
+"ret": "Wed 11 Nov 2026, 17:00. San José airport (SJO).",
+"warn": "✅ Confirmed by Vamos 21 Oct. Changes: tell Vamos 72 h before pickup (by Mon 26 Oct).",
+"days": "13 days",
+"car": "Full Size SUV (Azkarra or similar), automatic. Check 4 big bags fit.",
+"insurance": "Full cover (included in the price).",
+"price": "1,211.18 USD total (VAT included)",
+"area": "Vamos office, across from the Hampton (SJO)"
 },
 "t_volc": {
 "auto": true
@@ -1146,6 +1150,9 @@
 "auto": true
 },
 "good_c13": {
+"auto": true
+},
+"todo_car": {
 "auto": true
 },
 "todo_st_lf": {
@@ -1209,6 +1216,9 @@
 "lat": 10.2993,
 "lng": -85.8371
 },
+"sp_car": {
+"what": "Vamos car rental, 13 days, full cover (paid by Simon, assumed)"
+},
 "t_alsacia": {
 "auto": true
 },
@@ -1216,9 +1226,6 @@
 "auto": true
 },
 "todo_t_poas": {
-"auto": true
-},
-"todo_vamos_delivery": {
 "auto": true
 },
 "todo_t_alsacia": {
@@ -1233,25 +1240,82 @@
 "sp_springs": {
 "auto": true
 },
-"fuel_c14": {
+"question134": {
+"del": true
+},
+"food163": {
+"del": true
+},
+"food153": {
 "del": true
 },
 "question137": {
 "del": true
 },
+"st_ma": {
+"del": true
+},
+"fuel_c19": {
+"del": true
+},
+"question129": {
+"del": true
+},
+"good63": {
+"del": true
+},
+"todo_t_tab": {
+"del": true
+},
+"st_mv": {
+"del": true
+},
 "pack107": {
+"del": true
+},
+"pack105": {
+"del": true
+},
+"food155": {
+"del": true
+},
+"food159": {
+"del": true
+},
+"st_at": {
+"del": true
+},
+"food164": {
+"del": true
+},
+"fuel_c13": {
 "del": true
 },
 "todo_st_ma": {
 "del": true
 },
-"t_coop": {
+"todo_st_mv": {
+"del": true
+},
+"food165": {
+"del": true
+},
+"todo_st_sm": {
 "del": true
 },
 "st_sm": {
 "del": true
 },
-"t_als": {
+"todo_t_dj": {
+"del": true
+},
+"question130": {
+"del": true
+},
+"food154": {
+"del": true
+},
+"fuel_c18": {
 "del": true
 },
 "L7": {
@@ -1260,103 +1324,46 @@
 "food156": {
 "del": true
 },
-"t_dj": {
-"del": true
-},
-"question129": {
-"del": true
-},
-"fuel_c13": {
-"del": true
-},
-"fuel_c18": {
-"del": true
-},
-"fuel_c19": {
-"del": true
-},
-"todo_c20": {
-"del": true
-},
-"food157": {
-"del": true
-},
-"fuel_c17": {
-"del": true
-},
-"todo_t_coop": {
-"del": true
-},
-"st_at": {
-"del": true
-},
-"st_mv": {
-"del": true
-},
-"todo_t_tab": {
-"del": true
-},
-"food158": {
-"del": true
-},
-"food159": {
-"del": true
-},
-"fuel_c16": {
-"del": true
-},
-"st_ma": {
-"del": true
-},
-"food154": {
-"del": true
-},
-"fuel_c15": {
-"del": true
-},
-"todo_st_sm": {
-"del": true
-},
-"todo_st_mv": {
+"question135": {
 "del": true
 },
 "todo_st_at": {
 "del": true
 },
-"food155": {
+"t_als": {
 "del": true
 },
-"food164": {
+"food157": {
 "del": true
 },
-"question130": {
-"del": true
-},
-"question135": {
+"t_dj": {
 "del": true
 },
 "t_tab": {
 "del": true
 },
-"food165": {
+"todo_t_coop": {
 "del": true
 },
-"todo_t_dj": {
+"fuel_c17": {
 "del": true
 },
-"food163": {
+"fuel_c15": {
 "del": true
 },
-"question134": {
+"fuel_c14": {
 "del": true
 },
-"good63": {
+"todo_c20": {
 "del": true
 },
-"pack105": {
+"food158": {
 "del": true
 },
-"food153": {
+"fuel_c16": {
+"del": true
+},
+"t_coop": {
 "del": true
 }
 }
@@ -1366,10 +1373,13 @@
 "patch": {
 "day2": {
 "title": "Car → Poás volcano → Starbucks farm → The Springs",
-"plan": "08:30 Vamos brings the car to the Hampton (hotel delivery 9 USD, to ask Vamos). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."
+"plan": "08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."
 },
 "day4": {
 "plan": "Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs."
+},
+"day15": {
+"plan": "Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30."
 },
 "st_lf": {
 "auto": true
@@ -1382,10 +1392,23 @@
 "notes": "Hampton → Poás crater about 36 km / 1 h–1 h 30. Poás → Hacienda Alsacia about 22 km / 45 min–1 h. Alsacia → The Springs about 119 km / 3 h 30 (mountain roads, slow). Tight: leave the farm by 13:45."
 },
 "car": {
-"pickup": "As booked: San José International Airport (SJO), Thu 29 Oct 2026, 12:00 (Vamos wrote 10 Oct by mistake: waiting for Vamos). Plan: 08:30 delivery to the Hampton (9 USD), to ask Vamos."
+"pickup": "Thu 29 Oct 2026, 08:30. Vamos office, just across the street from the Hampton. Walk over (no delivery).",
+"ret": "Wed 11 Nov 2026, 17:00. San José airport (SJO).",
+"warn": "✅ Confirmed by Vamos 21 Oct. Changes: tell Vamos 72 h before pickup (by Mon 26 Oct).",
+"days": "13 days",
+"car": "Full Size SUV (Azkarra or similar), automatic. Check 4 big bags fit.",
+"insurance": "Full cover (included in the price).",
+"price": "1,211.18 USD total (VAT included)",
+"area": "Vamos office, across from the Hampton (SJO)"
+},
+"todo_car": {
+"auto": true
 },
 "todo_st_lf": {
 "auto": true
+},
+"sp_car": {
+"what": "Vamos car rental, 13 days, full cover (paid by Simon, assumed)"
 },
 "t_alsacia": {
 "auto": true
@@ -1394,9 +1417,6 @@
 "auto": true
 },
 "todo_t_poas": {
-"auto": true
-},
-"todo_vamos_delivery": {
 "auto": true
 },
 "todo_t_alsacia": {
@@ -1418,10 +1438,13 @@
 "patch": {
 "day2": {
 "title": "Car → Poás volcano → Starbucks farm → The Springs",
-"plan": "08:30 Vamos brings the car to the Hampton (hotel delivery 9 USD, to ask Vamos). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."
+"plan": "08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."
 },
 "day4": {
 "plan": "Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs."
+},
+"day15": {
+"plan": "Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30."
 },
 "st_lf": {
 "auto": true
@@ -1434,10 +1457,23 @@
 "notes": "Hampton → Poás crater about 36 km / 1 h–1 h 30. Poás → Hacienda Alsacia about 22 km / 45 min–1 h. Alsacia → The Springs about 119 km / 3 h 30 (mountain roads, slow). Tight: leave the farm by 13:45."
 },
 "car": {
-"pickup": "As booked: San José International Airport (SJO), Thu 29 Oct 2026, 12:00 (Vamos wrote 10 Oct by mistake: waiting for Vamos). Plan: 08:30 delivery to the Hampton (9 USD), to ask Vamos."
+"pickup": "Thu 29 Oct 2026, 08:30. Vamos office, just across the street from the Hampton. Walk over (no delivery).",
+"ret": "Wed 11 Nov 2026, 17:00. San José airport (SJO).",
+"warn": "✅ Confirmed by Vamos 21 Oct. Changes: tell Vamos 72 h before pickup (by Mon 26 Oct).",
+"days": "13 days",
+"car": "Full Size SUV (Azkarra or similar), automatic. Check 4 big bags fit.",
+"insurance": "Full cover (included in the price).",
+"price": "1,211.18 USD total (VAT included)",
+"area": "Vamos office, across from the Hampton (SJO)"
+},
+"todo_car": {
+"auto": true
 },
 "todo_st_lf": {
 "auto": true
+},
+"sp_car": {
+"what": "Vamos car rental, 13 days, full cover (paid by Simon, assumed)"
 },
 "t_alsacia": {
 "when": "Thu 29 Oct ~11:30 (tours 08:00–15:00)",
@@ -1447,9 +1483,6 @@
 "auto": true
 },
 "todo_t_poas": {
-"auto": true
-},
-"todo_vamos_delivery": {
 "auto": true
 },
 "todo_t_alsacia": {
@@ -1471,7 +1504,10 @@
 "patch": {
 "day2": {
 "title": "Car → Poás volcano → Starbucks farm → The Springs",
-"plan": "08:30 Vamos brings the car to the Hampton (hotel delivery 9 USD, to ask Vamos). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."
+"plan": "08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."
+},
+"day15": {
+"plan": "Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30."
 },
 "L1": {
 "route": "Hampton → Poás volcano → Hacienda Alsacia → The Springs",
@@ -1481,7 +1517,20 @@
 "notes": "Hampton → Poás crater about 36 km / 1 h–1 h 30. Poás → Hacienda Alsacia about 22 km / 45 min–1 h. Alsacia → The Springs about 119 km / 3 h 30 (mountain roads, slow). Tight: leave the farm by 13:45."
 },
 "car": {
-"pickup": "As booked: San José International Airport (SJO), Thu 29 Oct 2026, 12:00 (Vamos wrote 10 Oct by mistake: waiting for Vamos). Plan: 08:30 delivery to the Hampton (9 USD), to ask Vamos."
+"pickup": "Thu 29 Oct 2026, 08:30. Vamos office, just across the street from the Hampton. Walk over (no delivery).",
+"ret": "Wed 11 Nov 2026, 17:00. San José airport (SJO).",
+"warn": "✅ Confirmed by Vamos 21 Oct. Changes: tell Vamos 72 h before pickup (by Mon 26 Oct).",
+"days": "13 days",
+"car": "Full Size SUV (Azkarra or similar), automatic. Check 4 big bags fit.",
+"insurance": "Full cover (included in the price).",
+"price": "1,211.18 USD total (VAT included)",
+"area": "Vamos office, across from the Hampton (SJO)"
+},
+"todo_car": {
+"auto": true
+},
+"sp_car": {
+"what": "Vamos car rental, 13 days, full cover (paid by Simon, assumed)"
 },
 "t_alsacia": {
 "when": "Thu 29 Oct ~11:30 (tours 08:00–15:00)",
@@ -1494,11 +1543,38 @@
 "todo_t_poas": {
 "auto": true
 },
-"todo_vamos_delivery": {
-"auto": true
-},
 "todo_t_alsacia": {
 "auto": true
+}
+}
+},
+{
+"id": "m9-vamos-ok",
+"patch": {
+"day2": {
+"plan": "08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark."
+},
+"day15": {
+"plan": "Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30."
+},
+"car": {
+"pickup": "Thu 29 Oct 2026, 08:30. Vamos office, just across the street from the Hampton. Walk over (no delivery).",
+"ret": "Wed 11 Nov 2026, 17:00. San José airport (SJO).",
+"warn": "✅ Confirmed by Vamos 21 Oct. Changes: tell Vamos 72 h before pickup (by Mon 26 Oct).",
+"days": "13 days",
+"car": "Full Size SUV (Azkarra or similar), automatic. Check 4 big bags fit.",
+"insurance": "Full cover (included in the price).",
+"price": "1,211.18 USD total (VAT included)",
+"area": "Vamos office, across from the Hampton (SJO)"
+},
+"todo_car": {
+"auto": true
+},
+"sp_car": {
+"what": "Vamos car rental, 13 days, full cover (paid by Simon, assumed)"
+},
+"todo_vamos_delivery": {
+"del": true
 }
 }
 }
@@ -1531,7 +1607,7 @@
 "date": "2026-10-29",
 "label": "Thu 29 Oct",
 "title": "Car → Poás volcano → Starbucks farm → The Springs",
-"plan": "08:30 Vamos brings the car to the Hampton (hotel delivery 9 USD, to ask Vamos). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark.",
+"plan": "08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -1804,7 +1880,7 @@
 "date": "2026-11-11",
 "label": "Wed 11 Nov",
 "title": "Fly home",
-"plan": "Slow morning, pack. Fill up. Car back at SJO by 14:00 (saves a day) or 17:00 (change asked). Fly 19:30.",
+"plan": "Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -2335,20 +2411,20 @@
 "company": "Vamos Rent-A-Car",
 "ref": "",
 "status": "Booked",
-"pickup": "As booked: San José International Airport (SJO), Thu 29 Oct 2026, 12:00 (Vamos wrote 10 Oct by mistake: waiting for Vamos). Plan: 08:30 delivery to the Hampton (9 USD), to ask Vamos.",
-"ret": "As booked: SJO, Thu 12 Nov 2026, 12:00",
-"warn": "⚠️ Return change asked: Wed 11 Nov 17:00 at SJO. Email sent, waiting for Vamos.",
-"days": "14 days as booked (13 needed)",
-"car": "Full Size SUV 4x4, 2500cc, automatic, petrol. Check 4 big bags fit.",
-"insurance": "SLI/TPL is required; a credit card can't replace it. Ask for an all-in price with SLI. CDW can sometimes be skipped with a card letter.",
+"pickup": "Thu 29 Oct 2026, 08:30. Vamos office, just across the street from the Hampton. Walk over (no delivery).",
+"ret": "Wed 11 Nov 2026, 17:00. San José airport (SJO).",
+"warn": "✅ Confirmed by Vamos 21 Oct. Changes: tell Vamos 72 h before pickup (by Mon 26 Oct).",
+"days": "13 days",
+"car": "Full Size SUV (Azkarra or similar), automatic. Check 4 big bags fit.",
+"insurance": "Full cover (included in the price).",
 "watch": "Returning after 18:30 can cost an extra day. Check grace period. Ask about Quick Pass for tolls. Add Stian as driver?",
 "licence": "Norwegian licence OK, no international permit. Carry passport.",
-"price": "$1,211.18 total",
+"price": "1,211.18 USD total (VAT included)",
 "deposit": "",
 "phone": "",
 "lat": 9.9939,
 "lng": -84.2088,
-"area": "SJO airport (Juan Santamaría)",
+"area": "Vamos office, across from the Hampton (SJO)",
 "type": "car",
 "o": 48,
 "u": 1
@@ -2560,13 +2636,13 @@
 },
 "todo_car": {
 "id": "todo_car",
-"name": "4x4 SUV (Vamos): 29 Oct 12:00 → return change to 11 Nov 17:00 asked. With SLI? Quick Pass, Stian as driver, 4 bags fit",
+"name": "SUV (Vamos): Thu 29 Oct 08:30 → Wed 11 Nov 17:00 ✅ Full cover. Quick Pass, Stian as driver, 4 bags fit",
 "done": true,
 "status": "Booked",
 "link": "car",
 "ref": "",
 "price": "$1,211.18",
-"notes": "Return date: change to Wed 11 Nov 17:00 asked (email sent, waiting for Vamos).",
+"notes": "Confirmed by Vamos 21 Oct. Changes: 72 h before pickup (by Mon 26 Oct).",
 "type": "todo",
 "o": 68,
 "u": 1
@@ -3600,7 +3676,7 @@
 "sp_car": {
 "id": "sp_car",
 "date": "2026-10-13",
-"what": "Vamos car rental, 14 days (paid by Simon, assumed)",
+"what": "Vamos car rental, 13 days, full cover (paid by Simon, assumed)",
 "amount": 1211.18,
 "cur": "USD",
 "who": "Simon",
@@ -3654,19 +3730,6 @@
 "o": 156,
 "u": 1
 },
-"todo_vamos_delivery": {
-"id": "todo_vamos_delivery",
-"name": "Ask Vamos: deliver the car to the Hampton Thu 29 Oct 08:30 (9 USD). Email about Wed 21 Oct",
-"done": false,
-"status": "Question",
-"link": "",
-"ref": "",
-"price": "",
-"notes": "https://vamosrentacar.com/faq/",
-"type": "todo",
-"o": 157,
-"u": 1
-},
 "todo_t_alsacia": {
 "id": "todo_t_alsacia",
 "name": "Hacienda Alsacia (Starbucks farm) tour, Thu 29 Oct ~11:30",
@@ -3677,7 +3740,7 @@
 "price": "",
 "notes": "",
 "type": "todo",
-"o": 158,
+"o": 157,
 "u": 1
 },
 "st_lf2": {
@@ -3726,7 +3789,7 @@
 "who": "Simon",
 "cat": "hotel",
 "type": "spend",
-"o": 161,
+"o": 160,
 "u": 1
 }
 }
