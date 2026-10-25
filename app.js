@@ -21,7 +21,7 @@ const tdone=x=>{const t=lnk(x);return t&&!t.del?t.status==='Booked':!!x.done};
 const tstat=x=>{const t=lnk(x);return t&&!t.del?t.status:x.status};
 function toggleTodo(id){const x=get(id),t=lnk(x);if(t&&!t.del){const nb=t.status!=='Booked';upd(t.id,{status:nb?'Booked':'To book'});upd(id,{done:nb,status:nb?'Booked':'To book'});}else upd(id,{done:!x.done});}
 function setStatus(id,st){const it=get(id);all('todo').filter(x=>x.link===id).forEach(x=>upd(x.id,{done:st==='Booked',status:st}));}
-const days=()=>all('day');const dayOf=n=>days().find(d=>d.day==n);
+const days=()=>all('day');const dayOf=n=>days().find(d=>d.day==n)||(n===0?{label:'Tue 27 Oct'}:undefined);
 const stayFor=n=>all('stay').find(s=>!s.backupOf&&n>=s.fromDay&&n<=s.toDay);
 const RATE=c=>c==='USD'?1:c==='CRC'?(doc.meta.rate||456.61):c==='NOK'?(doc.meta.nokRate||9.57):c==='SEK'?(doc.meta.sekRate||10.04):1;
 const toUSD=(amt,c)=>(+amt||0)/RATE(c);const money=v=>'$'+v.toFixed(2);

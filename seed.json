@@ -1577,6 +1577,64 @@
 "del": true
 }
 }
+},
+{
+"id": "m10-gardermoen-alsacia",
+"patch": {
+"day1": {
+"plan": "Tue 27 Oct: train from Ås to Gardermoen (R20/R21 → Oslo S, then Flytoget or regional train; times: check Entur). Sleep at Comfort Hotel Runway ✅. Wed 28 Oct: walk or shuttle to the terminal, be there about 07:30. Fly 09:30. Land 17:30. Taxi to the Hampton (at the airport). No car today. Early night. To do: ask Vamos (next door) for the car at ~08:00?"
+},
+"day2": {
+"title": "Car → Starbucks farm → Poás volcano → The Springs",
+"plan": "08:30 pick up the car at the Vamos office, across the street from the Hampton (walk over). Drive to Alsacia 30–40 min (Simon asks Vamos on 28 Oct for ~08:00). 09:00–10:30 Hacienda Alsacia (Starbucks) coffee tour ✅ booked. 10:30 drive to Poás (about 45 min). About 11:30 Poás crater, about 1 h (tickets NOT booked yet, last entry 14:00). About 12:30 leave, drive to The Springs (about 3 h 15), arrive about 16:00, before dark."
+},
+"L1": {
+"route": "Hampton → Hacienda Alsacia → Poás volcano → The Springs",
+"km": 155,
+"time": "4 h 45",
+"leaveBy": "08:30",
+"notes": "Hampton → Hacienda Alsacia about 17 km / 30–40 min. Alsacia → Poás crater about 22 km / 45 min. Poás → The Springs about 115 km / 3 h 15 (mountain roads, slow). Leave Poás by about 12:30."
+},
+"t_alsacia": {
+"when": "Thu 29 Oct 09:00–10:30",
+"length": "1 h 30",
+"price": "Paid USD 73.72 (NOK 714.98) for 2",
+"status": "Booked",
+"notes": "✅ Booked, 2 adults. Dulce Nombre, San Isidro, Alajuela. Waze: HACIENDA ALSACIA VISITOR CENTER. Runs rain or shine, no refund. 30–40 min from the Hampton."
+},
+"t_poas": {
+"when": "Thu 29 Oct ~11:00–11:30 (after the coffee tour)",
+"price": "US$15 pp + parking about ₡2,000",
+"notes": "Tickets ONLY on the official SINAC site (fake sites exist). Site was down on 25 Oct: try again. Fixed slot, no refunds. Last entry 14:00. https://serviciosenlinea.sinac.go.cr/"
+},
+"todo_t_poas": {
+"name": "Poás volcano tickets (SINAC only), Thu 29 Oct ~11:00–11:30 slot"
+},
+"todo_t_alsacia": {
+"name": "Hacienda Alsacia coffee tour, Thu 29 Oct 09:00 ✅",
+"done": true,
+"status": "Booked",
+"price": "USD 73.72"
+},
+"st_gar": {
+"auto": true
+},
+"todo_st_gar": {
+"auto": true
+},
+"good_train": {
+"auto": true
+},
+"todo_vamos_early": {
+"auto": true
+},
+"sp_gar": {
+"auto": true
+},
+"sp_alsacia": {
+"auto": true
+}
+}
 }
 ],
 "items": {
@@ -1586,7 +1644,7 @@
 "date": "2026-10-28",
 "label": "Wed 28 Oct",
 "title": "Arrive · taxi",
-"plan": "Land 17:30. Taxi to the Hampton (at the airport). No car today. Early night.",
+"plan": "Tue 27 Oct: train from Ås to Gardermoen (R20/R21 → Oslo S, then Flytoget or regional train; times: check Entur). Sleep at Comfort Hotel Runway ✅. Wed 28 Oct: walk or shuttle to the terminal, be there about 07:30. Fly 09:30. Land 17:30. Taxi to the Hampton (at the airport). No car today. Early night. To do: ask Vamos (next door) for the car at ~08:00?",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -1606,8 +1664,8 @@
 "day": 2,
 "date": "2026-10-29",
 "label": "Thu 29 Oct",
-"title": "Car → Poás volcano → Starbucks farm → The Springs",
-"plan": "08:30 pick up the car at the Vamos office, just across the street from the Hampton (walk over). Leave 08:45 sharp. 09:30 Poás volcano crater (online ticket, fixed slot, to book), about 1 h. 10:30 leave, Poás → Hacienda Alsacia (about 45 min). 11:30 Starbucks farm tour, 1 h 30 + 30 min tasting (to book). Tight: leave the farm by 13:45. Drive to The Springs (about 3 h 30), arrive about 17:15, before dark.",
+"title": "Car → Starbucks farm → Poás volcano → The Springs",
+"plan": "08:30 pick up the car at the Vamos office, across the street from the Hampton (walk over). Drive to Alsacia 30–40 min (Simon asks Vamos on 28 Oct for ~08:00). 09:00–10:30 Hacienda Alsacia (Starbucks) coffee tour ✅ booked. 10:30 drive to Poás (about 45 min). About 11:30 Poás crater, about 1 h (tickets NOT booked yet, last entry 14:00). About 12:30 leave, drive to The Springs (about 3 h 15), arrive about 16:00, before dark.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -2139,11 +2197,11 @@
 "id": "L1",
 "name": "L1",
 "day": 2,
-"route": "Hampton → Poás volcano → Hacienda Alsacia → The Springs",
-"km": 177,
-"time": "5 h 45",
-"leaveBy": "08:45",
-"notes": "Hampton → Poás crater about 36 km / 1 h–1 h 30. Poás → Hacienda Alsacia about 22 km / 45 min–1 h. Alsacia → The Springs about 119 km / 3 h 30 (mountain roads, slow). Tight: leave the farm by 13:45.",
+"route": "Hampton → Hacienda Alsacia → Poás volcano → The Springs",
+"km": 155,
+"time": "4 h 45",
+"leaveBy": "08:30",
+"notes": "Hampton → Hacienda Alsacia about 17 km / 30–40 min. Alsacia → Poás crater about 22 km / 45 min. Poás → The Springs about 115 km / 3 h 15 (mountain roads, slow). Leave Poás by about 12:30.",
 "type": "leg",
 "o": 26,
 "u": 1
@@ -3689,11 +3747,11 @@
 "id": "t_alsacia",
 "name": "Hacienda Alsacia (Starbucks coffee farm), Poás",
 "day": 2,
-"when": "Thu 29 Oct ~11:30 (tours 08:00–15:00)",
-"length": "1 h 30 + 30 min tasting",
-"price": "about 30–36 USD pp",
-"status": "To book",
-"notes": "Real coffee farm on Poás volcano: coffee trees, nursery, wet mill, roaster + tasting. Visitor centre 8–16, café to 18. About 45 min from Poás. Book online: https://starbuckscoffeefarm.com/en/",
+"when": "Thu 29 Oct 09:00–10:30",
+"length": "1 h 30",
+"price": "Paid USD 73.72 (NOK 714.98) for 2",
+"status": "Booked",
+"notes": "✅ Booked, 2 adults. Dulce Nombre, San Isidro, Alajuela. Waze: HACIENDA ALSACIA VISITOR CENTER. Runs rain or shine, no refund. 30–40 min from the Hampton.",
 "lat": 10.1013,
 "lng": -84.2009,
 "link": "",
@@ -3705,11 +3763,11 @@
 "id": "t_poas",
 "name": "Poás Volcano National Park (crater)",
 "day": 2,
-"when": "Thu 29 Oct ~09:30 (fixed slot)",
+"when": "Thu 29 Oct ~11:00–11:30 (after the coffee tour)",
 "length": "about 1 h",
-"price": "16.95 USD pp + parking about ₡2,000",
+"price": "US$15 pp + parking about ₡2,000",
 "status": "To book",
-"notes": "Tickets ONLY online (SINAC SICORE), fixed time slot. No refunds, even for fog. Open 08:00–16:00, last entry 14:00. Mornings are clearer. https://serviciosenlinea.sinac.go.cr/",
+"notes": "Tickets ONLY on the official SINAC site (fake sites exist). Site was down on 25 Oct: try again. Fixed slot, no refunds. Last entry 14:00. https://serviciosenlinea.sinac.go.cr/",
 "lat": 10.196,
 "lng": -84.2316,
 "link": "",
@@ -3719,7 +3777,7 @@
 },
 "todo_t_poas": {
 "id": "todo_t_poas",
-"name": "Poás volcano tickets (SINAC online), Thu 29 Oct ~09:30 slot",
+"name": "Poás volcano tickets (SINAC only), Thu 29 Oct ~11:00–11:30 slot",
 "done": false,
 "status": "To book",
 "link": "t_poas",
@@ -3732,12 +3790,12 @@
 },
 "todo_t_alsacia": {
 "id": "todo_t_alsacia",
-"name": "Hacienda Alsacia (Starbucks farm) tour, Thu 29 Oct ~11:30",
-"done": false,
-"status": "To book",
+"name": "Hacienda Alsacia coffee tour, Thu 29 Oct 09:00 ✅",
+"done": true,
+"status": "Booked",
 "link": "t_alsacia",
 "ref": "",
-"price": "",
+"price": "USD 73.72",
 "notes": "",
 "type": "todo",
 "o": 157,
@@ -3790,6 +3848,88 @@
 "cat": "hotel",
 "type": "spend",
 "o": 160,
+"u": 1
+},
+"st_gar": {
+"type": "stay",
+"name": "Comfort Hotel Runway",
+"area": "Oslo Airport Gardermoen",
+"address": "Hans Gaarders veg 27, 2060 Gardermoen",
+"checkin": "Tue 27 Oct (from 15:00)",
+"checkout": "Wed 28 Oct (by 11:00)",
+"price": "NOK 1,529 (pay at the hotel)",
+"fromDay": 0,
+"toDay": 0,
+"status": "Booked",
+"notes": "1 night before the flight, 2 adults, member price. No breakfast. Free cancellation until 16:00 on 27 Oct. Walk or shuttle to the terminal, be there about 07:30 on 28 Oct.",
+"phone": "+47 63 94 88 88",
+"backupOf": "",
+"ref": "",
+"lat": null,
+"lng": null,
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"id": "st_gar",
+"o": 161,
+"u": 1
+},
+"todo_st_gar": {
+"type": "todo",
+"name": "Hotel 27 Oct (1 night): Comfort Hotel Runway, Gardermoen ✅",
+"done": true,
+"status": "Booked",
+"link": "st_gar",
+"ref": "",
+"price": "NOK 1,529",
+"notes": "Pay at the hotel.",
+"id": "todo_st_gar",
+"o": 162,
+"u": 1
+},
+"good_train": {
+"type": "good",
+"name": "Tue 27 Oct: train to the airport",
+"text": "Ås → Oslo S: R20 or R21 (about 30 min). Oslo S → Gardermoen: Flytoget (about 20 min) or Vy regional train (cheaper). Times: check Entur app. Hotel check-in from 15:00.",
+"id": "good_train",
+"o": 163,
+"u": 1
+},
+"todo_vamos_early": {
+"type": "todo",
+"name": "Wed 28 Oct evening: ask Vamos: car at ~08:00?",
+"done": false,
+"status": "To book",
+"link": "car",
+"ref": "",
+"price": "",
+"notes": "Office next door to the Hampton. Coffee tour starts 09:00.",
+"id": "todo_vamos_early",
+"o": 164,
+"u": 1
+},
+"sp_gar": {
+"type": "spend",
+"date": "2026-10-27",
+"what": "Comfort Hotel Runway, Gardermoen (pay at hotel)",
+"amount": 1529,
+"cur": "NOK",
+"who": "Simon",
+"cat": "hotel",
+"id": "sp_gar",
+"o": 165,
+"u": 1
+},
+"sp_alsacia": {
+"type": "spend",
+"date": "2026-10-25",
+"what": "Hacienda Alsacia coffee tour, 2 people",
+"amount": 714.98,
+"cur": "NOK",
+"who": "Simon",
+"cat": "tour",
+"id": "sp_alsacia",
+"o": 166,
 "u": 1
 }
 }
