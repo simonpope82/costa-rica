@@ -1635,6 +1635,209 @@
 "auto": true
 }
 }
+},
+{
+"id": "m11-packing",
+"patch": {
+"pack89": {
+"del": true
+},
+"pack90": {
+"del": true
+},
+"pack91": {
+"del": true
+},
+"pack92": {
+"del": true
+},
+"pack93": {
+"del": true
+},
+"pack94": {
+"del": true
+},
+"pack95": {
+"del": true
+},
+"pack96": {
+"del": true
+},
+"pack97": {
+"del": true
+},
+"pack99": {
+"del": true
+},
+"pack100": {
+"del": true
+},
+"pack101": {
+"del": true
+},
+"pack102": {
+"del": true
+},
+"pack103": {
+"del": true
+},
+"pack104": {
+"del": true
+},
+"pack_c16": {
+"del": true
+},
+"pack106": {
+"del": true
+},
+"pack_c17": {
+"del": true
+},
+"pack108": {
+"del": true
+},
+"pack109": {
+"del": true
+},
+"pack110": {
+"del": true
+},
+"pack111": {
+"del": true
+},
+"pack112": {
+"del": true
+},
+"pack113": {
+"del": true
+},
+"pack114": {
+"del": true
+},
+"pack115": {
+"del": true
+},
+"pack116": {
+"del": true
+},
+"pack117": {
+"del": true
+},
+"pack118": {
+"del": true
+},
+"pack119": {
+"del": true
+},
+"pack120": {
+"del": true
+},
+"pack121": {
+"del": true
+},
+"pack122": {
+"del": true
+},
+"pack123": {
+"del": true
+},
+"pack124": {
+"del": true
+},
+"pack125": {
+"del": true
+},
+"pack126": {
+"del": true
+},
+"pack127": {
+"del": true
+},
+"pack128": {
+"del": true
+},
+"pk11_1": {
+"auto": true
+},
+"pk11_2": {
+"auto": true
+},
+"pk11_3": {
+"auto": true
+},
+"pk11_4": {
+"auto": true
+},
+"pk11_5": {
+"auto": true
+},
+"pk11_6": {
+"auto": true
+},
+"pk11_7": {
+"auto": true
+},
+"pk11_8": {
+"auto": true
+},
+"pk11_9": {
+"auto": true
+},
+"pk11_10": {
+"auto": true
+},
+"pk11_11": {
+"auto": true
+},
+"pk11_12": {
+"auto": true
+},
+"pk11_13": {
+"auto": true
+},
+"pk11_14": {
+"auto": true
+},
+"pk11_15": {
+"auto": true
+},
+"pk11_16": {
+"auto": true
+},
+"pk11_17": {
+"auto": true
+},
+"pk11_18": {
+"auto": true
+},
+"pk11_19": {
+"auto": true
+},
+"pk11_20": {
+"auto": true
+},
+"pk11_21": {
+"auto": true
+},
+"pk11_22": {
+"auto": true
+},
+"pk11_23": {
+"auto": true
+},
+"pk11_24": {
+"auto": true
+},
+"pk11_25": {
+"auto": true
+},
+"pk11_26": {
+"auto": true
+},
+"good_cash": {
+"auto": true
+}
+}
 }
 ],
 "items": {
@@ -2978,474 +3181,6 @@
 "o": 88,
 "u": 1
 },
-"pack89": {
-"group": "Documents and money",
-"name": "Passport (6+ months left is safest)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack89",
-"o": 89,
-"u": 1
-},
-"pack90": {
-"group": "Documents and money",
-"name": "Norwegian driving licence (both, if Stian drives)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack90",
-"o": 90,
-"u": 1
-},
-"pack91": {
-"group": "Documents and money",
-"name": "Credit card in the driver's name (for the car deposit)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack91",
-"o": 91,
-"u": 1
-},
-"pack92": {
-"group": "Documents and money",
-"name": "Debit card + backup card",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack92",
-"o": 92,
-"u": 1
-},
-"pack93": {
-"group": "Documents and money",
-"name": "Some US dollars in cash",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack93",
-"o": 93,
-"u": 1
-},
-"pack94": {
-"group": "Documents and money",
-"name": "Card coverage letter (if skipping CDW)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack94",
-"o": 94,
-"u": 1
-},
-"pack95": {
-"group": "Documents and money",
-"name": "Travel insurance details",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack95",
-"o": 95,
-"u": 1
-},
-"pack96": {
-"group": "Documents and money",
-"name": "E-ticket and booking refs (also offline on phone)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack96",
-"o": 96,
-"u": 1
-},
-"pack97": {
-"group": "Documents and money",
-"name": "Copies of passport and licence (photo on phone + paper)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack97",
-"o": 97,
-"u": 1
-},
-"pack99": {
-"group": "Tech",
-"name": "Phone + charger",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack99",
-"o": 99,
-"u": 1
-},
-"pack100": {
-"group": "Tech",
-"name": "Power bank",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack100",
-"o": 100,
-"u": 1
-},
-"pack101": {
-"group": "Tech",
-"name": "Plug adapter for Costa Rica (US-type plugs, 120 V: check chargers say 100–240 V)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack101",
-"o": 101,
-"u": 1
-},
-"pack102": {
-"group": "Tech",
-"name": "Car phone holder",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack102",
-"o": 102,
-"u": 1
-},
-"pack103": {
-"group": "Tech",
-"name": "Car USB charger + cable",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack103",
-"o": 103,
-"u": 1
-},
-"pack104": {
-"group": "Tech",
-"name": "Headphones",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack104",
-"o": 104,
-"u": 1
-},
-"pack_c16": {
-"group": "Tech",
-"name": "Head torch (night walks)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack_c16",
-"o": 106,
-"u": 1
-},
-"pack106": {
-"group": "Clothes",
-"name": "Rain jacket (October is the wettest month)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack106",
-"o": 106,
-"u": 1
-},
-"pack_c17": {
-"group": "Clothes",
-"name": "Warm layer / fleece (cool evenings, plane)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack_c17",
-"o": 108,
-"u": 1
-},
-"pack108": {
-"group": "Clothes",
-"name": "Long trousers (hiking, mosquitoes)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack108",
-"o": 108,
-"u": 1
-},
-"pack109": {
-"group": "Clothes",
-"name": "Light quick-dry shirts and shorts",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack109",
-"o": 109,
-"u": 1
-},
-"pack110": {
-"group": "Clothes",
-"name": "Swimwear",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack110",
-"o": 110,
-"u": 1
-},
-"pack111": {
-"group": "Clothes",
-"name": "Walking shoes or light hiking boots (mud)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack111",
-"o": 111,
-"u": 1
-},
-"pack112": {
-"group": "Clothes",
-"name": "Sandals / flip-flops",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack112",
-"o": 112,
-"u": 1
-},
-"pack113": {
-"group": "Clothes",
-"name": "Cap or sun hat",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack113",
-"o": 113,
-"u": 1
-},
-"pack114": {
-"group": "Clothes",
-"name": "Clothes for a nice dinner",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack114",
-"o": 114,
-"u": 1
-},
-"pack115": {
-"group": "Health and comfort",
-"name": "Personal medicines (enough for the whole trip)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack115",
-"o": 115,
-"u": 1
-},
-"pack116": {
-"group": "Health and comfort",
-"name": "Insect repellent (strong, DEET)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack116",
-"o": 116,
-"u": 1
-},
-"pack117": {
-"group": "Health and comfort",
-"name": "Sunscreen (reef-safe for the beaches)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack117",
-"o": 117,
-"u": 1
-},
-"pack118": {
-"group": "Health and comfort",
-"name": "Sunglasses",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack118",
-"o": 118,
-"u": 1
-},
-"pack119": {
-"group": "Health and comfort",
-"name": "Small first aid kit + plasters",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack119",
-"o": 119,
-"u": 1
-},
-"pack120": {
-"group": "Health and comfort",
-"name": "Travel sickness tablets (lots of curvy roads)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack120",
-"o": 120,
-"u": 1
-},
-"pack121": {
-"group": "Health and comfort",
-"name": "Stomach tablets",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack121",
-"o": 121,
-"u": 1
-},
-"pack122": {
-"group": "Health and comfort",
-"name": "Hand sanitiser",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack122",
-"o": 122,
-"u": 1
-},
-"pack123": {
-"group": "Day trips",
-"name": "Small daypack",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack123",
-"o": 123,
-"u": 1
-},
-"pack124": {
-"group": "Day trips",
-"name": "Dry bag (rafting, boat trips, rain)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack124",
-"o": 124,
-"u": 1
-},
-"pack125": {
-"group": "Day trips",
-"name": "Water bottle",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack125",
-"o": 125,
-"u": 1
-},
-"pack126": {
-"group": "Day trips",
-"name": "Binoculars (birds, sloths, whales)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack126",
-"o": 126,
-"u": 1
-},
-"pack127": {
-"group": "Day trips",
-"name": "Snorkel mask (optional)",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack127",
-"o": 127,
-"u": 1
-},
-"pack128": {
-"group": "Day trips",
-"name": "Quick-dry towel",
-"ticks": {
-"Simon": false,
-"Stian": false
-},
-"type": "pack",
-"id": "pack128",
-"o": 128,
-"u": 1
-},
 "question_c18": {
 "name": "Río Celeste on Sat 31 Oct: go, or rest day?",
 "done": false,
@@ -3930,6 +3665,326 @@
 "cat": "tour",
 "id": "sp_alsacia",
 "o": 166,
+"u": 1
+},
+"pk11_1": {
+"id": "pk11_1",
+"type": "pack",
+"group": "👕 Clothes",
+"name": "Light rain jacket or poncho",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 167,
+"u": 1
+},
+"pk11_2": {
+"id": "pk11_2",
+"type": "pack",
+"group": "👕 Clothes",
+"name": "Quick-dry T-shirts (5–6)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 168,
+"u": 1
+},
+"pk11_3": {
+"id": "pk11_3",
+"type": "pack",
+"group": "👕 Clothes",
+"name": "2 hiking shorts or light trousers",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 169,
+"u": 1
+},
+"pk11_4": {
+"id": "pk11_4",
+"type": "pack",
+"group": "👕 Clothes",
+"name": "1 long-sleeve shirt (mosquitoes, sun)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 170,
+"u": 1
+},
+"pk11_5": {
+"id": "pk11_5",
+"type": "pack",
+"group": "👕 Clothes",
+"name": "Swimwear (hot springs, beach)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 171,
+"u": 1
+},
+"pk11_6": {
+"id": "pk11_6",
+"type": "pack",
+"group": "👕 Clothes",
+"name": "Thin fleece (Poás ~10°C)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 172,
+"u": 1
+},
+"pk11_7": {
+"id": "pk11_7",
+"type": "pack",
+"group": "👕 Clothes",
+"name": "Evening clothes",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 173,
+"u": 1
+},
+"pk11_8": {
+"id": "pk11_8",
+"type": "pack",
+"group": "👟 Shoes",
+"name": "Waterproof hiking shoes (worn in)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 174,
+"u": 1
+},
+"pk11_9": {
+"id": "pk11_9",
+"type": "pack",
+"group": "👟 Shoes",
+"name": "Sandals or water shoes",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 175,
+"u": 1
+},
+"pk11_10": {
+"id": "pk11_10",
+"type": "pack",
+"group": "👟 Shoes",
+"name": "Quick-dry socks (6+)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 176,
+"u": 1
+},
+"pk11_11": {
+"id": "pk11_11",
+"type": "pack",
+"group": "💊 Health",
+"name": "Insect repellent (DEET)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 177,
+"u": 1
+},
+"pk11_12": {
+"id": "pk11_12",
+"type": "pack",
+"group": "💊 Health",
+"name": "Sunscreen and cap",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 178,
+"u": 1
+},
+"pk11_13": {
+"id": "pk11_13",
+"type": "pack",
+"group": "💊 Health",
+"name": "Plasters, painkillers, stomach tablets",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 179,
+"u": 1
+},
+"pk11_14": {
+"id": "pk11_14",
+"type": "pack",
+"group": "💊 Health",
+"name": "Own medicines",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 180,
+"u": 1
+},
+"pk11_15": {
+"id": "pk11_15",
+"type": "pack",
+"group": "🎒 Gear",
+"name": "Daypack with rain cover",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 181,
+"u": 1
+},
+"pk11_16": {
+"id": "pk11_16",
+"type": "pack",
+"group": "🎒 Gear",
+"name": "Dry bags or zip bags (phone, passport)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 182,
+"u": 1
+},
+"pk11_17": {
+"id": "pk11_17",
+"type": "pack",
+"group": "🎒 Gear",
+"name": "Water bottle",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 183,
+"u": 1
+},
+"pk11_18": {
+"id": "pk11_18",
+"type": "pack",
+"group": "🎒 Gear",
+"name": "Head torch (Tortuguero)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 184,
+"u": 1
+},
+"pk11_19": {
+"id": "pk11_19",
+"type": "pack",
+"group": "🎒 Gear",
+"name": "Power bank",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 185,
+"u": 1
+},
+"pk11_20": {
+"id": "pk11_20",
+"type": "pack",
+"group": "🎒 Gear",
+"name": "US plug adapter",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 186,
+"u": 1
+},
+"pk11_21": {
+"id": "pk11_21",
+"type": "pack",
+"group": "🎒 Gear",
+"name": "Binoculars",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 187,
+"u": 1
+},
+"pk11_22": {
+"id": "pk11_22",
+"type": "pack",
+"group": "🛂 Papers & money",
+"name": "Passport",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 188,
+"u": 1
+},
+"pk11_23": {
+"id": "pk11_23",
+"type": "pack",
+"group": "🛂 Papers & money",
+"name": "Driving licence",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 189,
+"u": 1
+},
+"pk11_24": {
+"id": "pk11_24",
+"type": "pack",
+"group": "🛂 Papers & money",
+"name": "Card with no foreign fees",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 190,
+"u": 1
+},
+"pk11_25": {
+"id": "pk11_25",
+"type": "pack",
+"group": "🛂 Papers & money",
+"name": "US$200–300 each in small notes ($1/$5/$10/$20)",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 191,
+"u": 1
+},
+"pk11_26": {
+"id": "pk11_26",
+"type": "pack",
+"group": "🛂 Papers & money",
+"name": "Travel insurance",
+"ticks": {
+"Simon": false,
+"Stian": false
+},
+"o": 192,
+"u": 1
+},
+"good_cash": {
+"id": "good_cash",
+"type": "good",
+"name": "💵 Cash tip",
+"text": "Dollars are OK almost everywhere. Use cash for tips, parking, sodas, fruit stands and boats. Get some colones (₡) from a bank ATM at the airport.",
+"o": 193,
 "u": 1
 }
 }
