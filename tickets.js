@@ -15,7 +15,7 @@ const sorted=()=>[...T].sort((a,b)=>(a.date+(a.time||'99')).localeCompare(b.date
 const fmt=t=>{if(!t.date)return 'No date';const d=new Date(t.date+'T12:00');return d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})+(t.time?' · '+t.time:'');};
 function qrSvg(txt){try{const q=qrcode(0,'M');q.addData(txt);q.make();return q.createSvgTag({cellSize:8,margin:2,scalable:true});}catch(x){return '';}}
 R.tickets=()=>{setTimeout(thumbs,0);return `<h2>🎟️ Tickets</h2><div class="banner">🔒 Only on this phone</div>`+
- sorted().map(t=>`<div class="card tk" data-tko="${t.id}"><div class="tkh"><span class="tki">${TY[t.type]?.[0]||'🎟️'}</span><div class="t"><h3>${e(t.title)}</h3><div class="mut">${e(fmt(t))}</div></div><button class="sm" data-tke="${t.id}" aria-label="Edit">✏️</button></div>
+ sorted().map(t=>`<div class="card tk" data-tko="${t.id}"><div class="tkh"><span class="tki">${TY[t.type]?.[0]||'🎟️'}</span><div class="t"><h3>${e(t.title)}</h3><div class="mut">${e(fmt(t))}</div>${t.note?`<div class="mut">📍 ${e(t.note)}</div>`:''}</div><button class="sm" data-tke="${t.id}" aria-label="Edit">✏️</button></div>
  ${t.code?`<button class="tkc" data-tkc="${e(t.code)}">${e(t.code)} <small>📋</small></button>`:`<button class="tkc empty" data-tke="${t.id}">＋ Add code</button>`}
  <div class="tkimg" id="ti-${t.id}"></div>${t.qr?`<div class="tkqr">${qrSvg(t.qr)}</div>`:''}</div>`).join('')+
  `<button class="btn pri big" data-tke="new">＋ New ticket</button>
@@ -49,5 +49,15 @@ document.addEventListener('click',ev=>{const b=ev.target.closest('[data-tke],[da
  if(b.dataset.tkc!==undefined){ev.stopPropagation();navigator.clipboard?.writeText(b.dataset.tkc);b.classList.add('ok');setTimeout(()=>b.classList.remove('ok'),1200);return;}
  if(b.dataset.tkx!==undefined)return exp();
  if(b.dataset.tko)full(b.dataset.tko);},true);
+// One-tap import: #tickets-import=<base64url UTF-8 JSON {tickets:[...], remove:[titles]}>. Fragment never reaches a server.
+async function hashImp(){const h=location.hash;if(!h.startsWith('#tickets-import='))return;
+ try{let b=h.slice(16).replace(/-/g,'+').replace(/_/g,'/');while(b.length%4)b+='=';const j=JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(b),c=>c.charCodeAt(0))));
+  const rm=new Set(j.remove||[]);const gone=T.filter(x=>rm.has(x.title));T=T.filter(x=>!rm.has(x.title));for(const g of gone)await delImg(g.id).catch(()=>{});let n=0;
+  for(const t of j.tickets||[]){const key=(t.match||t.title);let c=T.find(x=>x.title===key||x.title===t.title);const {match,img,...f}=t;
+   if(c)Object.assign(c,f);else{c={id:'t'+Date.now().toString(36)+(n),type:'other',title:'',date:'',time:'',code:'',qr:'',note:'',...f};T.push(c);}n++;
+   if(img)await putImg(c.id,await (await fetch(img)).blob());}
+  save();history.replaceState(null,'',location.pathname+location.search+'#tickets');if(window.render)render();setTimeout(()=>alert('✅ '+n+' tickets added'),300);}
+ catch(x){history.replaceState(null,'',location.pathname+'#tickets');alert('Import link not valid');}}
+addEventListener('hashchange',hashImp);setTimeout(hashImp,0);
 document.addEventListener('change',ev=>{if(ev.target.id==='tkimp'&&ev.target.files[0])imp(ev.target.files[0]);});
 })();
