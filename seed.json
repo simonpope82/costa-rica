@@ -1935,8 +1935,10 @@
 "question_nov1": {
 "auto": true
 },
-"todo_t_rl": {
-"auto": true
+"todo_t_volc": {
+"name": "Red Lava full-day tour, Sat 31 Oct 07:00",
+"done": true,
+"status": "Booked"
 }
 }
 }
@@ -3115,9 +3117,9 @@
 },
 "todo_t_volc": {
 "id": "todo_t_volc",
-"name": "Volcano + waterfall + hot springs tour, Fri 30 Oct",
-"done": false,
-"status": "To book",
+"name": "Red Lava full-day tour, Sat 31 Oct 07:00",
+"done": true,
+"status": "Booked",
 "link": "t_volc",
 "ref": "",
 "price": "",
@@ -4095,19 +4097,6 @@
 "answer": "",
 "type": "question",
 "o": 195,
-"u": 1
-},
-"todo_t_rl": {
-"id": "todo_t_rl",
-"name": "Red Lava full-day tour, Sat 31 Oct 07:00",
-"done": true,
-"status": "Booked",
-"link": "t_volc",
-"ref": "",
-"price": "USD 307.38",
-"notes": "",
-"type": "todo",
-"o": 196,
 "u": 1
 }
 }
