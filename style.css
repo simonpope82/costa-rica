@@ -34,3 +34,12 @@ table{width:100%;border-collapse:collapse;font-size:16px}td,th{border-bottom:1px
 .wx{margin:4px 0;font-size:17px}.wxrow{display:flex;gap:6px;overflow-x:auto}.wxd{flex:1;min-width:46px;text-align:center;background:#f3f6f4;border-radius:10px;padding:6px 2px;font-size:16px}
 .pinn{width:34px;height:34px;border-radius:50%;background:#0a6b45;color:#fff;font-weight:800;font-size:18px;display:flex;align-items:center;justify-content:center;border:3px solid #fff;box-shadow:0 1px 4px #0008}
 .pinc{font-size:26px;filter:drop-shadow(0 1px 2px #0008)}
+.tk{cursor:pointer}.tkh{display:flex;align-items:center;gap:12px}.tkh .t{flex:1}.tki{font-size:44px;line-height:1}
+.tkc{display:block;width:100%;margin-top:10px;border:3px dashed var(--g);background:#e6f2ec;border-radius:12px;padding:12px;font:800 28px/1.2 ui-monospace,Menlo,monospace;letter-spacing:2px;color:#111}
+.tkc.empty{font-family:inherit;font-size:19px;font-weight:700;letter-spacing:0;color:var(--g);border-color:#9cc}.tkc.ok{background:#15803d;color:#fff}.tkc.ok small:after{content:' Copied'}
+.tkimg img{display:block;max-width:100%;max-height:180px;margin:10px auto 0;border-radius:10px}.tkqr svg{display:block;width:150px;height:150px;margin:10px auto 0;background:#fff}
+.tkfull{position:fixed;inset:0;z-index:100;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:20px}
+.tkfull img{max-width:100%;max-height:62vh;object-fit:contain}.tkfull .tkqr svg{width:min(80vw,60vh);height:min(80vw,60vh)}
+.tkft{font-size:24px;font-weight:800;text-align:center}.tkfc{font:800 34px ui-monospace,Menlo,monospace;letter-spacing:3px}.tkfh{background:#fff4c2;border-radius:20px;padding:6px 14px;font-weight:700}
+.tkty{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px}.tkty input{display:none}.tkty span{display:block;text-align:center;border:3px solid #ddd;border-radius:12px;padding:8px;font-size:15px;font-weight:700}.tkty span{font-size:15px}.tkty input:checked+span{border-color:var(--g);background:#e6f2ec}
+#sheet label:not(.btn){display:block;font-weight:700;margin:8px 0}#sheet label input:not([type=radio]){display:block;width:100%;font-size:19px;padding:10px;border:2px solid #ccc;border-radius:10px;margin-top:4px}

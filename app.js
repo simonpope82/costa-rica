@@ -42,7 +42,7 @@ function crClock(){return new Date(Date.now()+C.utcOffset*3600e3).toISOString().
 function homeTime(hhmm){if(!/^\d\d:\d\d/.test(hhmm||''))return '';let [h,mm]=hhmm.split(':').map(Number);h=(h+C.homeOffsetH)%24;return `${String(h).padStart(2,'0')}:${String(mm).padStart(2,'0')} ${C.homeName}`;}
 // ---------- screens
 const R={};
-R.more=()=>`<h2>☰ All screens</h2><div class="banner">📱 iPhone: Share → Add to Home Screen</div><div class="tiles">${[['today','🏠','Today'],['map','🗺️','Map'],['days','📅','Day by day'],['stays','🛏️','Stays'],['car','🚙','Car'],['flights','✈️','Flights'],['spend','💸','Spend'],['places','📍','Places'],['lists','✅','Checklists'],['info','ℹ️','Info + notes'],['settings','⚙️','Sync + export']].map(([h,e,t])=>`<a class="tile" href="#${h}"><b>${e}</b>${t}</a>`).join('')}</div>`;
+R.more=()=>`<h2>☰ All screens</h2><div class="banner">📱 iPhone: Share → Add to Home Screen</div><div class="tiles">${[['today','🏠','Today'],['map','🗺️','Map'],['days','📅','Day by day'],['stays','🛏️','Stays'],['car','🚙','Car'],['flights','✈️','Flights'],['tickets','🎟️','Tickets'],['spend','💸','Spend'],['places','📍','Places'],['lists','✅','Checklists'],['info','ℹ️','Info + notes'],['settings','⚙️','Sync + export']].map(([h,e,t])=>`<a class="tile" href="#${h}"><b>${e}</b>${t}</a>`).join('')}</div>`;
 function liveSpot(){const t=crNow(),ds=days(),d=ds.find(x=>x.date===t);const s=d?stayFor(d.day):null;
  if(s&&s.lat!=null&&s.lat!=='')return{name:s.area,lat:+s.lat,lng:+s.lng};return{name:'San José / Alajuela',lat:9.9939,lng:-84.2088};}
 let wxBusy=false;async function fetchLive(){const sp=liveSpot();if(wxBusy)return;wxBusy=true;
