@@ -11,7 +11,7 @@ function save(){localStorage.setItem(TK,JSON.stringify(T));}
 const dbp=new Promise((ok,no)=>{const r=indexedDB.open('trip-tickets',1);r.onupgradeneeded=()=>r.result.createObjectStore('img');r.onsuccess=()=>ok(r.result);r.onerror=no;});
 const idb=(mode,fn)=>dbp.then(db=>new Promise((ok,no)=>{const t=db.transaction('img',mode);const r=fn(t.objectStore('img'));t.oncomplete=()=>ok(r&&r.result);t.onerror=no;}));
 const getImg=id=>idb('readonly',s=>s.get(id)),putImg=(id,v)=>idb('readwrite',s=>s.put(v,id)),delImg=id=>idb('readwrite',s=>s.delete(id));
-const sorted=()=>[...T].sort((a,b)=>(a.date+a.time).localeCompare(b.date+b.time));
+const sorted=()=>[...T].sort((a,b)=>(a.date+(a.time||'99')).localeCompare(b.date+(b.time||'99')));
 const fmt=t=>{if(!t.date)return 'No date';const d=new Date(t.date+'T12:00');return d.toLocaleDateString('en-GB',{weekday:'short',day:'numeric',month:'short'})+(t.time?' · '+t.time:'');};
 function qrSvg(txt){try{const q=qrcode(0,'M');q.addData(txt);q.make();return q.createSvgTag({cellSize:8,margin:2,scalable:true});}catch(x){return '';}}
 R.tickets=()=>{setTimeout(thumbs,0);return `<h2>🎟️ Tickets</h2><div class="banner">🔒 Only on this phone</div>`+
