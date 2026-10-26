@@ -1838,6 +1838,107 @@
 "auto": true
 }
 }
+},
+{
+"id": "m12-redlava-rioceleste",
+"patch": {
+"day3": {
+"title": "Free day at The Springs",
+"plan": "Rest day. Pools + hot springs at The Springs. (The big tour is now Sat 31 Oct.) No driving."
+},
+"day4": {
+"title": "Big tour → drive to Río Celeste",
+"plan": "Early check-out, bags in the car. 07:00 Red Lava tour: hanging bridges, lava walk, lunch, La Fortuna waterfall, hot springs. Back about 17:30. Then drive La Fortuna → Bijagua (Río Celeste): 97 km, about 1 h 45. Dark from 17:30: drive slowly. Night near Río Celeste: TO BOOK.",
+"wx": {
+"kind": "typical",
+"place": "La Fortuna → Bijagua",
+"tmax": 27,
+"tmin": 21,
+"mm": 16.7,
+"pop": 97
+}
+},
+"day5": {
+"title": "Río Celeste waterfall → Tamarindo?",
+"plan": "Go early to Tenorio park (Río Celeste waterfall, about 3 h walk, 250 steps). Then drive Bijagua → Tamarindo: 151 km, about 3 h. Night 1 Nov: TO DECIDE (Tamarindo, or a 2nd night at Río Celeste).",
+"wx": {
+"kind": "typical",
+"place": "Bijagua / Río Celeste",
+"tmax": 27,
+"tmin": 21,
+"mm": 17.3,
+"pop": 100
+}
+},
+"day6": {
+"title": "Tamarindo",
+"plan": "Beach. (If you stayed a 2nd night at Río Celeste: leave 08:00, drive 3 h to Tamarindo.)"
+},
+"t_volc": {
+"name": "Red Lava full day: hanging bridges, Arenal lava walk, La Fortuna waterfall, hot springs",
+"day": 4,
+"when": "Sat 31 Oct, 07:00 – about 17:30",
+"length": "11 h",
+"price": "USD 307.38 for 2 (paid)",
+"status": "Booked",
+"notes": "Meet: Red Lava office, La Fortuna bus terminal (or ask them for pickup at The Springs). Lunch + hot springs + 1 drink included. Free cancel until 24 h before. Code: see Tickets. Tel +506 2479-8004 / +506 8868-5500. https://redlavatours.com/tour/full-day-hanging-bridges-arenal-volcano-la-fortuna-waterfall-and-hotsprings/"
+},
+"t_rc": {
+"day": 5,
+"when": "Sun 1 Nov, morning",
+"status": "In plan",
+"length": "About 3 h walk, self-drive",
+"notes": "250 steps down. From Bijagua about 25 min to the park. Park ticket about 12 USD pp (buy on SINAC)."
+},
+"t_dja": {
+"status": "Idea",
+"notes": "Dropped for now: you leave La Fortuna on 31 Oct."
+},
+"st_lf2": {
+"name": "Not chosen (near Río Celeste)",
+"area": "Río Celeste / Bijagua",
+"checkin": "Sat 31 Oct",
+"checkout": "Sun 1 Nov",
+"fromDay": 4,
+"toDay": 4,
+"status": "To book",
+"notes": "1 night, 2 beds. Arrive about 19:30 after the tour. Ideas: Celeste Mountain Lodge (~USD 130–150), Tenorio Lodge (2 queen beds, ~USD 195–225 with breakfast), Hideaway Rio Celeste (luxury, ~USD 420 for 2 queens).",
+"lat": 10.7322,
+"lng": -85.0596
+},
+"todo_st_lf2": {
+"name": "Hotel 31 Oct (1 night): near Río Celeste (Bijagua), 2 beds"
+},
+"question_c18": {
+"answer": "Yes: after the tour on 31 Oct, sleep near Río Celeste. Waterfall on 1 Nov.",
+"done": true
+},
+"L2": {
+"day": 5,
+"route": "Bijagua (Río Celeste) → Tamarindo",
+"km": 151,
+"time": "3 h",
+"leaveBy": "after the waterfall (~13:00)",
+"notes": ""
+},
+"fuel_c3": {
+"name": "La Fortuna (leave full on 31 Oct)",
+"day": 4,
+"leg": "L1b"
+},
+"todo_t_dja": {
+"del": true
+},
+"L1b": {
+"auto": true
+},
+"question_nov1": {
+"auto": true
+},
+"todo_t_rl": {
+"auto": true
+}
+}
 }
 ],
 "items": {
@@ -1888,8 +1989,8 @@
 "day": 3,
 "date": "2026-10-30",
 "label": "Fri 30 Oct",
-"title": "Volcano + waterfall + hot springs",
-"plan": "Full-day tour (10 h, pickup from the hotel): La Fortuna waterfall, Maleku lunch, Arenal volcano walk, hot springs. No driving.",
+"title": "Free day at The Springs",
+"plan": "Rest day. Pools + hot springs at The Springs. (The big tour is now Sat 31 Oct.) No driving.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -1909,13 +2010,13 @@
 "day": 4,
 "date": "2026-10-31",
 "label": "Sat 31 Oct",
-"title": "Río Celeste (maybe)",
-"plan": "Check out of The Springs. Move to hotel 2 in La Fortuna (to book). Idea: Río Celeste waterfall, Tenorio park (1 h 45 each way, 250 steps down). Or a lazy day at the hot springs.",
+"title": "Big tour → drive to Río Celeste",
+"plan": "Early check-out, bags in the car. 07:00 Red Lava tour: hanging bridges, lava walk, lunch, La Fortuna waterfall, hot springs. Back about 17:30. Then drive La Fortuna → Bijagua (Río Celeste): 97 km, about 1 h 45. Dark from 17:30: drive slowly. Night near Río Celeste: TO BOOK.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "La Fortuna",
+"place": "La Fortuna → Bijagua",
 "tmax": 27,
 "tmin": 21,
 "mm": 16.7,
@@ -1930,13 +2031,13 @@
 "day": 5,
 "date": "2026-11-01",
 "label": "Sun 1 Nov",
-"title": "Don Juan coffee + chocolate",
-"plan": "Don Juan Arenal tour (2 h; 09:00, 10:00, 14:00 or 15:00). Afternoon: hot springs. No driving.",
+"title": "Río Celeste waterfall → Tamarindo?",
+"plan": "Go early to Tenorio park (Río Celeste waterfall, about 3 h walk, 250 steps). Then drive Bijagua → Tamarindo: 151 km, about 3 h. Night 1 Nov: TO DECIDE (Tamarindo, or a 2nd night at Río Celeste).",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "La Fortuna",
+"place": "Bijagua / Río Celeste",
 "tmax": 27,
 "tmin": 21,
 "mm": 17.3,
@@ -1951,8 +2052,8 @@
 "day": 6,
 "date": "2026-11-02",
 "label": "Mon 2 Nov",
-"title": "To Tamarindo",
-"plan": "Leave 08:00. Long drive (5 h 30). Afternoon: beach.",
+"title": "Tamarindo",
+"plan": "Beach. (If you stayed a 2nd night at Río Celeste: leave 08:00, drive 3 h to Tamarindo.)",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -2436,20 +2537,20 @@
 "L2": {
 "id": "L2",
 "name": "L2",
-"day": 6,
-"route": "La Fortuna → Tamarindo",
-"km": 247,
-"time": "5 h 30",
-"leaveBy": "08:00",
-"notes": "Long drive.",
+"day": 5,
+"route": "Bijagua (Río Celeste) → Tamarindo",
+"km": 151,
+"time": "3 h",
+"leaveBy": "after the waterfall (~13:00)",
+"notes": "",
 "type": "leg",
 "o": 29,
 "u": 1
 },
 "fuel_c3": {
-"name": "La Fortuna (leave full)",
-"day": 6,
-"leg": "L2",
+"name": "La Fortuna (leave full on 31 Oct)",
+"day": 4,
+"leg": "L1b",
 "km": null,
 "lat": null,
 "lng": null,
@@ -2740,13 +2841,13 @@
 },
 "t_volc": {
 "id": "t_volc",
-"name": "Arenal volcano + La Fortuna waterfall + hot springs (GetYourGuide)",
-"day": 3,
-"when": "Fri 30 Oct, pickup (time at booking)",
-"length": "10 h",
-"price": "about 95–105 USD pp",
-"status": "To book",
-"notes": "Pickup in La Fortuna. Lunch, park fees, hot springs + 1 cocktail included. https://www.getyourguide.com/la-fortuna-l1904/arenal-volcano-la-fortuna-waterfall-and-hot-springs-tour-t192264/",
+"name": "Red Lava full day: hanging bridges, Arenal lava walk, La Fortuna waterfall, hot springs",
+"day": 4,
+"when": "Sat 31 Oct, 07:00 – about 17:30",
+"length": "11 h",
+"price": "USD 307.38 for 2 (paid)",
+"status": "Booked",
+"notes": "Meet: Red Lava office, La Fortuna bus terminal (or ask them for pickup at The Springs). Lunch + hot springs + 1 drink included. Free cancel until 24 h before. Code: see Tickets. Tel +506 2479-8004 / +506 8868-5500. https://redlavatours.com/tour/full-day-hanging-bridges-arenal-volcano-la-fortuna-waterfall-and-hotsprings/",
 "lat": 10.4627,
 "lng": -84.7032,
 "link": "",
@@ -2761,8 +2862,8 @@
 "when": "Sun 1 Nov 09:00/10:00/14:00/15:00",
 "length": "2 h",
 "price": "50 USD pp",
-"status": "To book",
-"notes": "The La Fortuna farm (not Monteverde). Free pickup from most town hotels. https://donjuantoursarenal.com/",
+"status": "Idea",
+"notes": "Dropped for now: you leave La Fortuna on 31 Oct.",
 "lat": 10.484,
 "lng": -84.642,
 "link": "",
@@ -2773,12 +2874,12 @@
 "t_rc": {
 "id": "t_rc",
 "name": "Río Celeste waterfall (Tenorio park)",
-"day": 4,
-"when": "Sat 31 Oct (maybe)",
-"length": "6 h tour or self-drive",
+"day": 5,
+"when": "Sun 1 Nov, morning",
+"length": "About 3 h walk, self-drive",
 "price": "Tour from 165 USD; park ticket about 32 USD",
-"status": "Idea",
-"notes": "250 steps down. 1 h 45 each way from La Fortuna. https://www.getyourguide.com/bijagua-de-upala-l215361/rio-celeste-fossen-luksustur-sertifisert-guide-lunsj-t1381037/",
+"status": "In plan",
+"notes": "250 steps down. From Bijagua about 25 min to the park. Park ticket about 12 USD pp (buy on SINAC).",
 "lat": 10.7158,
 "lng": -84.9969,
 "link": "",
@@ -3025,19 +3126,6 @@
 "o": 77,
 "u": 1
 },
-"todo_t_dja": {
-"id": "todo_t_dja",
-"name": "Don Juan Arenal tour, Sun 1 Nov",
-"done": false,
-"status": "To book",
-"link": "t_dja",
-"ref": "",
-"price": "",
-"notes": "",
-"type": "todo",
-"o": 78,
-"u": 1
-},
 "todo_t_tortboat": {
 "id": "todo_t_tortboat",
 "name": "Tortuguero: La Pavona parking + boats, 5 Nov / 7 Nov",
@@ -3183,8 +3271,8 @@
 },
 "question_c18": {
 "name": "Río Celeste on Sat 31 Oct: go, or rest day?",
-"done": false,
-"answer": "",
+"done": true,
+"answer": "Yes: after the tour on 31 Oct, sleep near Río Celeste. Waterfall on 1 Nov.",
 "type": "question",
 "id": "question_c18",
 "o": 130,
@@ -3538,21 +3626,21 @@
 },
 "st_lf2": {
 "id": "st_lf2",
-"name": "Not chosen (hotel 2)",
-"area": "La Fortuna / Arenal",
+"name": "Not chosen (near Río Celeste)",
+"area": "Río Celeste / Bijagua",
 "address": "",
 "checkin": "Sat 31 Oct",
-"checkout": "Mon 2 Nov",
+"checkout": "Sun 1 Nov",
 "price": "",
 "fromDay": 4,
-"toDay": 5,
+"toDay": 4,
 "status": "To book",
-"notes": "2 nights: Sat 31 Oct + Sun 1 Nov. The Springs covers only 29 + 30 Oct.",
+"notes": "1 night, 2 beds. Arrive about 19:30 after the tour. Ideas: Celeste Mountain Lodge (~USD 130–150), Tenorio Lodge (2 queen beds, ~USD 195–225 with breakfast), Hideaway Rio Celeste (luxury, ~USD 420 for 2 queens).",
 "phone": "",
 "backupOf": "",
 "ref": "",
-"lat": 10.47168,
-"lng": -84.64444,
+"lat": 10.7322,
+"lng": -85.0596,
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
@@ -3562,7 +3650,7 @@
 },
 "todo_st_lf2": {
 "id": "todo_st_lf2",
-"name": "Hotel 31 Oct – 1 Nov (2 nights): La Fortuna, hotel 2",
+"name": "Hotel 31 Oct (1 night): near Río Celeste (Bijagua), 2 beds",
 "done": false,
 "status": "To book",
 "link": "st_lf2",
@@ -3985,6 +4073,41 @@
 "name": "💵 Cash tip",
 "text": "Dollars are OK almost everywhere. Use cash for tips, parking, sodas, fruit stands and boats. Get some colones (₡) from a bank ATM at the airport.",
 "o": 193,
+"u": 1
+},
+"L1b": {
+"id": "L1b",
+"name": "L1b",
+"day": 4,
+"route": "La Fortuna → Bijagua (Río Celeste)",
+"km": 97,
+"time": "1 h 45",
+"leaveBy": "after the tour (~17:30)",
+"notes": "In the dark. Slow, watch for potholes.",
+"type": "leg",
+"o": 28.5,
+"u": 1
+},
+"question_nov1": {
+"id": "question_nov1",
+"name": "Night of 1 Nov: Tamarindo (then 3 nights there), or a 2nd night at Río Celeste?",
+"done": false,
+"answer": "",
+"type": "question",
+"o": 195,
+"u": 1
+},
+"todo_t_rl": {
+"id": "todo_t_rl",
+"name": "Red Lava full-day tour, Sat 31 Oct 07:00",
+"done": true,
+"status": "Booked",
+"link": "t_volc",
+"ref": "",
+"price": "USD 307.38",
+"notes": "",
+"type": "todo",
+"o": 196,
 "u": 1
 }
 }
