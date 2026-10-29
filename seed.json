@@ -1941,6 +1941,32 @@
 "status": "Booked"
 }
 }
+},
+{
+"id": "m13-poas-booked",
+"patch": {
+"day2": {
+"title": "Car → Starbucks farm → Poás volcano → The Springs",
+"plan": "08:30 pick up the Vamos car, across the street from the Hampton (walk over). Drive to Hacienda Alsacia, 30–40 min. 09:00 Hacienda Alsacia (Starbucks) coffee tour ✅ booked: 1 h 30 tour + 30 min tasting. About 11:00 leave, drive to Poás (about 45 min–1 h). 12:40 Poás volcano entry ✅ BOOKED (2 adults, GetYourGuide, QR in the app), about 1 h at the crater. About 13:45 leave, drive to The Springs, La Fortuna (about 2 h 30–3 h). Aim to arrive before dark (~17:45)."
+},
+"L1": {
+"route": "Hampton → Hacienda Alsacia → Poás volcano → The Springs",
+"leaveBy": "08:30",
+"notes": "Hampton → Hacienda Alsacia about 17 km / 30–40 min. Alsacia → Poás crater about 22 km / 45 min–1 h. Poás → The Springs about 115 km / 2 h 30–3 h (mountain roads, slow). Leave Poás by about 13:45, arrive before dark (~17:45)."
+},
+"t_poas": {
+"when": "Thu 29 Oct 12:40 entry (after the coffee tour)",
+"status": "Booked",
+"price": "Paid via GetYourGuide (2 adults) + parking about ₡2,000",
+"notes": "Booked via GetYourGuide, 12:40, 2 adults, QR in GetYourGuide app. About 1 h at the crater. Code: see Tickets."
+},
+"todo_t_poas": {
+"name": "Poás volcano tickets, Thu 29 Oct 12:40",
+"done": true,
+"status": "Booked",
+"notes": "Booked via GetYourGuide, 12:40, 2 adults, QR in GetYourGuide app"
+}
+}
 }
 ],
 "items": {
@@ -1971,7 +1997,7 @@
 "date": "2026-10-29",
 "label": "Thu 29 Oct",
 "title": "Car → Starbucks farm → Poás volcano → The Springs",
-"plan": "08:30 pick up the car at the Vamos office, across the street from the Hampton (walk over). Drive to Alsacia 30–40 min (Simon asks Vamos on 28 Oct for ~08:00). 09:00–10:30 Hacienda Alsacia (Starbucks) coffee tour ✅ booked. 10:30 drive to Poás (about 45 min). About 11:30 Poás crater, about 1 h (tickets NOT booked yet, last entry 14:00). About 12:30 leave, drive to The Springs (about 3 h 15), arrive about 16:00, before dark.",
+"plan": "08:30 pick up the Vamos car, across the street from the Hampton (walk over). Drive to Hacienda Alsacia, 30–40 min. 09:00 Hacienda Alsacia (Starbucks) coffee tour ✅ booked: 1 h 30 tour + 30 min tasting. About 11:00 leave, drive to Poás (about 45 min–1 h). 12:40 Poás volcano entry ✅ BOOKED (2 adults, GetYourGuide, QR in the app), about 1 h at the crater. About 13:45 leave, drive to The Springs, La Fortuna (about 2 h 30–3 h). Aim to arrive before dark (~17:45).",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -2507,7 +2533,7 @@
 "km": 155,
 "time": "4 h 45",
 "leaveBy": "08:30",
-"notes": "Hampton → Hacienda Alsacia about 17 km / 30–40 min. Alsacia → Poás crater about 22 km / 45 min. Poás → The Springs about 115 km / 3 h 15 (mountain roads, slow). Leave Poás by about 12:30.",
+"notes": "Hampton → Hacienda Alsacia about 17 km / 30–40 min. Alsacia → Poás crater about 22 km / 45 min–1 h. Poás → The Springs about 115 km / 2 h 30–3 h (mountain roads, slow). Leave Poás by about 13:45, arrive before dark (~17:45).",
 "type": "leg",
 "o": 26,
 "u": 1
@@ -3588,11 +3614,11 @@
 "id": "t_poas",
 "name": "Poás Volcano National Park (crater)",
 "day": 2,
-"when": "Thu 29 Oct ~11:00–11:30 (after the coffee tour)",
+"when": "Thu 29 Oct 12:40 entry (after the coffee tour)",
 "length": "about 1 h",
-"price": "US$15 pp + parking about ₡2,000",
-"status": "To book",
-"notes": "Tickets ONLY on the official SINAC site (fake sites exist). Site was down on 25 Oct: try again. Fixed slot, no refunds. Last entry 14:00. https://serviciosenlinea.sinac.go.cr/",
+"price": "Paid via GetYourGuide (2 adults) + parking about ₡2,000",
+"status": "Booked",
+"notes": "Booked via GetYourGuide, 12:40, 2 adults, QR in GetYourGuide app. About 1 h at the crater. Code: see Tickets.",
 "lat": 10.196,
 "lng": -84.2316,
 "link": "",
@@ -3602,13 +3628,13 @@
 },
 "todo_t_poas": {
 "id": "todo_t_poas",
-"name": "Poás volcano tickets (SINAC only), Thu 29 Oct ~11:00–11:30 slot",
-"done": false,
-"status": "To book",
+"name": "Poás volcano tickets, Thu 29 Oct 12:40",
+"done": true,
+"status": "Booked",
 "link": "t_poas",
 "ref": "",
 "price": "",
-"notes": "",
+"notes": "Booked via GetYourGuide, 12:40, 2 adults, QR in GetYourGuide app",
 "type": "todo",
 "o": 156,
 "u": 1
