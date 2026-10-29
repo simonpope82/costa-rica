@@ -23,8 +23,9 @@ function toggleTodo(id){const x=get(id),t=lnk(x);if(t&&!t.del){const nb=t.status
 function setStatus(id,st){const it=get(id);all('todo').filter(x=>x.link===id).forEach(x=>upd(x.id,{done:st==='Booked',status:st}));}
 const days=()=>all('day');const dayOf=n=>days().find(d=>d.day==n)||(n===0?{label:'Tue 27 Oct'}:undefined);
 const stayFor=n=>all('stay').find(s=>!s.backupOf&&n>=s.fromDay&&n<=s.toDay);
-const RATE=c=>c==='USD'?1:c==='CRC'?(doc.meta.rate||456.61):c==='NOK'?(doc.meta.nokRate||9.57):c==='SEK'?(doc.meta.sekRate||10.04):1;
+const RATE=c=>c==='USD'?1:c==='CRC'?(doc.meta.rate||456.61):c==='NOK'?(doc.meta.nokRate||9.28):c==='SEK'?(doc.meta.sekRate||10.04):1;
 const toUSD=(amt,c)=>(+amt||0)/RATE(c);const money=v=>'$'+v.toFixed(2);
+const toNOK=(amt,c)=>toUSD(amt,c)*RATE('NOK');const kr=v=>Math.round(v).toString().replace(/\B(?=(\d{3})+(?!\d))/g,'\u00a0')+'\u00a0kr';
 const usd=crc=>doc.meta.rate?(crc/doc.meta.rate).toFixed(0):'?';
 // ---------- links
 function waze(it,label='🚗 Navigate in Waze'){const q=[it.name&&!/^Not chosen|^Ideas:/.test(it.name)?it.name:'',it.area,C.country].filter(Boolean).join(' ');
@@ -124,16 +125,16 @@ R.settings=()=>`<h2>⚙️ Sync, export, settings</h2><div class="card"><h3>🔄
  <div class="mut">${esc(doc.meta.basics||'')}<br>${esc(doc.meta.tz||'')}</div>`;
 
 R.spend=()=>{const P=doc.meta.travellers||['Simon','Stian'],e=all('spend').sort((x,y)=>(y.date||'').localeCompare(x.date||''));
- const tot=e.reduce((s,x)=>s+toUSD(x.amount,x.cur),0),paid={};P.forEach(p=>paid[p]=0);e.forEach(x=>paid[x.who]=(paid[x.who]||0)+toUSD(x.amount,x.cur));
+ const tot=e.reduce((s,x)=>s+toNOK(x.amount,x.cur),0),paid={};P.forEach(p=>paid[p]=0);e.forEach(x=>paid[x.who]=(paid[x.who]||0)+toNOK(x.amount,x.cur));
  const half=tot/2,diff=paid[P[0]]-half;
- const owe=Math.abs(diff)<0.005?'✅ All square':diff>0?`${esc(P[1])} owes ${esc(P[0])} <b>${money(diff)}</b>`:`${esc(P[0])} owes ${esc(P[1])} <b>${money(-diff)}</b>`;
+ const owe=Math.abs(diff)<0.5?'✅ All square':diff>0?`${esc(P[1])} owes ${esc(P[0])} <b>${kr(diff)}</b>`:`${esc(P[0])} owes ${esc(P[1])} <b>${kr(-diff)}</b>`;
  const ic={hotel:'🛏️',car:'🚙',fuel:'⛽',food:'🍽️',tours:'🎟️',other:'📦'};
- return `<h2>💸 Spend</h2><div class="card" style="text-align:center"><div class="mut">Total spent</div><div class="big-num">${money(tot)}</div><div class="mut">Each person's share (50/50): <b>${money(half)}</b></div>
+ return `<h2>💸 Spend</h2><div class="card" style="text-align:center"><div class="mut">Total spent</div><div class="big-num">${kr(tot)}</div><div class="mut">Each person's share (50/50): <b>${kr(half)}</b></div>
  <div style="font-size:24px;margin-top:8px">${owe}</div></div>
- <div class="card">${P.map(p=>`<div class="kv" style="font-size:20px"><b>${esc(p)} paid</b> ${money(paid[p]||0)}</div>`).join('')}</div>
+ <div class="card">${P.map(p=>`<div class="kv" style="font-size:20px"><b>${esc(p)} paid</b> ${kr(paid[p]||0)}</div>`).join('')}</div>
  <button class="btn big pri" data-new="spend">＋ Add expense</button>
- ${e.map(x=>`<div class="row"><span style="font-size:30px">${ic[x.cat]||'📦'}</span><span class="t"><b>${esc(x.what)}</b><br><span class="mut">${esc(x.date)} · paid by ${esc(x.who)}</span></span><span style="text-align:right"><b>${esc(x.amount)} ${esc(x.cur)}</b><br><span class="mut">${money(toUSD(x.amount,x.cur))}</span></span><button class="sm" data-ed="${x.id}">✏️</button></div>`).join('')||'<div class="mut">No expenses yet.</div>'}
- <div class="card"><h3>💱 Rates (1 USD =)</h3><label>CRC</label><input id="r-crc" inputmode="decimal" value="${esc(doc.meta.rate||456.61)}"><label>NOK</label><input id="r-nok" inputmode="decimal" value="${esc(doc.meta.nokRate||9.57)}"><label>SEK</label><input id="r-sek" inputmode="decimal" value="${esc(doc.meta.sekRate||10.04)}"><button class="btn" data-rates>Save rates</button><div class="mut">Start values: CRC 10 Oct (BCCR), NOK + SEK 12 Oct 2026.</div></div>`;};
+ ${e.map(x=>`<div class="row"><span style="font-size:30px">${ic[x.cat]||'📦'}</span><span class="t"><b>${esc(x.what)}</b><br><span class="mut">${esc(x.date)} · paid by ${esc(x.who)}</span></span><span style="text-align:right"><b>${esc(x.amount)} ${esc(x.cur)}</b><br><span class="mut">${kr(toNOK(x.amount,x.cur))}</span></span><button class="sm" data-ed="${x.id}">✏️</button></div>`).join('')||'<div class="mut">No expenses yet.</div>'}
+ <div class="card"><h3>💱 Rates (1 USD =)</h3><label>CRC</label><input id="r-crc" inputmode="decimal" value="${esc(doc.meta.rate||456.61)}"><label>NOK</label><input id="r-nok" inputmode="decimal" value="${esc(doc.meta.nokRate||9.28)}"><label>SEK</label><input id="r-sek" inputmode="decimal" value="${esc(doc.meta.sekRate||10.04)}"><button class="btn" data-rates>Save rates</button><div class="mut">Start values: CRC 10 Oct (BCCR), NOK + SEK 12 Oct 2026.</div></div>`;};
 // ---------- map
 let lmap=null;
 R.map=()=>`<h2>🗺️ Map</h2><div class="tabs">${[['all','All'],['sleep','🛏️ Sleep'],['coffee','☕ Coffee'],['ideas','💡 Ideas']].map(([k,t])=>`<button class="${ui.mapF===k?'on':''}" data-mf="${k}">${t}</button>`).join('')}</div><div id="map"></div><div id="nogps" class="mut"></div>`;
