@@ -1967,6 +1967,23 @@
 "notes": "Booked via GetYourGuide, 12:40, 2 adults, QR in GetYourGuide app"
 }
 }
+},
+{
+"id": "m14-rioceleste-hotel",
+"patch": {
+"st_lf2": {
+"full": true
+},
+"todo_st_lf2": {
+"name": "Hotel 31 Oct: Finca Amistad Cacao Lodge, Bijagua",
+"done": true,
+"status": "Booked",
+"price": "USD 176.20 (pay at hotel)"
+},
+"day4": {
+"plan": "Early check-out, bags in the car. 07:00 Red Lava tour: hanging bridges, lava walk, lunch, La Fortuna waterfall, hot springs. Back about 17:30. Then drive La Fortuna → Bijagua (Río Celeste): 97 km, about 1 h 45. Dark from 17:30: drive slowly. Night: Finca Amistad Cacao Lodge ✅ BOOKED (check-in until 23:30, arrive ~19:30)."
+}
+}
 }
 ],
 "items": {
@@ -2039,7 +2056,7 @@
 "date": "2026-10-31",
 "label": "Sat 31 Oct",
 "title": "Big tour → drive to Río Celeste",
-"plan": "Early check-out, bags in the car. 07:00 Red Lava tour: hanging bridges, lava walk, lunch, La Fortuna waterfall, hot springs. Back about 17:30. Then drive La Fortuna → Bijagua (Río Celeste): 97 km, about 1 h 45. Dark from 17:30: drive slowly. Night near Río Celeste: TO BOOK.",
+"plan": "Early check-out, bags in the car. 07:00 Red Lava tour: hanging bridges, lava walk, lunch, La Fortuna waterfall, hot springs. Back about 17:30. Then drive La Fortuna → Bijagua (Río Celeste): 97 km, about 1 h 45. Dark from 17:30: drive slowly. Night: Finca Amistad Cacao Lodge ✅ BOOKED (check-in until 23:30, arrive ~19:30).",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -3654,21 +3671,21 @@
 },
 "st_lf2": {
 "id": "st_lf2",
-"name": "Not chosen (near Río Celeste)",
-"area": "Río Celeste / Bijagua",
-"address": "",
-"checkin": "Sat 31 Oct",
-"checkout": "Sun 1 Nov",
-"price": "",
+"name": "Finca Amistad Cacao Lodge",
+"area": "Bijagua",
+"address": "6 km from Bijagua toward Tenorio National Park, 21304 Bijagua",
+"checkin": "Sat 31 Oct (15:00–23:30)",
+"checkout": "Sun 1 Nov (by 11:00)",
+"price": "USD 176.20 (pay at hotel, in CRC)",
 "fromDay": 4,
 "toDay": 4,
-"status": "To book",
-"notes": "1 night, 2 beds. Arrive about 19:30 after the tour. Ideas: Celeste Mountain Lodge (~USD 130–150), Tenorio Lodge (2 queen beds, ~USD 195–225 with breakfast), Hideaway Rio Celeste (luxury, ~USD 420 for 2 queens).",
-"phone": "",
+"status": "Booked",
+"notes": "1 night. Suite with Garden View, 2 adults, breakfast included. Booked on Booking.com. Non-refundable. Pay at hotel (CRC). Check-in 15:00–23:30: tell the hotel you arrive about 19:30. Check-out by 11:00. Waze: name search.",
+"phone": "+506 6048 3391",
 "backupOf": "",
 "ref": "",
-"lat": 10.7322,
-"lng": -85.0596,
+"lat": "",
+"lng": "",
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
@@ -3678,12 +3695,12 @@
 },
 "todo_st_lf2": {
 "id": "todo_st_lf2",
-"name": "Hotel 31 Oct (1 night): near Río Celeste (Bijagua), 2 beds",
-"done": false,
-"status": "To book",
+"name": "Hotel 31 Oct: Finca Amistad Cacao Lodge, Bijagua",
+"done": true,
+"status": "Booked",
 "link": "st_lf2",
 "ref": "",
-"price": "",
+"price": "USD 176.20 (pay at hotel)",
 "notes": "",
 "type": "todo",
 "o": 71.5,
