@@ -2006,6 +2006,17 @@
 "answer": "Monteverde: Cala Lodge (booked)"
 }
 }
+},
+{
+"id": "m16-donluis-dinner",
+"patch": {
+"food_donluis": {
+"full": true
+},
+"day5": {
+"plan": "Skipping Río Celeste. Check out of Finca Amistad by 11:00. Drive Bijagua → Monteverde (about 2 h 30, last part rough road). Night: Cala Lodge, Cerro Plano, Monteverde ✅ BOOKED (check-in 14:00–00:00). Dinner: Restaurante Don Luis, Cerro Plano (dry-aged steak, open till 21:00, not booked)."
+}
+}
 }
 ],
 "items": {
@@ -2099,7 +2110,7 @@
 "date": "2026-11-01",
 "label": "Sun 1 Nov",
 "title": "Bijagua → Monteverde",
-"plan": "Skipping Río Celeste. Check out of Finca Amistad by 11:00. Drive Bijagua → Monteverde (about 2 h 30, last part rough road). Night: Cala Lodge, Cerro Plano, Monteverde ✅ BOOKED (check-in 14:00–00:00).",
+"plan": "Skipping Río Celeste. Check out of Finca Amistad by 11:00. Drive Bijagua → Monteverde (about 2 h 30, last part rough road). Night: Cala Lodge, Cerro Plano, Monteverde ✅ BOOKED (check-in 14:00–00:00). Dinner: Restaurante Don Luis, Cerro Plano (dry-aged steak, open till 21:00, not booked).",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -4212,6 +4223,19 @@
 "notes": "No walk-ins: book direct at treetopiapark.com. Rides hourly 08:00–15:40, about 1 h. 15–20 min from Santa Elena.",
 "type": "todo",
 "o": 71.7,
+"u": 1
+},
+"food_donluis": {
+"stay": "st_mv",
+"name": "Restaurante Don Luis (dinner Sun 1 Nov)",
+"link": "https://www.google.com/maps/search/?api=1&query=Restaurante+Don+Luis+Monteverde",
+"notes": "Steakhouse, dry-aged beef (21–60 days). Open 12:00–21:00 daily. Phone +506 8470-8000. Not booked. Near Cala Lodge. Waze: https://waze.com/ul?q=Restaurante%20Don%20Luis%20Monteverde",
+"area": "Cerro Plano, Monteverde",
+"lat": null,
+"lng": null,
+"type": "food",
+"id": "food_donluis",
+"o": 152.5,
 "u": 1
 }
 }
