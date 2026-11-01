@@ -1984,6 +1984,28 @@
 "plan": "Early check-out, bags in the car. 07:00 Red Lava tour: hanging bridges, lava walk, lunch, La Fortuna waterfall, hot springs. Back about 17:30. Then drive La Fortuna → Bijagua (Río Celeste): 97 km, about 1 h 45. Dark from 17:30: drive slowly. Night: Finca Amistad Cacao Lodge ✅ BOOKED (check-in until 23:30, arrive ~19:30)."
 }
 }
+},
+{
+"id": "m15-monteverde-hotel",
+"patch": {
+"st_mv": {
+"full": true
+},
+"todo_st_mv": {
+"full": true
+},
+"todo_skytram": {
+"full": true
+},
+"day5": {
+"title": "Bijagua → Monteverde",
+"plan": "Skipping Río Celeste. Check out of Finca Amistad by 11:00. Drive Bijagua → Monteverde (about 2 h 30, last part rough road). Night: Cala Lodge, Cerro Plano, Monteverde ✅ BOOKED (check-in 14:00–00:00)."
+},
+"question_nov1": {
+"done": true,
+"answer": "Monteverde: Cala Lodge (booked)"
+}
+}
 }
 ],
 "items": {
@@ -2076,8 +2098,8 @@
 "day": 5,
 "date": "2026-11-01",
 "label": "Sun 1 Nov",
-"title": "Río Celeste waterfall → Tamarindo?",
-"plan": "Go early to Tenorio park (Río Celeste waterfall, about 3 h walk, 250 steps). Then drive Bijagua → Tamarindo: 151 km, about 3 h. Night 1 Nov: TO DECIDE (Tamarindo, or a 2nd night at Río Celeste).",
+"title": "Bijagua → Monteverde",
+"plan": "Skipping Río Celeste. Check out of Finca Amistad by 11:00. Drive Bijagua → Monteverde (about 2 h 30, last part rough road). Night: Cala Lodge, Cerro Plano, Monteverde ✅ BOOKED (check-in 14:00–00:00).",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -4136,10 +4158,60 @@
 "question_nov1": {
 "id": "question_nov1",
 "name": "Night of 1 Nov: Tamarindo (then 3 nights there), or a 2nd night at Río Celeste?",
-"done": false,
-"answer": "",
+"done": true,
+"answer": "Monteverde: Cala Lodge (booked)",
 "type": "question",
 "o": 195,
+"u": 1
+},
+"st_mv": {
+"id": "st_mv",
+"name": "Cala Lodge",
+"area": "Cerro Plano, Monteverde",
+"address": "200 m west and 250 m south of Escuela Rafael Aguedas, Cerro Plano, 60109 Monteverde",
+"checkin": "Sun 1 Nov (14:00–00:00)",
+"checkout": "Mon 2 Nov (09:00–11:30)",
+"price": "USD 141.77 (paid on Booking.com)",
+"fromDay": 5,
+"toDay": 5,
+"status": "Booked",
+"notes": "1 night. Junior Suite with Balcony, 2 adults, breakfast included. Booked on Booking.com, already paid. Non-refundable. Show ID + credit card at check-in. Keys at reception. Waze: name search.",
+"phone": "+506 2645 5626",
+"backupOf": "",
+"ref": "",
+"lat": "",
+"lng": "",
+"link": "",
+"gpsAsked": false,
+"parkingAsked": false,
+"type": "stay",
+"o": 17.6,
+"u": 1
+},
+"todo_st_mv": {
+"id": "todo_st_mv",
+"name": "Hotel 1 Nov: Cala Lodge, Monteverde",
+"done": true,
+"status": "Booked",
+"link": "st_mv",
+"ref": "",
+"price": "USD 141.77 (paid)",
+"notes": "",
+"type": "todo",
+"o": 71.6,
+"u": 1
+},
+"todo_skytram": {
+"id": "todo_skytram",
+"name": "Monteverde Sky Tram (Treetopia Park): pick a day and book online",
+"done": false,
+"status": "To book",
+"link": "",
+"ref": "",
+"price": "About USD 67 each (59 + 13% tax)",
+"notes": "No walk-ins: book direct at treetopiapark.com. Rides hourly 08:00–15:40, about 1 h. 15–20 min from Santa Elena.",
+"type": "todo",
+"o": 71.7,
 "u": 1
 }
 }
