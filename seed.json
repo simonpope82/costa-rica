@@ -2029,6 +2029,21 @@
 "plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED (arrive 09:45, reception). Check out of Cala Lodge by 11:30 (before the class, or ask the hotel). Night: not booked yet."
 }
 }
+},
+{
+"id": "m18-jaco-airbnb",
+"patch": {
+"st_jaco": {
+"full": true
+},
+"sp_bread": {
+"full": true
+},
+"day6": {
+"title": "Monteverde → Jacó",
+"plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED (arrive 09:45, reception). Check out of Cala Lodge by 11:30. Then drive Monteverde → Jacó. Night: Airbnb Ocean View Condo, Jacó ⏳ REQUESTED, not confirmed yet (see Airbnb app)."
+}
+}
 }
 ],
 "items": {
@@ -2142,8 +2157,8 @@
 "day": 6,
 "date": "2026-11-02",
 "label": "Mon 2 Nov",
-"title": "Monteverde: bread workshop",
-"plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED (arrive 09:45, reception). Check out of Cala Lodge by 11:30 (before the class, or ask the hotel). Night: not booked yet.",
+"title": "Monteverde → Jacó",
+"plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED (arrive 09:45, reception). Check out of Cala Lodge by 11:30. Then drive Monteverde → Jacó. Night: Airbnb Ocean View Condo, Jacó ⏳ REQUESTED, not confirmed yet (see Airbnb app).",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -4264,6 +4279,40 @@
 "link": "https://www.google.com/maps/search/?api=1&query=Finca+El+Paraiso+Monteverde",
 "type": "tour",
 "o": 156,
+"u": 1
+},
+"st_jaco": {
+"id": "st_jaco",
+"type": "stay",
+"name": "Airbnb: Beautiful Ocean View Condo 1 Block From The Beach",
+"area": "Jacó",
+"address": "",
+"checkin": "Mon 2 Nov",
+"checkout": "Tue 3 Nov",
+"price": "Not charged yet (charged when host confirms)",
+"fromDay": 6,
+"toDay": 6,
+"status": "Requested",
+"notes": "1 night, 2 adults. Host: Jesse. REQUEST SENT, NOT CONFIRMED yet (host answers within 24 h). Check-in/out times + address: see Airbnb app. Listing: https://www.airbnb.co.uk/rooms/1558712813699243233  Map: https://www.google.com/maps/search/?api=1&query=Jaco+Beach+Costa+Rica  Waze: https://waze.com/ul?q=Jaco%20Costa%20Rica",
+"phone": "",
+"backupOf": "",
+"ref": "",
+"lat": 9.6149,
+"lng": -84.629,
+"link": "https://www.airbnb.co.uk/rooms/1558712813699243233",
+"o": 196,
+"u": 1
+},
+"sp_bread": {
+"id": "sp_bread",
+"type": "spend",
+"date": "2026-11-02",
+"what": "Bread-making workshop, Finca El Paraiso, 2 people (GetYourGuide)",
+"amount": 846,
+"cur": "NOK",
+"who": "Simon",
+"cat": "tour",
+"o": 197,
 "u": 1
 }
 }
