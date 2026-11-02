@@ -2017,6 +2017,18 @@
 "plan": "Skipping Río Celeste. Check out of Finca Amistad by 11:00. Drive Bijagua → Monteverde (about 2 h 30, last part rough road). Night: Cala Lodge, Cerro Plano, Monteverde ✅ BOOKED (check-in 14:00–00:00). Dinner: Restaurante Don Luis, Cerro Plano (dry-aged steak, open till 21:00, not booked)."
 }
 }
+},
+{
+"id": "m17-bread-workshop",
+"patch": {
+"t_bread": {
+"full": true
+},
+"day6": {
+"title": "Monteverde: bread workshop",
+"plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED (arrive 09:45, reception). Check out of Cala Lodge by 11:30 (before the class, or ask the hotel). Night: not booked yet."
+}
+}
 }
 ],
 "items": {
@@ -2130,8 +2142,8 @@
 "day": 6,
 "date": "2026-11-02",
 "label": "Mon 2 Nov",
-"title": "Tamarindo",
-"plan": "Beach. (If you stayed a 2nd night at Río Celeste: leave 08:00, drive 3 h to Tamarindo.)",
+"title": "Monteverde: bread workshop",
+"plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED (arrive 09:45, reception). Check out of Cala Lodge by 11:30 (before the class, or ask the hotel). Night: not booked yet.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -4236,6 +4248,22 @@
 "type": "food",
 "id": "food_donluis",
 "o": 152.5,
+"u": 1
+},
+"t_bread": {
+"id": "t_bread",
+"name": "Costa Rican Bread-Making Workshop, Finca El Paraiso",
+"day": 6,
+"when": "Mon 2 Nov, 10:00 – 12:00 (arrive 09:45)",
+"length": "2 h",
+"price": "NOK 846 for 2 (paid)",
+"status": "Booked",
+"notes": "GetYourGuide, 2 adults, English. Go to reception at the farm. Closed shoes + jacket. No cancel. Code: see GetYourGuide app. Tel +506 8735 4038. Map: https://www.google.com/maps/search/?api=1&query=Finca+El+Paraiso+Monteverde  Waze: https://waze.com/ul?q=Finca%20El%20Paraiso%20Monteverde",
+"lat": null,
+"lng": null,
+"link": "https://www.google.com/maps/search/?api=1&query=Finca+El+Paraiso+Monteverde",
+"type": "tour",
+"o": 156,
 "u": 1
 }
 }
