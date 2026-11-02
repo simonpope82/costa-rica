@@ -2042,6 +2042,9 @@
 "day6": {
 "title": "Monteverde → Jacó",
 "plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED (arrive 09:45, reception). Check out of Cala Lodge by 11:30. Then drive Monteverde → Jacó. Night: Airbnb Ocean View Condo, Jacó ⏳ REQUESTED, not confirmed yet (see Airbnb app)."
+},
+"sp_cala": {
+"full": true
 }
 }
 }
@@ -4313,6 +4316,18 @@
 "who": "Simon",
 "cat": "tour",
 "o": 197,
+"u": 1
+},
+"sp_cala": {
+"id": "sp_cala",
+"type": "spend",
+"date": "2026-11-01",
+"what": "Cala Lodge, Monteverde, 1 night (1–2 Nov), Booking.com, paid",
+"amount": 141.77,
+"cur": "USD",
+"who": "Simon",
+"cat": "hotel",
+"o": 198,
 "u": 1
 }
 }
