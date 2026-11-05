@@ -11,7 +11,7 @@
 "tz": "Costa Rica UTC−6 · Oslo is 7 h ahead",
 "rate": 456.61,
 "rateNote": "456.61 CRC = 1 USD (10 Oct 2026)",
-"basics": "Route: draft D2 (approved 13 Oct). 14 nights · about 1,180 km, about 32 h driving over 6 days · fuel: to check"
+"basics": "Plan changed 5 Nov: Quepos → Puerto Viejo (5–9 Nov) → Tortuguero (9–10 Nov) → near SJO (10–11 Nov) → fly 11 Nov 19:30."
 },
 "mig": [
 {
@@ -2047,6 +2047,149 @@
 "full": true
 }
 }
+},
+{
+"id": "m19-caribbean-replan",
+"patch": {
+"st_jaco": {
+"full": true
+},
+"st_quepos": {
+"full": true
+},
+"sp_jaco": {
+"full": true
+},
+"sp_quepos": {
+"full": true
+},
+"day6": {
+"full": true
+},
+"day7": {
+"full": true
+},
+"day8": {
+"full": true
+},
+"day9": {
+"full": true
+},
+"day10": {
+"full": true
+},
+"day11": {
+"full": true
+},
+"day12": {
+"full": true
+},
+"day13": {
+"full": true
+},
+"day14": {
+"full": true
+},
+"day15": {
+"full": true
+},
+"st_pvj": {
+"full": true
+},
+"st_tor": {
+"full": true
+},
+"st_sjo2": {
+"full": true
+},
+"todo_st_pvj": {
+"full": true
+},
+"todo_st_tor": {
+"full": true
+},
+"todo_st_sjo2": {
+"full": true
+},
+"t_tortboat": {
+"full": true
+},
+"todo_t_tortboat": {
+"full": true
+},
+"t_ride": {
+"full": true
+},
+"todo_t_ride": {
+"full": true
+},
+"L3": {
+"full": true
+},
+"L4": {
+"full": true
+},
+"L5": {
+"full": true
+},
+"fuel_c7": {
+"full": true
+},
+"fuel_c8": {
+"full": true
+},
+"fuel_c9": {
+"full": true
+},
+"fuel_c10": {
+"full": true
+},
+"fuel_c11": {
+"full": true
+},
+"fuel_c12": {
+"full": true
+},
+"st_tam": {
+"del": true
+},
+"st_fr": {
+"del": true
+},
+"todo_st_tam": {
+"del": true
+},
+"todo_st_fr": {
+"del": true
+},
+"todo_c14": {
+"del": true
+},
+"question_c19": {
+"del": true
+},
+"question_c20": {
+"del": true
+},
+"L6": {
+"del": true
+},
+"fuel_c5": {
+"del": true
+},
+"fuel_c6": {
+"del": true
+},
+"place144": {
+"del": true
+},
+"place143": {
+"full": true
+},
+"todo_c15": {
+"full": true
+}
+}
 }
 ],
 "items": {
@@ -2161,12 +2304,12 @@
 "date": "2026-11-02",
 "label": "Mon 2 Nov",
 "title": "Monteverde → Jacó",
-"plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED (arrive 09:45, reception). Check out of Cala Lodge by 11:30. Then drive Monteverde → Jacó. Night: Airbnb Ocean View Condo, Jacó ⏳ REQUESTED, not confirmed yet (see Airbnb app).",
+"plan": "10:00–12:00 Bread-making workshop at Finca El Paraiso ✅ BOOKED. Check out of Cala Lodge by 11:30. Then drive Monteverde → Jacó. Night: Airbnb Ocean View Condo, Jacó ✅ BOOKED (paid).",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "Tamarindo",
+"place": "Jacó",
 "tmax": 29,
 "tmin": 24,
 "mm": 12.8,
@@ -2181,13 +2324,13 @@
 "day": 7,
 "date": "2026-11-03",
 "label": "Tue 3 Nov",
-"title": "Tamarindo beach",
-"plan": "Beach, surf, sunset. No driving.",
+"title": "Jacó → Quepos (Manuel Antonio)",
+"plan": "Check out of the Jacó condo by 11:00. Drive Jacó → Quepos (about 1 h 15). Night: Airbnb Penthouse, Manuel Antonio ✅ BOOKED (check-in after 15:00).",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "Tamarindo",
+"place": "Quepos",
 "tmax": 29,
 "tmin": 24,
 "mm": 12.2,
@@ -2202,13 +2345,13 @@
 "day": 8,
 "date": "2026-11-04",
 "label": "Wed 4 Nov",
-"title": "To Fiesta Resort",
-"plan": "Leave 09:00, arrive about 14:00. All inclusive: pool + food.",
+"title": "Manuel Antonio",
+"plan": "Manuel Antonio day. Night: Airbnb Penthouse, Quepos ✅ BOOKED.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "Puntarenas (El Roble)",
+"place": "Quepos",
 "tmax": 27,
 "tmin": 23,
 "mm": 15.8,
@@ -2223,13 +2366,13 @@
 "day": 9,
 "date": "2026-11-05",
 "label": "Thu 5 Nov",
-"title": "To Tortuguero (car + boat)",
-"plan": "Leave 07:00. Via San José + Ruta 32 to La Pavona (5 h 15). Park the car (secure lot). 15:15 boat (12:45 if early), about 1 h.",
+"title": "Quepos → Puerto Viejo (Caribbean)",
+"plan": "Check out of the penthouse by 11:00. Long drive across the country: Quepos → San José → Ruta 32 → Limón → Puerto Viejo, about 360 km, 6 h 30–7 h. Fog + landslides possible on Braulio Carrillo. Dark at 17:30: drive slowly. Night: Puerto Viejo 🟡 NOT BOOKED.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "Tortuguero",
+"place": "Puerto Viejo",
 "tmax": 28,
 "tmin": 23,
 "mm": 11.7,
@@ -2244,13 +2387,13 @@
 "day": 10,
 "date": "2026-11-06",
 "label": "Fri 6 Nov",
-"title": "Tortuguero",
-"plan": "Canal boat tour + national park. No car.",
+"title": "Puerto Viejo",
+"plan": "Beach day. Punta Cocles beach is 5 min away. Night: Puerto Viejo 🟡 NOT BOOKED.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "Tortuguero",
+"place": "Puerto Viejo",
 "tmax": 28,
 "tmin": 23,
 "mm": 11.4,
@@ -2265,13 +2408,13 @@
 "day": 11,
 "date": "2026-11-07",
 "label": "Sat 7 Nov",
-"title": "To Punta Cocles",
-"plan": "06:40 or 08:40 boat back to La Pavona. Drive via Guápiles + Limón (4 h 45).",
+"title": "Puerto Viejo",
+"plan": "Beach or Cahuita National Park (20 min, open 8–16, pay at the gate). Night: Puerto Viejo 🟡 NOT BOOKED.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "Punta Cocles",
+"place": "Puerto Viejo",
 "tmax": 28,
 "tmin": 23,
 "mm": 9.1,
@@ -2286,13 +2429,13 @@
 "day": 12,
 "date": "2026-11-08",
 "label": "Sun 8 Nov",
-"title": "Ride The Rainforest",
-"plan": "Horse ride on the beach + jungle (Ride The Rainforest, Punta Cocles). Book ahead.",
+"title": "Puerto Viejo",
+"plan": "Free day. Idea: Ride The Rainforest horse ride at Punta Cocles (not booked). Night: Puerto Viejo 🟡 NOT BOOKED.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "Punta Cocles",
+"place": "Puerto Viejo",
 "tmax": 28,
 "tmin": 23,
 "mm": 10.2,
@@ -2307,13 +2450,13 @@
 "day": 13,
 "date": "2026-11-09",
 "label": "Mon 9 Nov",
-"title": "Cahuita",
-"plan": "Cahuita National Park (open every day 8–16; about 20 min drive). Beach.",
+"title": "Puerto Viejo → Tortuguero (car + boat)",
+"plan": "Check out. Drive Puerto Viejo → Limón → Guápiles → La Pavona, about 3 h 30. Park the car (secure lot). Boat about 1 h (about 12:45 or 15:15, check times). Night: Tortuguero 🟡 NOT BOOKED.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
 "kind": "typical",
-"place": "Punta Cocles",
+"place": "Tortuguero",
 "tmax": 28,
 "tmin": 23,
 "mm": 10.2,
@@ -2328,8 +2471,8 @@
 "day": 14,
 "date": "2026-11-10",
 "label": "Tue 10 Nov",
-"title": "Back to SJO",
-"plan": "Long day: leave 07:00 (6 h 30). Ruta 32 over Braulio Carrillo. Fog + landslides possible.",
+"title": "Tortuguero → near San José",
+"plan": "Early canal tour if you want. Boat back to La Pavona (about 06:40 or 08:40, check times). Drive La Pavona → near SJO, about 3 h. Ruta 32: fog + landslides possible. Night: near SJO 🟡 NOT BOOKED.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -2350,7 +2493,7 @@
 "date": "2026-11-11",
 "label": "Wed 11 Nov",
 "title": "Fly home",
-"plan": "Slow morning, pack. Fill up. Car back at SJO airport by 17:00 (confirmed). Fly 19:30.",
+"plan": "Slow morning, pack. Fill up. Return the Vamos car at SJO by about 16:30. Fly KL 760 at 19:30.",
 "notes": "",
 "sunset": "Dark about 17:15–17:30",
 "wx": {
@@ -2435,7 +2578,8 @@
 "parkingAsked": false,
 "type": "stay",
 "o": 18,
-"u": 1
+"u": 1,
+"del": true
 },
 "st_fr": {
 "id": "st_fr",
@@ -2459,20 +2603,21 @@
 "parkingAsked": false,
 "type": "stay",
 "o": 19,
-"u": 1
+"u": 1,
+"del": true
 },
 "st_tor": {
 "id": "st_tor",
-"name": "Hotel Serendipity",
-"area": "1809 Playa, Tortuguero, Limón",
+"name": "Not chosen",
+"area": "Tortuguero village",
 "address": "",
-"checkin": "",
-"checkout": "",
+"checkin": "Mon 9 Nov",
+"checkout": "Tue 10 Nov",
 "price": "",
-"fromDay": 9,
-"toDay": 10,
-"status": "To book",
-"notes": "No road: car stays at La Pavona, boat about 1 h. GPS = village (approx).",
+"fromDay": 13,
+"toDay": 13,
+"status": "Not booked",
+"notes": "1 night. Idea: Hotel Serendipity. No road: car stays at La Pavona, boat about 1 h.",
 "phone": "",
 "backupOf": "",
 "ref": "",
@@ -2488,20 +2633,20 @@
 "st_pvj": {
 "id": "st_pvj",
 "name": "Not chosen",
-"area": "Punta Cocles, Puerto Viejo de Talamanca",
+"area": "Puerto Viejo de Talamanca (incl. Punta Cocles)",
 "address": "",
-"checkin": "",
-"checkout": "",
+"checkin": "Thu 5 Nov",
+"checkout": "Mon 9 Nov",
 "price": "",
-"fromDay": 11,
-"toDay": 13,
-"status": "To book",
-"notes": "",
+"fromDay": 9,
+"toDay": 12,
+"status": "Not booked",
+"notes": "4 nights, 5–9 Nov.",
 "phone": "",
 "backupOf": "",
 "ref": "",
-"lat": 9.638944,
-"lng": -82.717119,
+"lat": 9.65638,
+"lng": -82.75382,
 "link": "",
 "gpsAsked": false,
 "parkingAsked": false,
@@ -2514,13 +2659,13 @@
 "name": "Not chosen",
 "area": "Near SJO (Tuetal / Alajuela hills / Belén)",
 "address": "",
-"checkin": "",
-"checkout": "",
+"checkin": "Tue 10 Nov",
+"checkout": "Wed 11 Nov",
 "price": "",
 "fromDay": 14,
 "toDay": 14,
-"status": "To book",
-"notes": "Last night, near the airport.",
+"status": "Not booked",
+"notes": "Last night, near the airport. Car back by about 16:30 on 11 Nov.",
 "phone": "",
 "backupOf": "",
 "ref": "",
@@ -2682,12 +2827,12 @@
 "L3": {
 "id": "L3",
 "name": "L3",
-"day": 8,
-"route": "Tamarindo → Fiesta Resort (Puntarenas)",
-"km": 174,
-"time": "4 h 45",
-"leaveBy": "09:00",
-"notes": "",
+"day": 9,
+"route": "Quepos → Puerto Viejo (via San José + Ruta 32 + Limón)",
+"km": 360,
+"time": "6 h 30–7 h",
+"leaveBy": "11:00",
+"notes": "Long day. Fog + landslides possible on Braulio Carrillo.",
 "type": "leg",
 "o": 32,
 "u": 1
@@ -2702,7 +2847,8 @@
 "type": "fuel",
 "id": "fuel_c5",
 "o": 33,
-"u": 1
+"u": 1,
+"del": true
 },
 "fuel_c6": {
 "name": "Nicoya or Ruta 1 (to check)",
@@ -2714,25 +2860,26 @@
 "type": "fuel",
 "id": "fuel_c6",
 "o": 34,
-"u": 1
+"u": 1,
+"del": true
 },
 "L4": {
 "id": "L4",
 "name": "L4",
-"day": 9,
-"route": "Fiesta Resort → La Pavona (via San José + Ruta 32)",
-"km": 198,
-"time": "5 h 15",
-"leaveBy": "07:00",
-"notes": "Car stays at La Pavona secure parking (about 20–23 USD/night). Boats about 07:00, 09:15, 11:15, 12:45, 15:15, 16:15.",
+"day": 13,
+"route": "Puerto Viejo → La Pavona (via Limón + Guápiles)",
+"km": 200,
+"time": "3 h 30",
+"leaveBy": "09:00",
+"notes": "Car stays at La Pavona secure parking. Boats about 12:45, 15:15 (check).",
 "type": "leg",
 "o": 35,
 "u": 1
 },
 "fuel_c7": {
-"name": "Leave full (to check)",
+"name": "Leave Quepos full (to check)",
 "day": 9,
-"leg": "L4",
+"leg": "L3",
 "km": null,
 "lat": null,
 "lng": null,
@@ -2742,9 +2889,9 @@
 "u": 1
 },
 "fuel_c8": {
-"name": "Guápiles (to check)",
+"name": "Limón (to check)",
 "day": 9,
-"leg": "L4",
+"leg": "L3",
 "km": null,
 "lat": null,
 "lng": null,
@@ -2756,20 +2903,20 @@
 "L5": {
 "id": "L5",
 "name": "L5",
-"day": 11,
-"route": "La Pavona → Punta Cocles",
-"km": 201,
-"time": "4 h 45",
-"leaveBy": "09:30",
+"day": 14,
+"route": "La Pavona → near SJO (Ruta 32)",
+"km": 150,
+"time": "3 h",
+"leaveBy": "after the boat (~09:30)",
 "notes": "Boat back first: 06:40 or 08:40.",
 "type": "leg",
 "o": 38,
 "u": 1
 },
 "fuel_c9": {
-"name": "Guápiles (to check)",
-"day": 11,
-"leg": "L5",
+"name": "Limón (to check)",
+"day": 13,
+"leg": "L4",
 "km": null,
 "lat": null,
 "lng": null,
@@ -2779,9 +2926,9 @@
 "u": 1
 },
 "fuel_c10": {
-"name": "Limón (to check)",
-"day": 11,
-"leg": "L5",
+"name": "Guápiles (to check)",
+"day": 13,
+"leg": "L4",
 "km": null,
 "lat": null,
 "lng": null,
@@ -2801,12 +2948,13 @@
 "notes": "Long day. Fog + landslides possible on Braulio Carrillo.",
 "type": "leg",
 "o": 41,
-"u": 1
+"u": 1,
+"del": true
 },
 "fuel_c11": {
-"name": "Leave full in Puerto Viejo (to check)",
+"name": "Guápiles (to check)",
 "day": 14,
-"leg": "L6",
+"leg": "L5",
 "km": null,
 "lat": null,
 "lng": null,
@@ -2816,9 +2964,9 @@
 "u": 1
 },
 "fuel_c12": {
-"name": "Guápiles (to check)",
-"day": 14,
-"leg": "L6",
+"name": "Fill up before returning the car, 11 Nov",
+"day": 15,
+"leg": "L5",
 "km": null,
 "lat": null,
 "lng": null,
@@ -2998,8 +3146,8 @@
 "t_tortboat": {
 "id": "t_tortboat",
 "name": "Tortuguero: La Pavona parking + boats",
-"day": 9,
-"when": "Thu 5 Nov (15:15 boat) · back Sat 7 Nov (06:40/08:40)",
+"day": 13,
+"when": "Mon 9 Nov (about 12:45 or 15:15) · back Tue 10 Nov (06:40/08:40)",
 "length": "about 1 h each way",
 "price": "Boat about 8–10 USD pp each way; parking about 20–23 USD/night",
 "status": "To book",
@@ -3013,12 +3161,12 @@
 },
 "t_ride": {
 "id": "t_ride",
-"name": "Ride The Rainforest (horse riding), Punta Cocles",
+"name": "Ride The Rainforest (horse riding), Puerto Viejo / Punta Cocles",
 "day": 12,
-"when": "Sun 8 Nov",
+"when": "Sun 8 Nov (idea)",
 "length": "1–2.5 h",
 "price": "from about 65 USD/h",
-"status": "To book",
+"status": "Idea",
 "notes": "Guided horse rides, beach + jungle. +506 6192 8939 · ridetherainforest.com",
 "lat": 9.638944,
 "lng": -82.717119,
@@ -3167,7 +3315,8 @@
 "notes": "",
 "type": "todo",
 "o": 72,
-"u": 1
+"u": 1,
+"del": true
 },
 "todo_st_fr": {
 "id": "todo_st_fr",
@@ -3180,13 +3329,14 @@
 "notes": "",
 "type": "todo",
 "o": 73,
-"u": 1
+"u": 1,
+"del": true
 },
 "todo_st_tor": {
 "id": "todo_st_tor",
-"name": "Hotel 5–6 Nov (2 nights): Hotel Serendipity, Tortuguero",
+"name": "Hotel 9 Nov (1 night): Tortuguero",
 "done": false,
-"status": "To book",
+"status": "Not booked",
 "link": "st_tor",
 "ref": "",
 "price": "",
@@ -3197,9 +3347,9 @@
 },
 "todo_st_pvj": {
 "id": "todo_st_pvj",
-"name": "Hotel 7–9 Nov (3 nights): Punta Cocles",
+"name": "Hotel 5–9 Nov (4 nights): Puerto Viejo",
 "done": false,
-"status": "To book",
+"status": "Not booked",
 "link": "st_pvj",
 "ref": "",
 "price": "",
@@ -3212,7 +3362,7 @@
 "id": "todo_st_sjo2",
 "name": "Hotel 10 Nov (1 night): near SJO",
 "done": false,
-"status": "To book",
+"status": "Not booked",
 "link": "st_sjo2",
 "ref": "",
 "price": "",
@@ -3236,7 +3386,7 @@
 },
 "todo_t_tortboat": {
 "id": "todo_t_tortboat",
-"name": "Tortuguero: La Pavona parking + boats, 5 Nov / 7 Nov",
+"name": "Tortuguero: La Pavona parking + boats, 9 Nov / 10 Nov",
 "done": false,
 "status": "To book",
 "link": "t_tortboat",
@@ -3249,7 +3399,7 @@
 },
 "todo_t_ride": {
 "id": "todo_t_ride",
-"name": "Ride The Rainforest, Sun 8 Nov",
+"name": "Ride The Rainforest, Sun 8 Nov (idea)",
 "done": false,
 "status": "To book",
 "link": "t_ride",
@@ -3271,11 +3421,12 @@
 "notes": "",
 "type": "todo",
 "o": 81,
-"u": 1
+"u": 1,
+"del": true
 },
 "todo_c15": {
 "id": "todo_c15",
-"name": "Cahuita: pay at the gate. Tortuguero park ticket: online or at the gate",
+"name": "Cahuita: pay at the gate. Tortuguero park ticket (9–10 Nov): online or at the gate",
 "done": false,
 "status": "To book",
 "link": "",
@@ -3393,7 +3544,8 @@
 "type": "question",
 "id": "question_c19",
 "o": 131,
-"u": 1
+"u": 1,
+"del": true
 },
 "question131": {
 "name": "Budget per night? One room or two?",
@@ -3429,7 +3581,8 @@
 "type": "question",
 "id": "question_c20",
 "o": 136,
-"u": 1
+"u": 1,
+"del": true
 },
 "place138": {
 "name": "Papagayo Peninsula",
@@ -3508,7 +3661,7 @@
 },
 "place143": {
 "name": "Puerto Viejo de Talamanca",
-"why": "Beach and activities",
+"why": "Beach, 5–9 Nov",
 "status": "In plan",
 "kind": "beach",
 "area": "",
@@ -3534,7 +3687,8 @@
 "type": "place",
 "id": "place144",
 "o": 144,
-"u": 1
+"u": 1,
+"del": true
 },
 "place145": {
 "name": "Drake Bay",
@@ -4289,19 +4443,19 @@
 "type": "stay",
 "name": "Airbnb: Beautiful Ocean View Condo 1 Block From The Beach",
 "area": "Jacó",
-"address": "",
-"checkin": "Mon 2 Nov",
-"checkout": "Tue 3 Nov",
-"price": "Not charged yet (charged when host confirms)",
+"address": "Av. Pastor Díaz, Jacó 61101",
+"checkin": "Mon 2 Nov, after 14:00",
+"checkout": "Tue 3 Nov, by 11:00",
+"price": "NOK 1,198.45 (paid, Airbnb)",
 "fromDay": 6,
 "toDay": 6,
-"status": "Requested",
-"notes": "1 night, 2 adults. Host: Jesse. REQUEST SENT, NOT CONFIRMED yet (host answers within 24 h). Check-in/out times + address: see Airbnb app. Listing: https://www.airbnb.co.uk/rooms/1558712813699243233  Map: https://www.google.com/maps/search/?api=1&query=Jaco+Beach+Costa+Rica  Waze: https://waze.com/ul?q=Jaco%20Costa%20Rica",
+"status": "Booked",
+"notes": "1 night, 2 adults. Host: Jesse. Confirmed + paid on Airbnb. Code: see Airbnb app. Listing: https://www.airbnb.co.uk/rooms/1558712813699243233  Map: https://maps.google.com/maps?daddr=9.620140877179761,-84.63444504886866",
 "phone": "",
 "backupOf": "",
 "ref": "",
-"lat": 9.6149,
-"lng": -84.629,
+"lat": 9.620140877179761,
+"lng": -84.63444504886866,
 "link": "https://www.airbnb.co.uk/rooms/1558712813699243233",
 "o": 196,
 "u": 1
@@ -4329,6 +4483,54 @@
 "cat": "hotel",
 "o": 198,
 "u": 1
+},
+"st_quepos": {
+"type": "stay",
+"name": "Airbnb: Penthouse 2 Bed Huge Ocean View in Manuel Antonio",
+"area": "Quepos / Manuel Antonio",
+"address": "Ruta 618, Pacifico Colonial, Quepos 60601",
+"checkin": "Tue 3 Nov, after 15:00",
+"checkout": "Thu 5 Nov, by 11:00",
+"price": "NOK 4,185.38 (paid, Airbnb)",
+"fromDay": 7,
+"toDay": 8,
+"status": "Booked",
+"notes": "2 nights, 2 adults. Host: John. Keys via Dani on WhatsApp +506 6270 9343. Code: see Airbnb app.",
+"phone": "+506 6270 9343",
+"backupOf": "",
+"ref": "",
+"lat": 9.4085003,
+"lng": -84.1582085,
+"link": "https://www.airbnb.co.uk/rooms/1308755228995569676",
+"gpsAsked": true,
+"parkingAsked": false,
+"o": 19.5,
+"u": 1,
+"id": "st_quepos"
+},
+"sp_jaco": {
+"type": "spend",
+"date": "2026-11-02",
+"what": "Airbnb Jacó condo, 1 night (2–3 Nov), paid",
+"amount": 1198.45,
+"cur": "NOK",
+"who": "Simon",
+"cat": "hotel",
+"o": 199,
+"u": 1,
+"id": "sp_jaco"
+},
+"sp_quepos": {
+"type": "spend",
+"date": "2026-11-03",
+"what": "Airbnb Manuel Antonio penthouse, Quepos, 2 nights (3–5 Nov), paid",
+"amount": 4185.38,
+"cur": "NOK",
+"who": "Simon",
+"cat": "hotel",
+"o": 200,
+"u": 1,
+"id": "sp_quepos"
 }
 }
 }
